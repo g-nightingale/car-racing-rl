@@ -28,9 +28,12 @@ class DQNAgent:
         gamma (float): Discount rate applied in q-value calculation.
         model (keras model): Model for predicting action values.
         target model (keras model): Model for updating action values.
+        user_defined_model_function (function): User defined function to create a CNN model.
+        ddqn (bool): Use double q-network or not.
     """
 
-    def __init__(self, actions, action_probs=None, lr=0.00025, batch_size=32, gamma=0.95):
+    def __init__(self, actions, action_probs=None, lr=0.00025, batch_size=32, gamma=0.95, 
+                 user_defined_model_function=None, ddqn=False):
         """Initialise the agent."""
 
         self.d = deque()
@@ -45,6 +48,11 @@ class DQNAgent:
         self.gamma = gamma
         self.model = None
         self.target_model = None
+        if user_defined_model_function is not None:
+            self.user_defined_model_function = user_defined_model_function
+        else:
+            self.user_defined_model_function = None
+        self.ddqn = ddqn
 
 
     def cnn_model(self, img_dim):
@@ -67,8 +75,13 @@ class DQNAgent:
 
     def create_models(self, img_dim):
         """Create the models for the agent."""
-        self.model = self.cnn_model(img_dim)
-        self.target_model = self.cnn_model(img_dim)
+        
+        if self.user_defined_model_function is None:
+            self.model = self.cnn_model(img_dim)
+            self.target_model = self.cnn_model(img_dim)
+        else:
+            self.model = self.user_defined_model_function()
+            self.target_model = self.user_defined_model_function()
 
 
     def experience_replay(self, img_dim, verbose=False):
@@ -84,13 +97,18 @@ class DQNAgent:
         # Get q values from models
         q_0 = self.model.predict(s_0)
         q_1 = self.target_model.predict(s_1)
+        if self.ddqn:
+            q_1_ddqn = self.model.predict(s_1)
 
         # Loop through batch and update q-values
         for i, (_, a, r, _, done) in enumerate(batch):
             if done:
                 q_new = r
             else: 
-                q_new = r + self.gamma * np.max(q_1[i])
+                if self.ddqn:
+                    q_new = r + self.gamma * q_1[i][np.argmax(q_1_ddqn[i])]
+                else:
+                    q_new = r + self.gamma * np.max(q_1[i])
 
             # Update the q-value
             q_0[i][a] = q_new 

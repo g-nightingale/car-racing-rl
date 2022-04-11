@@ -5,6 +5,7 @@ import numpy as np
 from collections import deque
 import time
 import random
+import copy
 from utils import *
 
 class DQNAgentTrainer:
@@ -227,7 +228,7 @@ class DQNAgentTrainer:
         
         # Agent config
         #config['d'] = agent.d
-        agent_copy = agent.copy()
+        agent_copy = copy.deepcopy(agent)
         agent_copy.d = deque()
         config['agent'] = agent_copy
         config['actions'] = agent.actions
