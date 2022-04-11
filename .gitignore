@@ -1,0 +1,6 @@
+
+*.ipynb_aml_checkpoints
+*.amlignore
+*.aml*
+video/
+__pycache__/
