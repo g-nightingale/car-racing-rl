@@ -63,7 +63,7 @@ def plot_reward_comparison(agent_episode_rewards, labels, ylim=(-50, 500)):
     plt.title('DQN Agent Comparison - Average reward (last 100 episodes)')
     for i, episode_rewards in enumerate(agent_episode_rewards):
         plt.plot([np.mean(episode_rewards[::-1][i:i+100]) for i in range(len(episode_rewards))][::-1], label=labels[i])
-    plt.ylim((-50, 500))
+    plt.ylim(ylim)
     plt.xlabel('episode')
     plt.ylabel('reward')
     plt.legend()
