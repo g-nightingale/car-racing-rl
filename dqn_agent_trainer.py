@@ -6,6 +6,7 @@ import time
 import random
 import copy
 import logging
+from IPython.display import clear_output
 from utils import *
 
 
@@ -74,36 +75,39 @@ class DQNAgentTrainer:
         episode_rewards =[]
         self.frame_count = 0
         self.timestr = time.strftime("%Y%m%d-%H%M%S")
-        log_filename = (f'./logs/log_{self.timestr}.log'
+        log_filename = (f'./logs/log_{self.timestr}.log')
         logging.basicConfig(filename=log_filename, level=logging.INFO, force=True)
 
         # Create agent models
         agent.create_models(self.img_dim)
 
-        for i in range(self.number_of_episodes):
-            print(f'Episode: {i}')
-             logging.info(f'Episode: {i}')
-
+        for episode_number in range(self.number_of_episodes):
             # Reset the environment
             _ = env.reset()
 
             # First 50 frames are zooming into track so ignore for training!
-            for j in range(50):
+            for _ in range(50):
                 s_0, _, _, _ = env.step([0.0, 1.0, 0.0])
 
             # Generate episode
-            episode_reward = self.generate_episode(s_0, env, agent)
+            episode_reward = self.generate_episode(s_0, env, agent, episode_number)
             episode_rewards.append(episode_reward)
 
-            # Update log
+            # Print and update log
+            clear_output(wait=True)
+            if self.verbose:
+                print(f'Total frame count: {self.frame_count}')
+                print(f'Epsilon: {self.epsilon}')
+                print(f'Total reward for episode: {episode_reward}')
+                print(f'Running average rewards: {np.mean(episode_rewards[-100:])} \n')
+
             logging.info(f'Total frame count: {self.frame_count}')
             logging.info(f'Epsilon: {self.epsilon}')
             logging.info(f'Total reward for episode: {episode_reward}')
             logging.info(f'Running average rewards: {np.mean(episode_rewards[-100:])} \n')
 
-
             # Start decaying epsilon when policy is used to select actions
-            if i > self.final_epsilon_episode:
+            if episode_number > self.final_epsilon_episode:
                 self.epsilon = 0.0
             elif self.frame_count > self.random_action_frames and self.frame_count > self.min_replay_memory_size:
                 self.epsilon = max(self.epsilon_min, self.epsilon - self.epsilon_step)
@@ -122,7 +126,7 @@ class DQNAgentTrainer:
             self.output_config_and_results(agent)
 
 
-    def generate_episode(self, s_0, env, agent):
+    def generate_episode(self, s_0, env, agent, episode_number=0):
         """Generate an episode of learning."""
         
         episode_reward = 0
@@ -191,6 +195,13 @@ class DQNAgentTrainer:
 
             # End the episode if following conditions are met
             if done or (episode_frame_count > self.max_frames_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards):
+                clear_output(wait=True)
+                if self.verbose:
+                    print(f'Episode: {episode_number}')
+                    print(f"Ending episode: done {done}, consecutive negative rewards {consecutive_negative_rewards}")
+                    print(f"Total frames in episode: {episode_frame_count}")   
+
+                logging.info(f'Episode: {episode_number}')
                 logging.info(f"Ending episode: done {done}, consecutive negative rewards {consecutive_negative_rewards}")
                 logging.info(f"Total frames in episode: {episode_frame_count}")
                 break
@@ -198,6 +209,8 @@ class DQNAgentTrainer:
             # Current state ← new state
             s_0_stacked = s_1_stacked.copy()
 
+        if self.verbose:
+            print(f'Replay buffer size: {len(agent.d)}')
         logging.info(f'Replay buffer size: {len(agent.d)}')
 
         return episode_reward
@@ -232,9 +245,9 @@ class DQNAgentTrainer:
         
         # Agent config
         #config['d'] = agent.d
-        agent_copy = copy.deepcopy(agent)
-        agent_copy.d = deque()
-        config['agent'] = agent_copy
+        # agent_copy = copy.deepcopy(agent)
+        # agent_copy.d = deque()
+        # config['agent'] = agent_copy
         config['actions'] = agent.actions
         config['num_actions'] = agent.num_actions
         config['action_probs'] = agent.action_probs   
