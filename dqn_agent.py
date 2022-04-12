@@ -13,6 +13,7 @@ from keras.layers import Conv2D, MaxPooling2D, Dense, Flatten, Input, \
 from keras.backend import clear_session
 from utils import *
 
+
 class DQNAgent:
     """Implementation of a DQN agent.
 

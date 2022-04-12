@@ -1,12 +1,13 @@
 
 import numpy as np
 import pickle
-import numpy as np
 from collections import deque
 import time
 import random
 import copy
+import logging
 from utils import *
+
 
 class DQNAgentTrainer:
     """A class to train a DQN agent.
@@ -72,12 +73,16 @@ class DQNAgentTrainer:
         # Init variables
         episode_rewards =[]
         self.frame_count = 0
+        self.timestr = time.strftime("%Y%m%d-%H%M%S")
+        log_filename = (f'./logs/log_{self.timestr}.log'
+        logging.basicConfig(filename=log_filename, level=logging.INFO, force=True)
 
         # Create agent models
         agent.create_models(self.img_dim)
 
         for i in range(self.number_of_episodes):
             print(f'Episode: {i}')
+             logging.info(f'Episode: {i}')
 
             # Reset the environment
             _ = env.reset()
@@ -90,11 +95,12 @@ class DQNAgentTrainer:
             episode_reward = self.generate_episode(s_0, env, agent)
             episode_rewards.append(episode_reward)
 
-            if self.verbose:
-                print(f'Total frame count: {self.frame_count}')
-                print(f'Epsilon: {self.epsilon}')
-                print(f'Total reward for episode: {episode_reward}')
-                print(f'Running average rewards: {np.mean(episode_rewards[-100:])} \n')
+            # Update log
+            logging.info(f'Total frame count: {self.frame_count}')
+            logging.info(f'Epsilon: {self.epsilon}')
+            logging.info(f'Total reward for episode: {episode_reward}')
+            logging.info(f'Running average rewards: {np.mean(episode_rewards[-100:])} \n')
+
 
             # Start decaying epsilon when policy is used to select actions
             if i > self.final_epsilon_episode:
@@ -185,16 +191,14 @@ class DQNAgentTrainer:
 
             # End the episode if following conditions are met
             if done or (episode_frame_count > self.max_frames_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards):
-                if self.verbose:
-                    print(f"Ending episode: done {done}, consecutive negative rewards {consecutive_negative_rewards}")
-                    print(f"Total frames in episode: {episode_frame_count}")
+                logging.info(f"Ending episode: done {done}, consecutive negative rewards {consecutive_negative_rewards}")
+                logging.info(f"Total frames in episode: {episode_frame_count}")
                 break
 
             # Current state ← new state
             s_0_stacked = s_1_stacked.copy()
 
-        if self.verbose:
-            print(f'Replay buffer size: {len(agent.d)}')
+        logging.info(f'Replay buffer size: {len(agent.d)}')
 
         return episode_reward
 
@@ -244,7 +248,6 @@ class DQNAgentTrainer:
         config['episode_rewards'] = self.episode_rewards
 
         # Save
-        timestr = time.strftime("%Y%m%d-%H%M%S")
-        with open(f'./runs/dqn_results_{timestr}.pickle', 'wb') as handle:
+        with open(f'./runs/dqn_results_{self.timestr}.pickle', 'wb') as handle:
             pickle.dump(config, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
