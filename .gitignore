@@ -4,3 +4,4 @@
 *.aml*
 video/
 __pycache__/
+temp.ipynb
