@@ -4102,3 +4102,309 @@ INFO:root:Epsilon: 0.05
 INFO:root:Total reward for episode: 791.666666666652
 INFO:root:Running average rewards: 440.29327616804716 
 
+INFO:root:Episode: 456
+INFO:root:Ending episode: done True, consecutive negative rewards 32
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 90207
+INFO:root:Total frame count: 90207
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 441.3321799307849
+INFO:root:Running average rewards: 439.732844301666 
+
+INFO:root:Episode: 457
+INFO:root:Ending episode: done True, consecutive negative rewards 66
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 90445
+INFO:root:Total frame count: 90445
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 810.4545454545256
+INFO:root:Running average rewards: 439.70511127519865 
+
+INFO:root:Episode: 458
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 220
+INFO:root:Replay buffer size: 90665
+INFO:root:Total frame count: 90665
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 299.0967741935341
+INFO:root:Running average rewards: 439.17941235046726 
+
+INFO:root:Episode: 459
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 167
+INFO:root:Replay buffer size: 90832
+INFO:root:Total frame count: 90832
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 22.80573476702763
+INFO:root:Running average rewards: 437.21900815967604 
+
+INFO:root:Episode: 460
+INFO:root:Ending episode: done True, consecutive negative rewards 6
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 91070
+INFO:root:Total frame count: 91070
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 408.28947368419716
+INFO:root:Running average rewards: 437.41656956318496 
+
+INFO:root:Episode: 461
+INFO:root:Ending episode: done True, consecutive negative rewards 63
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 91308
+INFO:root:Total frame count: 91308
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 759.0925266903746
+INFO:root:Running average rewards: 440.06005893265285 
+
+INFO:root:Episode: 462
+INFO:root:Ending episode: done True, consecutive negative rewards 69
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 91546
+INFO:root:Total frame count: 91546
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 408.44827586205065
+INFO:root:Running average rewards: 435.90726253933013 
+
+INFO:root:Episode: 463
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 224
+INFO:root:Replay buffer size: 91770
+INFO:root:Total frame count: 91770
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 200.81916167664306
+INFO:root:Running average rewards: 438.3598134375336 
+
+INFO:root:Episode: 464
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 92008
+INFO:root:Total frame count: 92008
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 541.0655737704752
+INFO:root:Running average rewards: 437.75727899118937 
+
+INFO:root:Episode: 465
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 92246
+INFO:root:Total frame count: 92246
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 759.4303797468228
+INFO:root:Running average rewards: 442.5138609343532 
+
+INFO:root:Episode: 466
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 198
+INFO:root:Replay buffer size: 92444
+INFO:root:Total frame count: 92444
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 243.0222222222077
+INFO:root:Running average rewards: 443.4809818907525 
+
+INFO:root:Episode: 467
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 215
+INFO:root:Replay buffer size: 92659
+INFO:root:Total frame count: 92659
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 293.66101694913766
+INFO:root:Running average rewards: 443.14376534544266 
+
+INFO:root:Episode: 468
+INFO:root:Ending episode: done True, consecutive negative rewards 69
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 92897
+INFO:root:Total frame count: 92897
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 451.5838509316585
+INFO:root:Running average rewards: 443.38776085134646 
+
+INFO:root:Episode: 469
+INFO:root:Ending episode: done True, consecutive negative rewards 72
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 93135
+INFO:root:Total frame count: 93135
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 620.1702786377575
+INFO:root:Running average rewards: 447.5727969710574 
+
+INFO:root:Episode: 470
+INFO:root:Ending episode: done True, consecutive negative rewards 127
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 93373
+INFO:root:Total frame count: 93373
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 323.4615384615227
+INFO:root:Running average rewards: 448.1411761933112 
+
+INFO:root:Episode: 471
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 175
+INFO:root:Replay buffer size: 93548
+INFO:root:Total frame count: 93548
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 58.47222222222611
+INFO:root:Running average rewards: 440.48009421972944 
+
+INFO:root:Episode: 472
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 195
+INFO:root:Replay buffer size: 93743
+INFO:root:Total frame count: 93743
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 202.27681660899088
+INFO:root:Running average rewards: 441.61503055398737 
+
+INFO:root:Episode: 473
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 212
+INFO:root:Replay buffer size: 93955
+INFO:root:Total frame count: 93955
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 325.6477611940138
+INFO:root:Running average rewards: 439.75254264868636 
+
+INFO:root:Episode: 474
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 94193
+INFO:root:Total frame count: 94193
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 508.846153846146
+INFO:root:Running average rewards: 442.3796708538146 
+
+INFO:root:Episode: 475
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 94431
+INFO:root:Total frame count: 94431
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 695.5405405405216
+INFO:root:Running average rewards: 446.52229450026226 
+
+INFO:root:Episode: 476
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 198
+INFO:root:Replay buffer size: 94629
+INFO:root:Total frame count: 94629
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 261.3797101449135
+INFO:root:Running average rewards: 442.16156329982476 
+
+INFO:root:Episode: 477
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 94867
+INFO:root:Total frame count: 94867
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 757.2336769759256
+INFO:root:Running average rewards: 447.072788958473 
+
+INFO:root:Episode: 478
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 228
+INFO:root:Replay buffer size: 95095
+INFO:root:Total frame count: 95095
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 288.4610169491368
+INFO:root:Running average rewards: 448.0946772344731 
+
+INFO:root:Episode: 479
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 221
+INFO:root:Replay buffer size: 95316
+INFO:root:Total frame count: 95316
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 233.36656151418066
+INFO:root:Running average rewards: 449.8498330456934 
+
+INFO:root:Episode: 480
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 227
+INFO:root:Replay buffer size: 95543
+INFO:root:Total frame count: 95543
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 360.610658307195
+INFO:root:Running average rewards: 451.14399759978 
+
+INFO:root:Episode: 481
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total frames in episode: 212
+INFO:root:Replay buffer size: 95755
+INFO:root:Total frame count: 95755
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 226.67540983605332
+INFO:root:Running average rewards: 450.86560606707263 
+
+INFO:root:Episode: 482
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 95993
+INFO:root:Total frame count: 95993
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 743.0062305295736
+INFO:root:Running average rewards: 453.4543014658938 
+
+INFO:root:Episode: 483
+INFO:root:Ending episode: done True, consecutive negative rewards 143
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 96231
+INFO:root:Total frame count: 96231
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 320.873015873002
+INFO:root:Running average rewards: 451.2754520067896 
+
+INFO:root:Episode: 484
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 96469
+INFO:root:Total frame count: 96469
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 346.71779141104423
+INFO:root:Running average rewards: 450.5259632542335 
+
+INFO:root:Episode: 485
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 96707
+INFO:root:Total frame count: 96707
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 563.5365853658365
+INFO:root:Running average rewards: 451.6359192718264 
+
+INFO:root:Episode: 486
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 96945
+INFO:root:Total frame count: 96945
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 441.80981595090475
+INFO:root:Running average rewards: 452.34827972641756 
+
+INFO:root:Episode: 487
+INFO:root:Ending episode: done True, consecutive negative rewards 9
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 97183
+INFO:root:Total frame count: 97183
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 494.12386706946717
+INFO:root:Running average rewards: 454.0339251767733 
+
+INFO:root:Episode: 488
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 97421
+INFO:root:Total frame count: 97421
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 407.8571428571335
+INFO:root:Running average rewards: 456.8202385408285 
+
+INFO:root:Episode: 489
+INFO:root:Ending episode: done True, consecutive negative rewards 39
+INFO:root:Total frames in episode: 238
+INFO:root:Replay buffer size: 97659
+INFO:root:Total frame count: 97659
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 825.6349206349014
+INFO:root:Running average rewards: 459.5909441828212 
+
