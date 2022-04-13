@@ -23,23 +23,23 @@ class DQNAgentTrainer:
         epsilon_step_episodes (float): Number of episodes to step from starting epsilon to epsilon_min.
         max_replay_memory_size (int): Maximum number of observations in the replay memory.
         min_replay_memory_size (int): Minimum number of observations in the replay memory before model training starts.
-        random_action_frames (int): Number of frames to take random action instead of using model.
+        random_action_steps (int): Number of steps to take random action instead of using model.
         max_consecutive_negative_rewards (int): Maximum number of consecutive negative rewards before ending episode.
-        update_target_model_frames (int): Frequency at which to update the target model weights.
-        max_frames_per_episode (int): Maximum number of frames before ending an episode.
+        update_target_model_steps (int): Frequency at which to update the target model weights.
+        max_steps_per_episode (int): Maximum number of steps before ending an episode.
         skip_frames (int): Number of frames to skip after taking each action.
         save_training_frequency (int): Frequency at which the agent q-value model is saved.
         save_models (bool): Save agent q-value model or not.
         save_run_results (bool): Save results from train_agent() method.
         verbose_cnn (int): Frequency to print outputs from q-value training.
         verbose (bool): Print training details to terminal or not.
-        frame_count (int): Count of frames elapsed.
+        step_count (int): Count of steps elapsed.
         episode_rewards (list): List of rewards from the train_agent() method.
         
     """
     def __init__(self, img_len=56, frame_stack_num=4, number_of_episodes=1000, epsilon=1.0, epsilon_min=0.05, epsilon_step_episodes=100.0,
-                 final_epsilon_episode=500, max_replay_memory_size=100000, min_replay_memory_size=10000, random_action_frames=2000,
-                 max_consecutive_negative_rewards=50, update_target_model_frames=5000, max_frames_per_episode=10000,
+                 final_epsilon_episode=500, max_replay_memory_size=100000, min_replay_memory_size=10000, random_action_steps=2000,
+                 max_consecutive_negative_rewards=50, update_target_model_steps=5000, max_steps_per_episode=10000,
                  skip_frames=4, save_training_frequency=10000, save_models=False, save_run_results=True, verbose_cnn=50, verbose=True):
 
         self.img_len = img_len
@@ -53,17 +53,17 @@ class DQNAgentTrainer:
         self.final_epsilon_episode = final_epsilon_episode
         self.max_replay_memory_size = max_replay_memory_size
         self.min_replay_memory_size = min_replay_memory_size
-        self.random_action_frames = random_action_frames
+        self.random_action_steps = random_action_steps
         self.max_consecutive_negative_rewards = max_consecutive_negative_rewards
-        self.update_target_model_frames = update_target_model_frames
-        self.max_frames_per_episode = max_frames_per_episode
+        self.update_target_model_steps = update_target_model_steps
+        self.max_steps_per_episode = max_steps_per_episode
         self.skip_frames = skip_frames
         self.save_training_frequency = save_training_frequency
         self.save_models = save_models
         self.save_run_results = save_run_results
         self.verbose_cnn = verbose_cnn
         self.verbose = verbose
-        self.frame_count = 0
+        self.step_count = 0
         self.grayscale_state_buffer = deque()
         self.episode_rewards = []
 
@@ -73,7 +73,7 @@ class DQNAgentTrainer:
 
         # Init variables
         episode_rewards =[]
-        self.frame_count = 0
+        self.step_count = 0
         self.timestr = time.strftime("%Y%m%d-%H%M%S")
         log_filename = (f'./logs/log_{self.timestr}.log')
         logging.basicConfig(filename=log_filename, level=logging.INFO, force=True)
@@ -96,12 +96,12 @@ class DQNAgentTrainer:
             # Print and update log
             clear_output(wait=True)
             if self.verbose:
-                print(f'Total frame count: {self.frame_count}')
+                print(f'Total step count: {self.step_count}')
                 print(f'Epsilon: {self.epsilon}')
                 print(f'Total reward for episode: {episode_reward}')
                 print(f'Running average rewards: {np.mean(episode_rewards[-100:])} \n')
 
-            logging.info(f'Total frame count: {self.frame_count}')
+            logging.info(f'Total step count: {self.step_count}')
             logging.info(f'Epsilon: {self.epsilon}')
             logging.info(f'Total reward for episode: {episode_reward}')
             logging.info(f'Running average rewards: {np.mean(episode_rewards[-100:])} \n')
@@ -109,7 +109,7 @@ class DQNAgentTrainer:
             # Start decaying epsilon when policy is used to select actions
             if episode_number > self.final_epsilon_episode:
                 self.epsilon = 0.0
-            elif self.frame_count > self.random_action_frames and self.frame_count > self.min_replay_memory_size:
+            elif self.step_count > self.random_action_steps and self.step_count > self.min_replay_memory_size:
                 self.epsilon = max(self.epsilon_min, self.epsilon - self.epsilon_step)
 
         env.close()
@@ -130,7 +130,7 @@ class DQNAgentTrainer:
         """Generate an episode of learning."""
         
         episode_reward = 0
-        episode_frame_count = 0
+        episode_step_count = 0
         consecutive_negative_rewards = 0
 
         # Get stacked state representation
@@ -141,11 +141,11 @@ class DQNAgentTrainer:
         while True:
 
             # Increment counters
-            episode_frame_count += 1
-            self.frame_count += 1
+            episode_step_count += 1
+            self.step_count += 1
 
             # Select action
-            if self.frame_count < self.random_action_frames or np.random.rand() < self.epsilon:
+            if self.step_count < self.random_action_steps or np.random.rand() < self.epsilon:
                 a_0 = np.random.choice(np.arange(agent.num_actions), p=agent.action_probs)
                 #a_0 = random.choice(np.arange(num_actions))
             else:
@@ -178,7 +178,7 @@ class DQNAgentTrainer:
 
             # Start experience replay
             if len(agent.d) >= self.min_replay_memory_size:
-                verbose = True if self.frame_count % self.verbose_cnn == 0 else False
+                verbose = True if self.step_count % self.verbose_cnn == 0 else False
                 agent.experience_replay(self.img_dim, verbose)
 
             # Drop the oldest experience if the length of d exceeeds MAX_REPLAY_MEMORY_SIZE
@@ -186,24 +186,24 @@ class DQNAgentTrainer:
                 agent.d.popleft()
 
             # Set target weights to model weights
-            if self.frame_count % self.update_target_model_frames == 0:
+            if self.step_count % self.update_target_model_steps == 0:
                 agent.update_model_weights()
 
             # Save model
-            if self.frame_count % self.save_training_frequency == 0 and self.save_models is True:
-                agent.model.save_model(f'./saved_models/dqn_trial_{frame_count}.h5')
+            if self.step_count % self.save_training_frequency == 0 and self.save_models is True:
+                agent.model.save_model(f'./saved_models/dqn_trial_{step_count}.h5')
 
             # End the episode if following conditions are met
-            if done or (episode_frame_count > self.max_frames_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards):
+            if done or (episode_step_count > self.max_steps_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards):
                 clear_output(wait=True)
                 if self.verbose:
                     print(f'Episode: {episode_number}')
                     print(f"Ending episode: done {done}, consecutive negative rewards {consecutive_negative_rewards}")
-                    print(f"Total frames in episode: {episode_frame_count}")   
+                    print(f"Total steps in episode: {episode_step_count}")   
 
                 logging.info(f'Episode: {episode_number}')
                 logging.info(f"Ending episode: done {done}, consecutive negative rewards {consecutive_negative_rewards}")
-                logging.info(f"Total frames in episode: {episode_frame_count}")
+                logging.info(f"Total steps in episode: {episode_step_count}")
                 break
 
             # Current state ← new state
@@ -232,10 +232,10 @@ class DQNAgentTrainer:
         config['final_epsilon_episode'] = self.final_epsilon_episode
         config['max_replay_memory_size'] = self.max_replay_memory_size
         config['min_replay_memory_size'] = self.min_replay_memory_size 
-        config['random_action_frames'] = self.random_action_frames
+        config['random_action_steps'] = self.random_action_steps
         config['max_consecutive_negative_rewards'] = self.max_consecutive_negative_rewards
-        config['update_target_model_frames'] = self.update_target_model_frames
-        config['max_frames_per_episode'] = self.max_frames_per_episode
+        config['update_target_model_steps'] = self.update_target_model_steps
+        config['max_steps_per_episode'] = self.max_steps_per_episode
         config['skip_frames'] = self.skip_frames
         config['save_training_frequency'] = self.save_training_frequency
         config['save_models'] = self.save_models
