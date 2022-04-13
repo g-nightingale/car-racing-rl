@@ -81,8 +81,8 @@ class DQNAgent:
             self.model = self.cnn_model(img_dim)
             self.target_model = self.cnn_model(img_dim)
         else:
-            self.model = self.user_defined_model_function()
-            self.target_model = self.user_defined_model_function()
+            self.model = self.user_defined_model_function(img_dim, self.lr, self.num_actions)
+            self.target_model = self.user_defined_model_function(img_dim, self.lr, self.num_actions)
 
 
     def experience_replay(self, img_dim, verbose=False):

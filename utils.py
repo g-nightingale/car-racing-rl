@@ -14,8 +14,9 @@ def image_processing(s, img_len, crop_dims=None):
     
     if crop_dims is not None:
         s = s[crop_dims[0], crop_dims[1], :]
-    s = np.dot(s[...,:3], [0.2989, 0.5870, 0.1140]).astype(np.int16)
+    s = np.dot(s[...,:3], [0.2989, 0.5870, 0.1140]).astype(np.uint8)
     s = np.reshape(s, (1, img_len, img_len))  
+    s[0, 86:, :16] = 0.0
 
     return s
 
