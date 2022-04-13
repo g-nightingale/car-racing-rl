@@ -28,7 +28,7 @@ class DQNAgentTrainer:
         update_target_model_steps (int): Frequency at which to update the target model weights.
         max_steps_per_episode (int): Maximum number of steps before ending an episode.
         skip_frames (int): Number of frames to skip after taking each action.
-        save_training_frequency (int): Frequency at which the agent q-value model is saved.
+        save_model_frequency (int): Frequency at which the agent q-value model is saved.
         save_models (bool): Save agent q-value model or not.
         save_run_results (bool): Save results from train_agent() method.
         verbose_cnn (int): Frequency to print outputs from q-value training.
@@ -40,7 +40,7 @@ class DQNAgentTrainer:
     def __init__(self, img_len=56, frame_stack_num=4, number_of_episodes=1000, epsilon=1.0, epsilon_min=0.05, epsilon_step_episodes=100.0,
                  final_epsilon_episode=500, max_replay_memory_size=100000, min_replay_memory_size=10000, random_action_steps=2000,
                  max_consecutive_negative_rewards=50, update_target_model_steps=5000, max_steps_per_episode=10000,
-                 skip_frames=4, save_training_frequency=10000, save_models=False, save_run_results=True, verbose_cnn=50, verbose=True):
+                 skip_frames=4, save_model_frequency=10000, save_models=False, save_run_results=True, verbose_cnn=50, verbose=True):
 
         self.img_len = img_len
         self.frame_stack_num = frame_stack_num
@@ -58,7 +58,7 @@ class DQNAgentTrainer:
         self.update_target_model_steps = update_target_model_steps
         self.max_steps_per_episode = max_steps_per_episode
         self.skip_frames = skip_frames
-        self.save_training_frequency = save_training_frequency
+        self.save_model_frequency = save_training_frequency
         self.save_models = save_models
         self.save_run_results = save_run_results
         self.verbose_cnn = verbose_cnn
@@ -111,6 +111,10 @@ class DQNAgentTrainer:
                 self.epsilon = 0.0
             elif self.step_count > self.random_action_steps and self.step_count > self.min_replay_memory_size:
                 self.epsilon = max(self.epsilon_min, self.epsilon - self.epsilon_step)
+
+            # Save model
+            if self.episode_number % self.save_model_frequency == 0 and episode_number > 0 and self.save_models is True:
+                agent.model.save_model(f'./saved_models/model_{self.time_str}_{step_count}.h5')
 
         env.close()
 
@@ -188,10 +192,6 @@ class DQNAgentTrainer:
             # Set target weights to model weights
             if self.step_count % self.update_target_model_steps == 0:
                 agent.update_model_weights()
-
-            # Save model
-            if self.step_count % self.save_training_frequency == 0 and self.save_models is True:
-                agent.model.save_model(f'./saved_models/dqn_trial_{step_count}.h5')
 
             # End the episode if following conditions are met
             if done or (episode_step_count > self.max_steps_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards):
