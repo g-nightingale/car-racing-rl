@@ -58,7 +58,7 @@ class DQNAgentTrainer:
         self.update_target_model_steps = update_target_model_steps
         self.max_steps_per_episode = max_steps_per_episode
         self.skip_frames = skip_frames
-        self.save_model_frequency = save_training_frequency
+        self.save_model_frequency = save_model_frequency
         self.save_models = save_models
         self.save_run_results = save_run_results
         self.verbose_cnn = verbose_cnn
@@ -113,7 +113,7 @@ class DQNAgentTrainer:
                 self.epsilon = max(self.epsilon_min, self.epsilon - self.epsilon_step)
 
             # Save model
-            if self.episode_number % self.save_model_frequency == 0 and episode_number > 0 and self.save_models is True:
+            if episode_number % self.save_model_frequency == 0 and episode_number > 0 and self.save_models is True:
                 agent.model.save_model(f'./saved_models/model_{self.time_str}_{step_count}.h5')
 
         env.close()
