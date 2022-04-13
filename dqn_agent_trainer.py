@@ -114,13 +114,13 @@ class DQNAgentTrainer:
 
             # Save model
             if episode_number % self.save_model_frequency == 0 and episode_number > 0 and self.save_models is True:
-                agent.model.save_model(f'./saved_models/model_{self.time_str}_{step_count}.h5')
+                agent.model.save(f'./saved_models/model_{self.timestr}_{step_count}.h5')
 
         env.close()
 
         # Save model
         if self.save_models is True:
-            agent.model.save_model(f'./saved_models/dqn_final.h5')
+            agent.model.save(f'./saved_models/dqn_{self.timestr}_final.h5')
 
         # Store rewards
         self.episode_rewards = episode_rewards
@@ -237,7 +237,7 @@ class DQNAgentTrainer:
         config['update_target_model_steps'] = self.update_target_model_steps
         config['max_steps_per_episode'] = self.max_steps_per_episode
         config['skip_frames'] = self.skip_frames
-        config['save_training_frequency'] = self.save_training_frequency
+        config['save_model_frequency'] = self.save_model_frequency
         config['save_models'] = self.save_models
         config['save_run_results'] = self.save_run_results
         config['verbose_cnn'] = self.verbose_cnn
