@@ -114,7 +114,7 @@ class DQNAgentTrainer:
 
             # Save model
             if episode_number % self.save_model_frequency == 0 and episode_number > 0 and self.save_models is True:
-                agent.model.save(f'./saved_models/model_{self.timestr}_{step_count}.h5')
+                agent.model.save(f'./saved_models/model_{self.timestr}_{self.step_count}.h5')
 
         env.close()
 
@@ -242,7 +242,8 @@ class DQNAgentTrainer:
         config['save_run_results'] = self.save_run_results
         config['verbose_cnn'] = self.verbose_cnn
         config['verbose'] = self.verbose
-        
+        config['final_step_count'] = self.step_count
+
         # Agent config
         #config['d'] = agent.d
         # agent_copy = copy.deepcopy(agent)
@@ -259,7 +260,7 @@ class DQNAgentTrainer:
 
         # Rewards
         config['episode_rewards'] = self.episode_rewards
-
+        
         # Save
         with open(f'./runs/dqn_results_{self.timestr}.pickle', 'wb') as handle:
             pickle.dump(config, handle, protocol=pickle.HIGHEST_PROTOCOL)
