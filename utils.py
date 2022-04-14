@@ -52,13 +52,14 @@ def get_stacked_state_live(grayscale_state_buffer, img_dim, skip_frames):
     return img
 
 
-def plot_rewards(episode_rewards):
+def plot_rewards(episode_rewards, y_lim=None):
     """Plot episode rewards."""
     plt.figure(figsize=(8, 6))
     plt.title('DQN Agent')
     plt.plot(episode_rewards, label='Episode reward', alpha=0.5)
     plt.plot([np.mean(episode_rewards[::-1][i:i+100]) for i in range(len(episode_rewards))][::-1], label='Average reward (last 100 episodes)')
-    plt.ylim((-50, 800))
+    if y_lim is not None:
+        plt.ylim(y_lim)
     plt.xlabel('episode')
     plt.ylabel('average reward')
     plt.legend()
