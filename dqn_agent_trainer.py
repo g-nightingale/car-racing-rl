@@ -1,4 +1,5 @@
 
+import os
 import numpy as np
 import pickle
 from collections import deque
@@ -26,6 +27,7 @@ class DQNAgentTrainer:
         random_action_steps (int): Number of steps to take random action instead of using model.
         max_consecutive_negative_rewards (int): Maximum number of consecutive negative rewards before ending episode.
         update_target_model_steps (int): Frequency at which to update the target model weights.
+        target_model_hard_update (bool): Make hard update or soft update to target model weights. 
         max_steps_per_episode (int): Maximum number of steps before ending an episode.
         skip_frames (int): Number of frames to skip after taking each action.
         save_model_frequency (int): Frequency at which the agent q-value model is saved.
@@ -33,14 +35,17 @@ class DQNAgentTrainer:
         save_run_results (bool): Save results from train_agent() method.
         verbose_cnn (int): Frequency to print outputs from q-value training.
         verbose (bool): Print training details to terminal or not.
+        plot_progress (bool): Plot current rewards or not.
+        benchmark_rewards (list): Benchmark rewards to plot against - useful for comparing training progress.
         step_count (int): Count of steps elapsed.
         episode_rewards (list): List of rewards from the train_agent() method.
         
     """
     def __init__(self, img_len=56, frame_stack_num=4, number_of_episodes=1000, epsilon=1.0, epsilon_min=0.05, epsilon_step_episodes=100.0,
                  final_epsilon_episode=500, max_replay_memory_size=100000, min_replay_memory_size=10000, random_action_steps=2000,
-                 max_consecutive_negative_rewards=50, update_target_model_steps=5000, max_steps_per_episode=10000,
-                 skip_frames=4, save_model_frequency=10000, save_models=False, save_run_results=True, verbose_cnn=50, verbose=True):
+                 max_consecutive_negative_rewards=50, update_target_model_steps=5000, target_model_hard_update=True, max_steps_per_episode=10000,
+                 skip_frames=4, save_model_frequency=10000, save_models=False, save_run_results=True, verbose_cnn=50, verbose=True,
+                 plot_progress=False, benchmark_rewards=None):
 
         self.img_len = img_len
         self.frame_stack_num = frame_stack_num
@@ -56,6 +61,7 @@ class DQNAgentTrainer:
         self.random_action_steps = random_action_steps
         self.max_consecutive_negative_rewards = max_consecutive_negative_rewards
         self.update_target_model_steps = update_target_model_steps
+        self.target_model_hard_update = target_model_hard_update
         self.max_steps_per_episode = max_steps_per_episode
         self.skip_frames = skip_frames
         self.save_model_frequency = save_model_frequency
@@ -63,9 +69,12 @@ class DQNAgentTrainer:
         self.save_run_results = save_run_results
         self.verbose_cnn = verbose_cnn
         self.verbose = verbose
+        self.plot_progress = plot_progress
+        self.benchmark_rewards = benchmark_rewards
         self.step_count = 0
         self.grayscale_state_buffer = deque()
         self.episode_rewards = []
+        self.path = None
 
 
     def train_agent(self, env, agent):
@@ -75,13 +84,17 @@ class DQNAgentTrainer:
         episode_rewards =[]
         self.step_count = 0
         self.timestr = time.strftime("%Y%m%d-%H%M%S")
-        log_filename = (f'./logs/log_{self.timestr}.log')
+        self.path = f'./runs/{self.timestr}'
+        if not os.path.exists(self.path):
+            os.makedirs(self.path)
+        log_filename = (f'{self.path}/log.log')
         logging.basicConfig(filename=log_filename, level=logging.INFO, force=True)
 
         # Create agent models
         agent.create_models(self.img_dim)
 
         for episode_number in range(self.number_of_episodes):
+
             # Reset the environment
             _ = env.reset()
 
@@ -101,6 +114,9 @@ class DQNAgentTrainer:
                 print(f'Total reward for episode: {episode_reward}')
                 print(f'Running average rewards: {np.mean(episode_rewards[-100:])} \n')
 
+            if self.plot_progress:
+                self.plot_rewards(episode_rewards)
+
             logging.info(f'Total step count: {self.step_count}')
             logging.info(f'Epsilon: {self.epsilon}')
             logging.info(f'Total reward for episode: {episode_reward}')
@@ -114,13 +130,13 @@ class DQNAgentTrainer:
 
             # Save model
             if episode_number % self.save_model_frequency == 0 and episode_number > 0 and self.save_models is True:
-                agent.model.save(f'./saved_models/model_{self.timestr}_{self.step_count}.h5')
+                agent.model.save(f'{self.path}/model_{episode_number}.h5')
 
         env.close()
 
         # Save model
         if self.save_models is True:
-            agent.model.save(f'./saved_models/dqn_{self.timestr}_final.h5')
+            agent.model.save(f'{self.path}/model_final.h5')
 
         # Store rewards
         self.episode_rewards = episode_rewards
@@ -191,7 +207,7 @@ class DQNAgentTrainer:
 
             # Set target weights to model weights
             if self.step_count % self.update_target_model_steps == 0:
-                agent.update_model_weights()
+                agent.update_model_weights(self.target_model_hard_update)
 
             # End the episode if following conditions are met
             if done or (episode_step_count > self.max_steps_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards):
@@ -214,6 +230,24 @@ class DQNAgentTrainer:
         logging.info(f'Replay buffer size: {len(agent.d)}')
 
         return episode_reward
+
+
+    def plot_rewards(self, episode_rewards):
+        """Plot episode rewards."""
+        # Create new benchmark rewards list that is thesame length as episode rewards
+        benchmark_rewards = self.benchmark_rewards[:len(episode_rewards)]
+
+        # Plot
+        plt.figure(figsize=(8, 6))
+        plt.title('DQN Agent')
+        plt.plot(episode_rewards, label='Episode reward', alpha=0.5)
+        plt.plot([np.mean(episode_rewards[::-1][i:i+100]) for i in range(len(episode_rewards))][::-1], label='Average reward (last 100 episodes)')
+        if self.benchmark_rewards is not None:
+            plt.plot([np.mean(benchmark_rewards[::-1][i:i+100]) for i in range(len(benchmark_rewards))][::-1], label='Benchmark average reward (last 100 episodes)')
+        plt.xlabel('episode')
+        plt.ylabel('average reward')
+        plt.legend()
+        plt.show()
 
 
     def output_config_and_results(self, agent):
@@ -262,6 +296,6 @@ class DQNAgentTrainer:
         config['episode_rewards'] = self.episode_rewards
         
         # Save
-        with open(f'./runs/dqn_results_{self.timestr}.pickle', 'wb') as handle:
+        with open(f'{self.path}/config_results.pickle', 'wb') as handle:
             pickle.dump(config, handle, protocol=pickle.HIGHEST_PROTOCOL)
 

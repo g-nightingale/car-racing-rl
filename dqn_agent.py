@@ -27,13 +27,14 @@ class DQNAgent:
         lr (float): Learning rate for CNN model.
         batch_size (int): Batch size for experience replay sampling.
         gamma (float): Discount rate applied in q-value calculation.
+        tau (float): Tau value used for soft model updates.
         model (keras model): Model for predicting action values.
         target model (keras model): Model for updating action values.
         user_defined_model_function (function): User defined function to create a CNN model.
         ddqn (bool): Use double q-network or not.
     """
 
-    def __init__(self, actions, action_probs=None, lr=0.00025, batch_size=32, gamma=0.95, 
+    def __init__(self, actions, action_probs=None, lr=0.00025, batch_size=32, gamma=0.95, tau=0.001,
                  user_defined_model_function=None, ddqn=False):
         """Initialise the agent."""
 
@@ -47,6 +48,7 @@ class DQNAgent:
         self.lr = lr
         self.batch_size = batch_size
         self.gamma = gamma
+        self.tau = tau
         self.model = None
         self.target_model = None
         if user_defined_model_function is not None:
@@ -64,7 +66,7 @@ class DQNAgent:
         model.add(Conv2D(64, 4, activation='relu', strides=2))
         model.add(Conv2D(64, 3, activation='relu', strides=1))
         model.add(Flatten())
-        model.add(Dense(512, activation='relu'))
+        model.add(Dense(256, activation='relu'))
         model.add(Dense(self.num_actions, activation="linear"))
 
         opt = Adam(learning_rate=self.lr, epsilon=1e-7, clipnorm=1.0)
@@ -118,9 +120,13 @@ class DQNAgent:
         self.model.fit(s_0, q_0, epochs=1, batch_size=self.batch_size, verbose=verbose)
 
 
-    def update_model_weights(self):
+    def update_model_weights(self, hard_update=True):
         """Update target model weights to match model weights."""
-        self.target_model.set_weights(self.model.get_weights())
+        if hard_update:
+            self.target_model.set_weights(self.model.get_weights())
+        else:
+            new_weights = (1 - self.tau) * self.target_model.get_weights() + self.tau * self.model.get_weights()
+            self.target_model.set_weights(new_weights)
 
 
     def save_model(self, path='./saved_models/dqn_final.h5'):
