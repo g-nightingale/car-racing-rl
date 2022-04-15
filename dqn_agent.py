@@ -125,7 +125,7 @@ class DQNAgent:
         if hard_update:
             self.target_model.set_weights(self.model.get_weights())
         else:
-            new_weights = (1 - self.tau) * self.target_model.get_weights() + self.tau * self.model.get_weights()
+            new_weights = [(1 - self.tau) * tw  + self.tau * mw for tw, mw in zip(self.target_model.get_weights(), self.model.get_weights())]
             self.target_model.set_weights(new_weights)
 
 
