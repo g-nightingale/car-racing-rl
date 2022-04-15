@@ -1,0 +1,3987 @@
+INFO:root:Episode: 0
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 162
+INFO:root:Replay buffer size: 162
+INFO:root:Total step count: 162
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -11.769696969696838
+INFO:root:Running average rewards: -11.769696969696838 
+
+INFO:root:Episode: 1
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 156
+INFO:root:Replay buffer size: 318
+INFO:root:Total step count: 318
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -45.39319727891233
+INFO:root:Running average rewards: -28.581447124304585 
+
+INFO:root:Episode: 2
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 168
+INFO:root:Replay buffer size: 486
+INFO:root:Total step count: 486
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -20.842384105961067
+INFO:root:Running average rewards: -26.001759451523412 
+
+INFO:root:Episode: 3
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 160
+INFO:root:Replay buffer size: 646
+INFO:root:Total step count: 646
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -26.585034013606233
+INFO:root:Running average rewards: -26.147578092044117 
+
+INFO:root:Episode: 4
+INFO:root:Ending episode: done True, consecutive negative rewards 29
+INFO:root:Total steps in episode: 37
+INFO:root:Replay buffer size: 683
+INFO:root:Total step count: 683
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -83.88775510204101
+INFO:root:Running average rewards: -37.69561349404349 
+
+INFO:root:Episode: 5
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 173
+INFO:root:Replay buffer size: 856
+INFO:root:Total step count: 856
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -25.20000000000079
+INFO:root:Running average rewards: -35.613011245036375 
+
+INFO:root:Episode: 6
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 157
+INFO:root:Replay buffer size: 1013
+INFO:root:Total step count: 1013
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -41.261538461539175
+INFO:root:Running average rewards: -36.41994370453678 
+
+INFO:root:Episode: 7
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 155
+INFO:root:Replay buffer size: 1168
+INFO:root:Total step count: 1168
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -47.915492957747254
+INFO:root:Running average rewards: -37.856887361188086 
+
+INFO:root:Episode: 8
+INFO:root:Ending episode: done True, consecutive negative rewards 98
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 1406
+INFO:root:Total step count: 1406
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 86.10236220472962
+INFO:root:Running average rewards: -24.083637409419453 
+
+INFO:root:Episode: 9
+INFO:root:Ending episode: done True, consecutive negative rewards 67
+INFO:root:Total steps in episode: 97
+INFO:root:Replay buffer size: 1503
+INFO:root:Total step count: 1503
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -102.41578947368475
+INFO:root:Running average rewards: -31.916852615845983 
+
+INFO:root:Episode: 10
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 162
+INFO:root:Replay buffer size: 1665
+INFO:root:Total step count: 1665
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -27.648297213623046
+INFO:root:Running average rewards: -31.528802124734806 
+
+INFO:root:Episode: 11
+INFO:root:Ending episode: done True, consecutive negative rewards 151
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 1903
+INFO:root:Total step count: 1903
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -37.446043165468396
+INFO:root:Running average rewards: -32.021905544795935 
+
+INFO:root:Episode: 12
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 166
+INFO:root:Replay buffer size: 2069
+INFO:root:Total step count: 2069
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -37.461093247589204
+INFO:root:Running average rewards: -32.440304598856954 
+
+INFO:root:Episode: 13
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 159
+INFO:root:Replay buffer size: 2228
+INFO:root:Total step count: 2228
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -35.2981132075479
+INFO:root:Running average rewards: -32.64443378519202 
+
+INFO:root:Episode: 14
+INFO:root:Ending episode: done True, consecutive negative rewards 81
+INFO:root:Total steps in episode: 99
+INFO:root:Replay buffer size: 2327
+INFO:root:Total step count: 2327
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -100.76760563380334
+INFO:root:Running average rewards: -37.18597857509944 
+
+INFO:root:Episode: 15
+INFO:root:Ending episode: done True, consecutive negative rewards 144
+INFO:root:Total steps in episode: 158
+INFO:root:Replay buffer size: 2485
+INFO:root:Total step count: 2485
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -119.42173913043547
+INFO:root:Running average rewards: -42.325713609807956 
+
+INFO:root:Episode: 16
+INFO:root:Ending episode: done True, consecutive negative rewards 76
+INFO:root:Total steps in episode: 98
+INFO:root:Replay buffer size: 2583
+INFO:root:Total step count: 2583
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -97.84436860068311
+INFO:root:Running average rewards: -45.59151684456532 
+
+INFO:root:Episode: 17
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 166
+INFO:root:Replay buffer size: 2749
+INFO:root:Total step count: 2749
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -35.891525423729654
+INFO:root:Running average rewards: -45.052628432296665 
+
+INFO:root:Episode: 18
+INFO:root:Ending episode: done True, consecutive negative rewards 113
+INFO:root:Total steps in episode: 119
+INFO:root:Replay buffer size: 2868
+INFO:root:Total step count: 2868
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -126.17323943662028
+INFO:root:Running average rewards: -49.32213427462949 
+
+INFO:root:Episode: 19
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 162
+INFO:root:Replay buffer size: 3030
+INFO:root:Total step count: 3030
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -24.80000000000087
+INFO:root:Running average rewards: -48.09602756089806 
+
+INFO:root:Episode: 20
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 160
+INFO:root:Replay buffer size: 3190
+INFO:root:Total step count: 3190
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -32.9655172413801
+INFO:root:Running average rewards: -47.37552706949244 
+
+INFO:root:Episode: 21
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 3428
+INFO:root:Total step count: 3428
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 92.0503597122352
+INFO:root:Running average rewards: -41.0379867612321 
+
+INFO:root:Episode: 22
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 188
+INFO:root:Replay buffer size: 3616
+INFO:root:Total step count: 3616
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -2.6193548387083894
+INFO:root:Running average rewards: -39.3676114602528 
+
+INFO:root:Episode: 23
+INFO:root:Ending episode: done True, consecutive negative rewards 26
+INFO:root:Total steps in episode: 31
+INFO:root:Replay buffer size: 3647
+INFO:root:Total step count: 3647
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -92.09797979797996
+INFO:root:Running average rewards: -41.56471014099143 
+
+INFO:root:Episode: 24
+INFO:root:Ending episode: done True, consecutive negative rewards 86
+INFO:root:Total steps in episode: 130
+INFO:root:Replay buffer size: 3777
+INFO:root:Total step count: 3777
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -121.14865900383211
+INFO:root:Running average rewards: -44.74806809550506 
+
+INFO:root:Episode: 25
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 168
+INFO:root:Replay buffer size: 3945
+INFO:root:Total step count: 3945
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -26.659459459460294
+INFO:root:Running average rewards: -44.052352378734106 
+
+INFO:root:Episode: 26
+INFO:root:Ending episode: done True, consecutive negative rewards 37
+INFO:root:Total steps in episode: 45
+INFO:root:Replay buffer size: 3990
+INFO:root:Total step count: 3990
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -86.94024767801884
+INFO:root:Running average rewards: -45.64079294537428 
+
+INFO:root:Episode: 27
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 198
+INFO:root:Replay buffer size: 4188
+INFO:root:Total step count: 4188
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -24.405479452055772
+INFO:root:Running average rewards: -44.882388892041476 
+
+INFO:root:Episode: 28
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 165
+INFO:root:Replay buffer size: 4353
+INFO:root:Total step count: 4353
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -34.75000000000084
+INFO:root:Running average rewards: -44.53299617162628 
+
+INFO:root:Episode: 29
+INFO:root:Ending episode: done True, consecutive negative rewards 109
+INFO:root:Total steps in episode: 118
+INFO:root:Replay buffer size: 4471
+INFO:root:Total step count: 4471
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -111.20129449838248
+INFO:root:Running average rewards: -46.75527278251816 
+
+INFO:root:Episode: 30
+INFO:root:Ending episode: done True, consecutive negative rewards 34
+INFO:root:Total steps in episode: 47
+INFO:root:Replay buffer size: 4518
+INFO:root:Total step count: 4518
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -76.99872611464994
+INFO:root:Running average rewards: -47.7308680512966 
+
+INFO:root:Episode: 31
+INFO:root:Ending episode: done True, consecutive negative rewards 88
+INFO:root:Total steps in episode: 96
+INFO:root:Replay buffer size: 4614
+INFO:root:Total step count: 4614
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -104.51621621621676
+INFO:root:Running average rewards: -49.50541018145036 
+
+INFO:root:Episode: 32
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 164
+INFO:root:Replay buffer size: 4778
+INFO:root:Total step count: 4778
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -23.52880258899755
+INFO:root:Running average rewards: -48.71824025440633 
+
+INFO:root:Episode: 33
+INFO:root:Ending episode: done True, consecutive negative rewards 43
+INFO:root:Total steps in episode: 55
+INFO:root:Replay buffer size: 4833
+INFO:root:Total step count: 4833
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -81.19595959595988
+INFO:root:Running average rewards: -49.67346729386379 
+
+INFO:root:Episode: 34
+INFO:root:Ending episode: done True, consecutive negative rewards 95
+INFO:root:Total steps in episode: 102
+INFO:root:Replay buffer size: 4935
+INFO:root:Total step count: 4935
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -110.08174904943024
+INFO:root:Running average rewards: -51.39941820116569 
+
+INFO:root:Episode: 35
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 157
+INFO:root:Replay buffer size: 5092
+INFO:root:Total step count: 5092
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -42.733110367893744
+INFO:root:Running average rewards: -51.15868742801925 
+
+INFO:root:Episode: 36
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 155
+INFO:root:Replay buffer size: 5247
+INFO:root:Total step count: 5247
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -48.062717770035626
+INFO:root:Running average rewards: -51.075012572398066 
+
+INFO:root:Episode: 37
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 155
+INFO:root:Replay buffer size: 5402
+INFO:root:Total step count: 5402
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -48.301369863014465
+INFO:root:Running average rewards: -51.00202197478271 
+
+INFO:root:Episode: 38
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 196
+INFO:root:Replay buffer size: 5598
+INFO:root:Total step count: 5598
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -40.946816479401804
+INFO:root:Running average rewards: -50.74419619284986 
+
+INFO:root:Episode: 39
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 155
+INFO:root:Replay buffer size: 5753
+INFO:root:Total step count: 5753
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -49.692307692308404
+INFO:root:Running average rewards: -50.71789898033633 
+
+INFO:root:Episode: 40
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 157
+INFO:root:Replay buffer size: 5910
+INFO:root:Total step count: 5910
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -43.31948051948128
+INFO:root:Running average rewards: -50.537449749583764 
+
+INFO:root:Episode: 41
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 162
+INFO:root:Replay buffer size: 6072
+INFO:root:Total step count: 6072
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -29.588732394366993
+INFO:root:Running average rewards: -50.038670764935745 
+
+INFO:root:Episode: 42
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 168
+INFO:root:Replay buffer size: 6240
+INFO:root:Total step count: 6240
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 24.054752851713914
+INFO:root:Running average rewards: -48.315567890129934 
+
+INFO:root:Episode: 43
+INFO:root:Ending episode: done True, consecutive negative rewards 83
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 6478
+INFO:root:Total step count: 6478
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -35.740740740741906
+INFO:root:Running average rewards: -48.02977636400748 
+
+INFO:root:Episode: 44
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 159
+INFO:root:Replay buffer size: 6637
+INFO:root:Total step count: 6637
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -29.89213483146152
+INFO:root:Running average rewards: -47.62671766328424 
+
+INFO:root:Episode: 45
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 162
+INFO:root:Replay buffer size: 6799
+INFO:root:Total step count: 6799
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -29.085714285715092
+INFO:root:Running average rewards: -47.22365237246752 
+
+INFO:root:Episode: 46
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 157
+INFO:root:Replay buffer size: 6956
+INFO:root:Total step count: 6956
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -41.74736842105343
+INFO:root:Running average rewards: -47.1071356926502 
+
+INFO:root:Episode: 47
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 183
+INFO:root:Replay buffer size: 7139
+INFO:root:Total step count: 7139
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 19.657142857145487
+INFO:root:Running average rewards: -45.71621322286279 
+
+INFO:root:Episode: 48
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 162
+INFO:root:Replay buffer size: 7301
+INFO:root:Total step count: 7301
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -26.090322580645932
+INFO:root:Running average rewards: -45.31568484240939 
+
+INFO:root:Episode: 49
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 221
+INFO:root:Replay buffer size: 7522
+INFO:root:Total step count: 7522
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -12.094779116464295
+INFO:root:Running average rewards: -44.65126672789049 
+
+INFO:root:Episode: 50
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 163
+INFO:root:Replay buffer size: 7685
+INFO:root:Total step count: 7685
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -13.475862068965649
+INFO:root:Running average rewards: -44.039984283597846 
+
+INFO:root:Episode: 51
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 161
+INFO:root:Replay buffer size: 7846
+INFO:root:Total step count: 7846
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -26.425316455696972
+INFO:root:Running average rewards: -43.70124067152283 
+
+INFO:root:Episode: 52
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 196
+INFO:root:Replay buffer size: 8042
+INFO:root:Total step count: 8042
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -15.693729372937174
+INFO:root:Running average rewards: -43.172797062115556 
+
+INFO:root:Episode: 53
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 165
+INFO:root:Replay buffer size: 8207
+INFO:root:Total step count: 8207
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -10.262295081967235
+INFO:root:Running average rewards: -42.56334332174244 
+
+INFO:root:Episode: 54
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 182
+INFO:root:Replay buffer size: 8389
+INFO:root:Total step count: 8389
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 8.185915492959424
+INFO:root:Running average rewards: -41.6406295251115 
+
+INFO:root:Episode: 55
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 170
+INFO:root:Replay buffer size: 8559
+INFO:root:Total step count: 8559
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 21.171974522295216
+INFO:root:Running average rewards: -40.51897588140779 
+
+INFO:root:Episode: 56
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 161
+INFO:root:Replay buffer size: 8720
+INFO:root:Total step count: 8720
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -16.605882352941386
+INFO:root:Running average rewards: -40.09944792476803 
+
+INFO:root:Episode: 57
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 212
+INFO:root:Replay buffer size: 8932
+INFO:root:Total step count: 8932
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -30.822727272728244
+INFO:root:Running average rewards: -39.939504465250096 
+
+INFO:root:Episode: 58
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 185
+INFO:root:Replay buffer size: 9117
+INFO:root:Total step count: 9117
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -13.189189189188905
+INFO:root:Running average rewards: -39.486109291079565 
+
+INFO:root:Episode: 59
+INFO:root:Ending episode: done True, consecutive negative rewards 19
+INFO:root:Total steps in episode: 39
+INFO:root:Replay buffer size: 9156
+INFO:root:Total step count: 9156
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -12.358823529411168
+INFO:root:Running average rewards: -39.03398786171842 
+
+INFO:root:Episode: 60
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 224
+INFO:root:Replay buffer size: 9380
+INFO:root:Total step count: 9380
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 15.84217687075035
+INFO:root:Running average rewards: -38.1343786038091 
+
+INFO:root:Episode: 61
+INFO:root:Ending episode: done True, consecutive negative rewards 63
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 9618
+INFO:root:Total step count: 9618
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 12.023411371239021
+INFO:root:Running average rewards: -37.325381991308326 
+
+INFO:root:Episode: 62
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 208
+INFO:root:Replay buffer size: 9826
+INFO:root:Total step count: 9826
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 31.085714285717884
+INFO:root:Running average rewards: -36.239491574212664 
+
+INFO:root:Episode: 63
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 204
+INFO:root:Replay buffer size: 10030
+INFO:root:Total step count: 10030
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 3.14576271186624
+INFO:root:Running average rewards: -35.6240969759927 
+
+INFO:root:Episode: 64
+INFO:root:Ending episode: done True, consecutive negative rewards 18
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 10268
+INFO:root:Total step count: 10268
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 110.22388059701984
+INFO:root:Running average rewards: -33.38028193640789 
+
+INFO:root:Episode: 65
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 169
+INFO:root:Replay buffer size: 10437
+INFO:root:Total step count: 10437
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 6.93416149068436
+INFO:root:Running average rewards: -32.7694570359974 
+
+INFO:root:Episode: 66
+INFO:root:Ending episode: done True, consecutive negative rewards 151
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 10675
+INFO:root:Total step count: 10675
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -8.97849462365403
+INFO:root:Running average rewards: -32.414368044768395 
+
+INFO:root:Episode: 67
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 175
+INFO:root:Replay buffer size: 10850
+INFO:root:Total step count: 10850
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 65.33834586466551
+INFO:root:Running average rewards: -30.976828134335545 
+
+INFO:root:Episode: 68
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 164
+INFO:root:Replay buffer size: 11014
+INFO:root:Total step count: 11014
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -3.0999999999992696
+INFO:root:Running average rewards: -30.572816132388645 
+
+INFO:root:Episode: 69
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 228
+INFO:root:Replay buffer size: 11242
+INFO:root:Total step count: 11242
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 34.67412587413056
+INFO:root:Running average rewards: -29.640716960866946 
+
+INFO:root:Episode: 70
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 166
+INFO:root:Replay buffer size: 11408
+INFO:root:Total step count: 11408
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 24.854752851713926
+INFO:root:Running average rewards: -28.87317513252074 
+
+INFO:root:Episode: 71
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 172
+INFO:root:Replay buffer size: 11580
+INFO:root:Total step count: 11580
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 22.725423728816054
+INFO:root:Running average rewards: -28.156527926113274 
+
+INFO:root:Episode: 72
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 196
+INFO:root:Replay buffer size: 11776
+INFO:root:Total step count: 11776
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 2.4823529411782914
+INFO:root:Running average rewards: -27.73681722930106 
+
+INFO:root:Episode: 73
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 192
+INFO:root:Replay buffer size: 11968
+INFO:root:Total step count: 11968
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 32.290909090913004
+INFO:root:Running average rewards: -26.925631738487358 
+
+INFO:root:Episode: 74
+INFO:root:Ending episode: done True, consecutive negative rewards 61
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 12206
+INFO:root:Total step count: 12206
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 81.64670658683134
+INFO:root:Running average rewards: -25.47800056081644 
+
+INFO:root:Episode: 75
+INFO:root:Ending episode: done True, consecutive negative rewards 15
+INFO:root:Total steps in episode: 37
+INFO:root:Replay buffer size: 12243
+INFO:root:Total step count: 12243
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -5.275241157555797
+INFO:root:Running average rewards: -25.21217477919459 
+
+INFO:root:Episode: 76
+INFO:root:Ending episode: done True, consecutive negative rewards 109
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 12481
+INFO:root:Total step count: 12481
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 217.97709923663612
+INFO:root:Running average rewards: -22.053872519248735 
+
+INFO:root:Episode: 77
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 228
+INFO:root:Replay buffer size: 12709
+INFO:root:Total step count: 12709
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 188.3698924731168
+INFO:root:Running average rewards: -19.356131942423538 
+
+INFO:root:Episode: 78
+INFO:root:Ending episode: done True, consecutive negative rewards 73
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 12947
+INFO:root:Total step count: 12947
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 206.00334448160956
+INFO:root:Running average rewards: -16.50348034211932 
+
+INFO:root:Episode: 79
+INFO:root:Ending episode: done True, consecutive negative rewards 128
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 13185
+INFO:root:Total step count: 13185
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -0.7239057239039539
+INFO:root:Running average rewards: -16.30623565939163 
+
+INFO:root:Episode: 80
+INFO:root:Ending episode: done True, consecutive negative rewards 52
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 13423
+INFO:root:Total step count: 13423
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 25.68965517241557
+INFO:root:Running average rewards: -15.787767871344627 
+
+INFO:root:Episode: 81
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 182
+INFO:root:Replay buffer size: 13605
+INFO:root:Total step count: 13605
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 29.110828025480792
+INFO:root:Running average rewards: -15.240224018944318 
+
+INFO:root:Episode: 82
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 13843
+INFO:root:Total step count: 13843
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 147.06349206349762
+INFO:root:Running average rewards: -13.284757560119719 
+
+INFO:root:Episode: 83
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 14081
+INFO:root:Total step count: 14081
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -1.8100358422927272
+INFO:root:Running average rewards: -13.148153730145587 
+
+INFO:root:Episode: 84
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 209
+INFO:root:Replay buffer size: 14290
+INFO:root:Total step count: 14290
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 179.1986348122883
+INFO:root:Running average rewards: -10.885250335528719 
+
+INFO:root:Episode: 85
+INFO:root:Ending episode: done True, consecutive negative rewards 112
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 14528
+INFO:root:Total step count: 14528
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 80.62724014337432
+INFO:root:Running average rewards: -9.821151609029846 
+
+INFO:root:Episode: 86
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 190
+INFO:root:Replay buffer size: 14718
+INFO:root:Total step count: 14718
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 92.42105263158277
+INFO:root:Running average rewards: -8.645953859137746 
+
+INFO:root:Episode: 87
+INFO:root:Ending episode: done True, consecutive negative rewards 33
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 14956
+INFO:root:Total step count: 14956
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -60.87030716723671
+INFO:root:Running average rewards: -9.23941241945705 
+
+INFO:root:Episode: 88
+INFO:root:Ending episode: done True, consecutive negative rewards 31
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 15194
+INFO:root:Total step count: 15194
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 183.73563218391325
+INFO:root:Running average rewards: -7.0711534913292935 
+
+INFO:root:Episode: 89
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 15432
+INFO:root:Total step count: 15432
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 178.35640138408786
+INFO:root:Running average rewards: -5.010847326046881 
+
+INFO:root:Episode: 90
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 227
+INFO:root:Replay buffer size: 15659
+INFO:root:Total step count: 15659
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 242.5333333333191
+INFO:root:Running average rewards: -2.2905816045153866 
+
+INFO:root:Episode: 91
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 167
+INFO:root:Replay buffer size: 15826
+INFO:root:Total step count: 15826
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -13.387537091988554
+INFO:root:Running average rewards: -2.4112006859009645 
+
+INFO:root:Episode: 92
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 16064
+INFO:root:Total step count: 16064
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 112.01754385965239
+INFO:root:Running average rewards: -1.1807840778842618 
+
+INFO:root:Episode: 93
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 228
+INFO:root:Replay buffer size: 16292
+INFO:root:Total step count: 16292
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 3.205594405596827
+INFO:root:Running average rewards: -1.134120476996165 
+
+INFO:root:Episode: 94
+INFO:root:Ending episode: done True, consecutive negative rewards 142
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 16530
+INFO:root:Total step count: 16530
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 295.80459770113293
+INFO:root:Running average rewards: 1.9915502406683518 
+
+INFO:root:Episode: 95
+INFO:root:Ending episode: done True, consecutive negative rewards 33
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 16768
+INFO:root:Total step count: 16768
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 255.1805054151476
+INFO:root:Running average rewards: 4.628935190402511 
+
+INFO:root:Episode: 96
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 168
+INFO:root:Replay buffer size: 16936
+INFO:root:Total step count: 16936
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 7.885324232083377
+INFO:root:Running average rewards: 4.662506211450767 
+
+INFO:root:Episode: 97
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 17174
+INFO:root:Total step count: 17174
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 427.5563909774279
+INFO:root:Running average rewards: 8.977749933552573 
+
+INFO:root:Episode: 98
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 17412
+INFO:root:Total step count: 17412
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 209.61538461538876
+INFO:root:Running average rewards: 11.004392708116576 
+
+INFO:root:Episode: 99
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 205
+INFO:root:Replay buffer size: 17617
+INFO:root:Total step count: 17617
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 181.6655948553062
+INFO:root:Running average rewards: 12.711004729588472 
+
+INFO:root:Episode: 100
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 17855
+INFO:root:Total step count: 17855
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 289.9206349206373
+INFO:root:Running average rewards: 15.727908048491813 
+
+INFO:root:Episode: 101
+INFO:root:Ending episode: done True, consecutive negative rewards 26
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 18093
+INFO:root:Total step count: 18093
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 356.38888888888766
+INFO:root:Running average rewards: 19.745728910169813 
+
+INFO:root:Episode: 102
+INFO:root:Ending episode: done True, consecutive negative rewards 126
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 18331
+INFO:root:Total step count: 18331
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 264.73597359734447
+INFO:root:Running average rewards: 22.60151248720287 
+
+INFO:root:Episode: 103
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 229
+INFO:root:Replay buffer size: 18560
+INFO:root:Total step count: 18560
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 122.44682274248021
+INFO:root:Running average rewards: 24.091831054763734 
+
+INFO:root:Episode: 104
+INFO:root:Ending episode: done True, consecutive negative rewards 51
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 18798
+INFO:root:Total step count: 18798
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 160.89225589226146
+INFO:root:Running average rewards: 26.539631164706762 
+
+INFO:root:Episode: 105
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 210
+INFO:root:Replay buffer size: 19008
+INFO:root:Total step count: 19008
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 121.97014925373551
+INFO:root:Running average rewards: 28.011332657244125 
+
+INFO:root:Episode: 106
+INFO:root:Ending episode: done True, consecutive negative rewards 70
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 19246
+INFO:root:Total step count: 19246
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 543.9776357827353
+INFO:root:Running average rewards: 33.86372439968687 
+
+INFO:root:Episode: 107
+INFO:root:Ending episode: done True, consecutive negative rewards 42
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 19484
+INFO:root:Total step count: 19484
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 452.29729729728587
+INFO:root:Running average rewards: 38.865852302237194 
+
+INFO:root:Episode: 108
+INFO:root:Ending episode: done True, consecutive negative rewards 51
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 19722
+INFO:root:Total step count: 19722
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 268.33333333333155
+INFO:root:Running average rewards: 40.68816201352322 
+
+INFO:root:Episode: 109
+INFO:root:Ending episode: done True, consecutive negative rewards 33
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 19960
+INFO:root:Total step count: 19960
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 223.18181818182322
+INFO:root:Running average rewards: 43.944138090078305 
+
+INFO:root:Episode: 110
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 20198
+INFO:root:Total step count: 20198
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 138.10810810811338
+INFO:root:Running average rewards: 45.60170214329566 
+
+INFO:root:Episode: 111
+INFO:root:Ending episode: done True, consecutive negative rewards 32
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 20436
+INFO:root:Total step count: 20436
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 465.81081081080015
+INFO:root:Running average rewards: 50.63427068305835 
+
+INFO:root:Episode: 112
+INFO:root:Ending episode: done True, consecutive negative rewards 72
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 20674
+INFO:root:Total step count: 20674
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 329.9084249084143
+INFO:root:Running average rewards: 54.30796586461839 
+
+INFO:root:Episode: 113
+INFO:root:Ending episode: done True, consecutive negative rewards 34
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 20912
+INFO:root:Total step count: 20912
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 199.70198675496147
+INFO:root:Running average rewards: 56.657966864243484 
+
+INFO:root:Episode: 114
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 170
+INFO:root:Replay buffer size: 21082
+INFO:root:Total step count: 21082
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 35.8062283737058
+INFO:root:Running average rewards: 58.02370520431857 
+
+INFO:root:Episode: 115
+INFO:root:Ending episode: done True, consecutive negative rewards 22
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 21320
+INFO:root:Total step count: 21320
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 546.7445482865882
+INFO:root:Running average rewards: 64.68536807848879 
+
+INFO:root:Episode: 116
+INFO:root:Ending episode: done True, consecutive negative rewards 7
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 21558
+INFO:root:Total step count: 21558
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 412.8124999999833
+INFO:root:Running average rewards: 69.79193676449546 
+
+INFO:root:Episode: 117
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 170
+INFO:root:Replay buffer size: 21728
+INFO:root:Total step count: 21728
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 23.228070175441218
+INFO:root:Running average rewards: 70.38313272048717 
+
+INFO:root:Episode: 118
+INFO:root:Ending episode: done True, consecutive negative rewards 86
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 21966
+INFO:root:Total step count: 21966
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 267.1794871794804
+INFO:root:Running average rewards: 74.31665998664819 
+
+INFO:root:Episode: 119
+INFO:root:Ending episode: done True, consecutive negative rewards 20
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 22204
+INFO:root:Total step count: 22204
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 359.22535211266114
+INFO:root:Running average rewards: 78.1569135077748 
+
+INFO:root:Episode: 120
+INFO:root:Ending episode: done True, consecutive negative rewards 6
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 22442
+INFO:root:Total step count: 22442
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -6.475409836066165
+INFO:root:Running average rewards: 78.42181458182795 
+
+INFO:root:Episode: 121
+INFO:root:Ending episode: done True, consecutive negative rewards 90
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 22680
+INFO:root:Total step count: 22680
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 243.40304182508942
+INFO:root:Running average rewards: 79.93534140295647 
+
+INFO:root:Episode: 122
+INFO:root:Ending episode: done True, consecutive negative rewards 31
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 22918
+INFO:root:Total step count: 22918
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 413.474576271173
+INFO:root:Running average rewards: 84.0962807140553 
+
+INFO:root:Episode: 123
+INFO:root:Ending episode: done True, consecutive negative rewards 54
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 23156
+INFO:root:Total step count: 23156
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 234.99999999999852
+INFO:root:Running average rewards: 87.36726051203509 
+
+INFO:root:Episode: 124
+INFO:root:Ending episode: done True, consecutive negative rewards 87
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 23394
+INFO:root:Total step count: 23394
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 157.36593059937434
+INFO:root:Running average rewards: 90.15240640806715 
+
+INFO:root:Episode: 125
+INFO:root:Ending episode: done True, consecutive negative rewards 19
+INFO:root:Total steps in episode: 46
+INFO:root:Replay buffer size: 23440
+INFO:root:Total step count: 23440
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 25.784892086331723
+INFO:root:Running average rewards: 90.67684992352508 
+
+INFO:root:Episode: 126
+INFO:root:Ending episode: done True, consecutive negative rewards 99
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 23678
+INFO:root:Total step count: 23678
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 369.28571428570126
+INFO:root:Running average rewards: 95.23910954316227 
+
+INFO:root:Episode: 127
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 162
+INFO:root:Replay buffer size: 23840
+INFO:root:Total step count: 23840
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -18.595379537954415
+INFO:root:Running average rewards: 95.2972105423033 
+
+INFO:root:Episode: 128
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 161
+INFO:root:Replay buffer size: 24001
+INFO:root:Total step count: 24001
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -14.59157088122609
+INFO:root:Running average rewards: 95.49879483349105 
+
+INFO:root:Episode: 129
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 24239
+INFO:root:Total step count: 24239
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 184.06976744186616
+INFO:root:Running average rewards: 98.45150545289351 
+
+INFO:root:Episode: 130
+INFO:root:Ending episode: done True, consecutive negative rewards 131
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 24477
+INFO:root:Total step count: 24477
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 264.73597359734424
+INFO:root:Running average rewards: 101.86885245001345 
+
+INFO:root:Episode: 131
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 24715
+INFO:root:Total step count: 24715
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 302.69452449566785
+INFO:root:Running average rewards: 105.9409598571323 
+
+INFO:root:Episode: 132
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 237
+INFO:root:Replay buffer size: 24952
+INFO:root:Total step count: 24952
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 186.02191780821875
+INFO:root:Running average rewards: 108.03646706110447 
+
+INFO:root:Episode: 133
+INFO:root:Ending episode: done True, consecutive negative rewards 7
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 25190
+INFO:root:Total step count: 25190
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 465.43956043954574
+INFO:root:Running average rewards: 113.50282226145951 
+
+INFO:root:Episode: 134
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 25428
+INFO:root:Total step count: 25428
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 395.25974025972545
+INFO:root:Running average rewards: 118.55623715455107 
+
+INFO:root:Episode: 135
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 232
+INFO:root:Replay buffer size: 25660
+INFO:root:Total step count: 25660
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 228.49963898915442
+INFO:root:Running average rewards: 121.26856464812155 
+
+INFO:root:Episode: 136
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 223
+INFO:root:Replay buffer size: 25883
+INFO:root:Total step count: 25883
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 255.8980392156713
+INFO:root:Running average rewards: 124.30817221797865 
+
+INFO:root:Episode: 137
+INFO:root:Ending episode: done True, consecutive negative rewards 149
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 26121
+INFO:root:Total step count: 26121
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 202.12460063897385
+INFO:root:Running average rewards: 126.81243192299853 
+
+INFO:root:Episode: 138
+INFO:root:Ending episode: done True, consecutive negative rewards 132
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 26359
+INFO:root:Total step count: 26359
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 172.64705882353402
+INFO:root:Running average rewards: 128.94837067602788 
+
+INFO:root:Episode: 139
+INFO:root:Ending episode: done True, consecutive negative rewards 104
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 26597
+INFO:root:Total step count: 26597
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 108.22580645161773
+INFO:root:Running average rewards: 130.52755181746713 
+
+INFO:root:Episode: 140
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 169
+INFO:root:Replay buffer size: 26766
+INFO:root:Total step count: 26766
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 28.696296296299494
+INFO:root:Running average rewards: 131.24770958562493 
+
+INFO:root:Episode: 141
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 27004
+INFO:root:Total step count: 27004
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 310.750798722043
+INFO:root:Running average rewards: 134.651104896789 
+
+INFO:root:Episode: 142
+INFO:root:Ending episode: done True, consecutive negative rewards 145
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 27242
+INFO:root:Total step count: 27242
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 284.7909407665338
+INFO:root:Running average rewards: 137.25846677593722 
+
+INFO:root:Episode: 143
+INFO:root:Ending episode: done True, consecutive negative rewards 146
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 27480
+INFO:root:Total step count: 27480
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 37.14285714286224
+INFO:root:Running average rewards: 137.98730275477328 
+
+INFO:root:Episode: 144
+INFO:root:Ending episode: done True, consecutive negative rewards 111
+INFO:root:Total steps in episode: 211
+INFO:root:Replay buffer size: 27691
+INFO:root:Total step count: 27691
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 216.69365079363706
+INFO:root:Running average rewards: 140.45316061102426 
+
+INFO:root:Episode: 145
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 178
+INFO:root:Replay buffer size: 27869
+INFO:root:Total step count: 27869
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 50.42162162162528
+INFO:root:Running average rewards: 141.24823397009766 
+
+INFO:root:Episode: 146
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 192
+INFO:root:Replay buffer size: 28061
+INFO:root:Total step count: 28061
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 32.043537414969535
+INFO:root:Running average rewards: 141.9861430284579 
+
+INFO:root:Episode: 147
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 28299
+INFO:root:Total step count: 28299
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 685.487804878033
+INFO:root:Running average rewards: 148.64444964866678 
+
+INFO:root:Episode: 148
+INFO:root:Ending episode: done True, consecutive negative rewards 17
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 28537
+INFO:root:Total step count: 28537
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 264.86159169548773
+INFO:root:Running average rewards: 151.5539687914281 
+
+INFO:root:Episode: 149
+INFO:root:Ending episode: done True, consecutive negative rewards 6
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 28775
+INFO:root:Total step count: 28775
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 417.98701298699916
+INFO:root:Running average rewards: 155.85478671246275 
+
+INFO:root:Episode: 150
+INFO:root:Ending episode: done True, consecutive negative rewards 33
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 29013
+INFO:root:Total step count: 29013
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 430.08361204012573
+INFO:root:Running average rewards: 160.29038145355366 
+
+INFO:root:Episode: 151
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 29251
+INFO:root:Total step count: 29251
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 204.03536977492433
+INFO:root:Running average rewards: 162.5949883158599 
+
+INFO:root:Episode: 152
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 177
+INFO:root:Replay buffer size: 29428
+INFO:root:Total step count: 29428
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 39.20000000000368
+INFO:root:Running average rewards: 163.1439256095893 
+
+INFO:root:Episode: 153
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 29666
+INFO:root:Total step count: 29666
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 832.7566539923761
+INFO:root:Running average rewards: 171.57411510033273 
+
+INFO:root:Episode: 154
+INFO:root:Ending episode: done True, consecutive negative rewards 5
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 29904
+INFO:root:Total step count: 29904
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 231.2411347517584
+INFO:root:Running average rewards: 173.80466729292075 
+
+INFO:root:Episode: 155
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 225
+INFO:root:Replay buffer size: 30129
+INFO:root:Total step count: 30129
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 215.55555555554577
+INFO:root:Running average rewards: 175.74850310325326 
+
+INFO:root:Episode: 156
+INFO:root:Ending episode: done True, consecutive negative rewards 10
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 30367
+INFO:root:Total step count: 30367
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 442.67123287670717
+INFO:root:Running average rewards: 180.34127425554973 
+
+INFO:root:Episode: 157
+INFO:root:Ending episode: done True, consecutive negative rewards 107
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 30605
+INFO:root:Total step count: 30605
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 299.4954128440272
+INFO:root:Running average rewards: 183.64445565671724 
+
+INFO:root:Episode: 158
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 202
+INFO:root:Replay buffer size: 30807
+INFO:root:Total step count: 30807
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 181.8262626262636
+INFO:root:Running average rewards: 185.59461017487178 
+
+INFO:root:Episode: 159
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 205
+INFO:root:Replay buffer size: 31012
+INFO:root:Total step count: 31012
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 208.07633587785443
+INFO:root:Running average rewards: 187.79896176894437 
+
+INFO:root:Episode: 160
+INFO:root:Ending episode: done True, consecutive negative rewards 10
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 31250
+INFO:root:Total step count: 31250
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 523.4210526315645
+INFO:root:Running average rewards: 192.87475052655253 
+
+INFO:root:Episode: 161
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 31488
+INFO:root:Total step count: 31488
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 474.5364238410585
+INFO:root:Running average rewards: 197.49988065125075 
+
+INFO:root:Episode: 162
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 31726
+INFO:root:Total step count: 31726
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 471.26506024095363
+INFO:root:Running average rewards: 201.9016741108031 
+
+INFO:root:Episode: 163
+INFO:root:Ending episode: done True, consecutive negative rewards 34
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 31964
+INFO:root:Total step count: 31964
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 476.42857142855485
+INFO:root:Running average rewards: 206.63450219797 
+
+INFO:root:Episode: 164
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 181
+INFO:root:Replay buffer size: 32145
+INFO:root:Total step count: 32145
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 98.41850533808227
+INFO:root:Running average rewards: 206.5164484453806 
+
+INFO:root:Episode: 165
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 32383
+INFO:root:Total step count: 32383
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 709.1958041957881
+INFO:root:Running average rewards: 213.53906487243165 
+
+INFO:root:Episode: 166
+INFO:root:Ending episode: done True, consecutive negative rewards 25
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 32621
+INFO:root:Total step count: 32621
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 327.6804123711226
+INFO:root:Running average rewards: 216.90565394237944 
+
+INFO:root:Episode: 167
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 169
+INFO:root:Replay buffer size: 32790
+INFO:root:Total step count: 32790
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 55.856790123460414
+INFO:root:Running average rewards: 216.81083838496738 
+
+INFO:root:Episode: 168
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 33028
+INFO:root:Total step count: 33028
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 428.2558139534733
+INFO:root:Running average rewards: 221.12439652450212 
+
+INFO:root:Episode: 169
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 33266
+INFO:root:Total step count: 33266
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 640.6321839080317
+INFO:root:Running average rewards: 227.18397710484115 
+
+INFO:root:Episode: 170
+INFO:root:Ending episode: done True, consecutive negative rewards 27
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 33504
+INFO:root:Total step count: 33504
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 520.1515151514998
+INFO:root:Running average rewards: 232.13694472783897 
+
+INFO:root:Episode: 171
+INFO:root:Ending episode: done True, consecutive negative rewards 34
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 33742
+INFO:root:Total step count: 33742
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 429.75247524751353
+INFO:root:Running average rewards: 236.20721524302596 
+
+INFO:root:Episode: 172
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 33980
+INFO:root:Total step count: 33980
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 225.2614379085021
+INFO:root:Running average rewards: 238.4350060926992 
+
+INFO:root:Episode: 173
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 209
+INFO:root:Replay buffer size: 34189
+INFO:root:Total step count: 34189
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 184.14193548387118
+INFO:root:Running average rewards: 239.95351635662882 
+
+INFO:root:Episode: 174
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 172
+INFO:root:Replay buffer size: 34361
+INFO:root:Total step count: 34361
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 37.96156583630264
+INFO:root:Running average rewards: 239.51666494912354 
+
+INFO:root:Episode: 175
+INFO:root:Ending episode: done True, consecutive negative rewards 150
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 34599
+INFO:root:Total step count: 34599
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 199.7019867549599
+INFO:root:Running average rewards: 241.56643722824867 
+
+INFO:root:Episode: 176
+INFO:root:Ending episode: done True, consecutive negative rewards 110
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 34837
+INFO:root:Total step count: 34837
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 263.73015873014583
+INFO:root:Running average rewards: 242.02396782318377 
+
+INFO:root:Episode: 177
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 35075
+INFO:root:Total step count: 35075
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 697.5170068027128
+INFO:root:Running average rewards: 247.1154389664797 
+
+INFO:root:Episode: 178
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 211
+INFO:root:Replay buffer size: 35286
+INFO:root:Total step count: 35286
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 176.3142857142869
+INFO:root:Running average rewards: 246.81854837880653 
+
+INFO:root:Episode: 179
+INFO:root:Ending episode: done True, consecutive negative rewards 23
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 35524
+INFO:root:Total step count: 35524
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 175.35830618893007
+INFO:root:Running average rewards: 248.57937049793486 
+
+INFO:root:Episode: 180
+INFO:root:Ending episode: done True, consecutive negative rewards 117
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 35762
+INFO:root:Total step count: 35762
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 247.1052631578828
+INFO:root:Running average rewards: 250.7935265777895 
+
+INFO:root:Episode: 181
+INFO:root:Ending episode: done True, consecutive negative rewards 93
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 36000
+INFO:root:Total step count: 36000
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 100.04643962848621
+INFO:root:Running average rewards: 251.5028826938196 
+
+INFO:root:Episode: 182
+INFO:root:Ending episode: done True, consecutive negative rewards 4
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 36238
+INFO:root:Total step count: 36238
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 619.8288973383874
+INFO:root:Running average rewards: 256.2305367465685 
+
+INFO:root:Episode: 183
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 36476
+INFO:root:Total step count: 36476
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 253.70317002882072
+INFO:root:Running average rewards: 258.7856688052796 
+
+INFO:root:Episode: 184
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 36714
+INFO:root:Total step count: 36714
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 447.944785276062
+INFO:root:Running average rewards: 261.47313030991734 
+
+INFO:root:Episode: 185
+INFO:root:Ending episode: done True, consecutive negative rewards 5
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 36952
+INFO:root:Total step count: 36952
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 622.1314741035702
+INFO:root:Running average rewards: 266.8881726495193 
+
+INFO:root:Episode: 186
+INFO:root:Ending episode: done True, consecutive negative rewards 31
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 37190
+INFO:root:Total step count: 37190
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 491.4406779660908
+INFO:root:Running average rewards: 270.87836890286434 
+
+INFO:root:Episode: 187
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 37428
+INFO:root:Total step count: 37428
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 269.86486486486933
+INFO:root:Running average rewards: 274.18572062318543 
+
+INFO:root:Episode: 188
+INFO:root:Ending episode: done True, consecutive negative rewards 101
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 37666
+INFO:root:Total step count: 37666
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 174.23076923077403
+INFO:root:Running average rewards: 274.09067199365404 
+
+INFO:root:Episode: 189
+INFO:root:Ending episode: done True, consecutive negative rewards 19
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 37904
+INFO:root:Total step count: 37904
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 280.69060773479913
+INFO:root:Running average rewards: 275.11401405716117 
+
+INFO:root:Episode: 190
+INFO:root:Ending episode: done True, consecutive negative rewards 74
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 38142
+INFO:root:Total step count: 38142
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 263.1560283687837
+INFO:root:Running average rewards: 275.32024100751573 
+
+INFO:root:Episode: 191
+INFO:root:Ending episode: done True, consecutive negative rewards 9
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 38380
+INFO:root:Total step count: 38380
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 176.84466019417957
+INFO:root:Running average rewards: 277.22256298037746 
+
+INFO:root:Episode: 192
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 38618
+INFO:root:Total step count: 38618
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 364.0163934426097
+INFO:root:Running average rewards: 279.742551476207 
+
+INFO:root:Episode: 193
+INFO:root:Ending episode: done True, consecutive negative rewards 15
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 38856
+INFO:root:Total step count: 38856
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 495.16393442621364
+INFO:root:Running average rewards: 284.6621348764132 
+
+INFO:root:Episode: 194
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 39094
+INFO:root:Total step count: 39094
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 353.1605351170447
+INFO:root:Running average rewards: 285.2356942505723 
+
+INFO:root:Episode: 195
+INFO:root:Ending episode: done True, consecutive negative rewards 147
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 39332
+INFO:root:Total step count: 39332
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 283.5714285714138
+INFO:root:Running average rewards: 285.5196034821349 
+
+INFO:root:Episode: 196
+INFO:root:Ending episode: done True, consecutive negative rewards 41
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 39570
+INFO:root:Total step count: 39570
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 453.4949832775811
+INFO:root:Running average rewards: 289.97570007259 
+
+INFO:root:Episode: 197
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 39808
+INFO:root:Total step count: 39808
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 380.24752475247055
+INFO:root:Running average rewards: 289.5026114103404 
+
+INFO:root:Episode: 198
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 187
+INFO:root:Replay buffer size: 39995
+INFO:root:Total step count: 39995
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 29.81538461538785
+INFO:root:Running average rewards: 287.70461141034036 
+
+INFO:root:Episode: 199
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 212
+INFO:root:Replay buffer size: 40207
+INFO:root:Total step count: 40207
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 160.5531598513057
+INFO:root:Running average rewards: 287.49348706030037 
+
+INFO:root:Episode: 200
+INFO:root:Ending episode: done True, consecutive negative rewards 21
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 40445
+INFO:root:Total step count: 40445
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 442.6344086021397
+INFO:root:Running average rewards: 289.0206247971154 
+
+INFO:root:Episode: 201
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 40683
+INFO:root:Total step count: 40683
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 665.2996254681549
+INFO:root:Running average rewards: 292.1097321629081 
+
+INFO:root:Episode: 202
+INFO:root:Ending episode: done True, consecutive negative rewards 121
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 40921
+INFO:root:Total step count: 40921
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 258.13531353134056
+INFO:root:Running average rewards: 292.043725562248 
+
+INFO:root:Episode: 203
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 41159
+INFO:root:Total step count: 41159
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 280.88652482269816
+INFO:root:Running average rewards: 293.6281225830502 
+
+INFO:root:Episode: 204
+INFO:root:Ending episode: done True, consecutive negative rewards 45
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 41397
+INFO:root:Total step count: 41397
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 158.04878048781043
+INFO:root:Running average rewards: 293.5996878290057 
+
+INFO:root:Episode: 205
+INFO:root:Ending episode: done True, consecutive negative rewards 111
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 41635
+INFO:root:Total step count: 41635
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 307.5974025973901
+INFO:root:Running average rewards: 295.4559603624423 
+
+INFO:root:Episode: 206
+INFO:root:Ending episode: done True, consecutive negative rewards 105
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 41873
+INFO:root:Total step count: 41873
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 103.67549668874494
+INFO:root:Running average rewards: 291.0529389715024 
+
+INFO:root:Episode: 207
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 42111
+INFO:root:Total step count: 42111
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 618.2616487455097
+INFO:root:Running average rewards: 292.7125824859846 
+
+INFO:root:Episode: 208
+INFO:root:Ending episode: done True, consecutive negative rewards 27
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 42349
+INFO:root:Total step count: 42349
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 665.1476014760003
+INFO:root:Running average rewards: 296.68072516741125 
+
+INFO:root:Episode: 209
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 42587
+INFO:root:Total step count: 42587
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 722.1206225680827
+INFO:root:Running average rewards: 301.6701132112739 
+
+INFO:root:Episode: 210
+INFO:root:Ending episode: done True, consecutive negative rewards 5
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 42825
+INFO:root:Total step count: 42825
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 185.821917808224
+INFO:root:Running average rewards: 302.147251308275 
+
+INFO:root:Episode: 211
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 43063
+INFO:root:Total step count: 43063
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 460.1470588235211
+INFO:root:Running average rewards: 302.0906137884022 
+
+INFO:root:Episode: 212
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 43301
+INFO:root:Total step count: 43301
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 759.1666666666495
+INFO:root:Running average rewards: 306.3831962059845 
+
+INFO:root:Episode: 213
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 176
+INFO:root:Replay buffer size: 43477
+INFO:root:Total step count: 43477
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 59.73698630137359
+INFO:root:Running average rewards: 304.9835462014487 
+
+INFO:root:Episode: 214
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 175
+INFO:root:Replay buffer size: 43652
+INFO:root:Total step count: 43652
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 51.52777777778165
+INFO:root:Running average rewards: 305.1407616954894 
+
+INFO:root:Episode: 215
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 210
+INFO:root:Replay buffer size: 43862
+INFO:root:Total step count: 43862
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 74.24915824916286
+INFO:root:Running average rewards: 300.41580779511514 
+
+INFO:root:Episode: 216
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 44100
+INFO:root:Total step count: 44100
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 277.7598566308172
+INFO:root:Running average rewards: 299.0652813614235 
+
+INFO:root:Episode: 217
+INFO:root:Ending episode: done True, consecutive negative rewards 68
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 44338
+INFO:root:Total step count: 44338
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 338.54430379745514
+INFO:root:Running average rewards: 302.21844369764364 
+
+INFO:root:Episode: 218
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 44576
+INFO:root:Total step count: 44576
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 394.87854251010265
+INFO:root:Running average rewards: 303.49543425094987 
+
+INFO:root:Episode: 219
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 44814
+INFO:root:Total step count: 44814
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 544.860139860133
+INFO:root:Running average rewards: 305.35178212842453 
+
+INFO:root:Episode: 220
+INFO:root:Ending episode: done True, consecutive negative rewards 100
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 45052
+INFO:root:Total step count: 45052
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 406.87265917601655
+INFO:root:Running average rewards: 309.4852628185453 
+
+INFO:root:Episode: 221
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 45290
+INFO:root:Total step count: 45290
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 675.1149425287218
+INFO:root:Running average rewards: 313.8023818255817 
+
+INFO:root:Episode: 222
+INFO:root:Ending episode: done True, consecutive negative rewards 9
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 45528
+INFO:root:Total step count: 45528
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 670.8862876254065
+INFO:root:Running average rewards: 316.376498939124 
+
+INFO:root:Episode: 223
+INFO:root:Ending episode: done True, consecutive negative rewards 95
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 45766
+INFO:root:Total step count: 45766
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 420.1515151514975
+INFO:root:Running average rewards: 318.228014090639 
+
+INFO:root:Episode: 224
+INFO:root:Ending episode: done True, consecutive negative rewards 87
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 46004
+INFO:root:Total step count: 46004
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 301.8749999999897
+INFO:root:Running average rewards: 319.6731047846452 
+
+INFO:root:Episode: 225
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 46242
+INFO:root:Total step count: 46242
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 403.20788530465273
+INFO:root:Running average rewards: 323.4473347168284 
+
+INFO:root:Episode: 226
+INFO:root:Ending episode: done True, consecutive negative rewards 85
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 46480
+INFO:root:Total step count: 46480
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 93.35616438356655
+INFO:root:Running average rewards: 320.68803921780705 
+
+INFO:root:Episode: 227
+INFO:root:Ending episode: done True, consecutive negative rewards 76
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 46718
+INFO:root:Total step count: 46718
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 57.48226950355145
+INFO:root:Running average rewards: 321.4488157082221 
+
+INFO:root:Episode: 228
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 46956
+INFO:root:Total step count: 46956
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 143.63636363636851
+INFO:root:Running average rewards: 323.0310950533981 
+
+INFO:root:Episode: 229
+INFO:root:Ending episode: done True, consecutive negative rewards 33
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 47194
+INFO:root:Total step count: 47194
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 163.2781456953691
+INFO:root:Running average rewards: 322.8231788359331 
+
+INFO:root:Episode: 230
+INFO:root:Ending episode: done True, consecutive negative rewards 106
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 47432
+INFO:root:Total step count: 47432
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 43.98305084746269
+INFO:root:Running average rewards: 320.6156496084343 
+
+INFO:root:Episode: 231
+INFO:root:Ending episode: done True, consecutive negative rewards 74
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 47670
+INFO:root:Total step count: 47670
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 169.26426426426985
+INFO:root:Running average rewards: 319.2813470061203 
+
+INFO:root:Episode: 232
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 47908
+INFO:root:Total step count: 47908
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 859.7325102880533
+INFO:root:Running average rewards: 326.01845293091867 
+
+INFO:root:Episode: 233
+INFO:root:Ending episode: done True, consecutive negative rewards 50
+INFO:root:Total steps in episode: 76
+INFO:root:Replay buffer size: 47984
+INFO:root:Total step count: 47984
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -7.060563380280215
+INFO:root:Running average rewards: 321.2934516927204 
+
+INFO:root:Episode: 234
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 48222
+INFO:root:Total step count: 48222
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 802.6109215016888
+INFO:root:Running average rewards: 325.36696350514 
+
+INFO:root:Episode: 235
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 48460
+INFO:root:Total step count: 48460
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 312.66550522647947
+INFO:root:Running average rewards: 326.2086221675132 
+
+INFO:root:Episode: 236
+INFO:root:Ending episode: done True, consecutive negative rewards 34
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 48698
+INFO:root:Total step count: 48698
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 315.8280254777018
+INFO:root:Running average rewards: 326.80792203013357 
+
+INFO:root:Episode: 237
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 48936
+INFO:root:Total step count: 48936
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 594.1025641025526
+INFO:root:Running average rewards: 330.7277016647693 
+
+INFO:root:Episode: 238
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 183
+INFO:root:Replay buffer size: 49119
+INFO:root:Total step count: 49119
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 54.84878048780871
+INFO:root:Running average rewards: 329.5497188814122 
+
+INFO:root:Episode: 239
+INFO:root:Ending episode: done True, consecutive negative rewards 42
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 49357
+INFO:root:Total step count: 49357
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 283.8395904436718
+INFO:root:Running average rewards: 331.3058567213326 
+
+INFO:root:Episode: 240
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 169
+INFO:root:Replay buffer size: 49526
+INFO:root:Total step count: 49526
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 43.95378486056143
+INFO:root:Running average rewards: 331.4584316069753 
+
+INFO:root:Episode: 241
+INFO:root:Ending episode: done True, consecutive negative rewards 42
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 49764
+INFO:root:Total step count: 49764
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 540.4515050167081
+INFO:root:Running average rewards: 333.75543866992194 
+
+INFO:root:Episode: 242
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 50002
+INFO:root:Total step count: 50002
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 763.1081081080895
+INFO:root:Running average rewards: 338.53861034333755 
+
+INFO:root:Episode: 243
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 50240
+INFO:root:Total step count: 50240
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 279.57044673539536
+INFO:root:Running average rewards: 340.9628862392628 
+
+INFO:root:Episode: 244
+INFO:root:Ending episode: done True, consecutive negative rewards 141
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 50478
+INFO:root:Total step count: 50478
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 284.43262411346217
+INFO:root:Running average rewards: 341.6402759724611 
+
+INFO:root:Episode: 245
+INFO:root:Ending episode: done True, consecutive negative rewards 64
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 50716
+INFO:root:Total step count: 50716
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 369.61538461537134
+INFO:root:Running average rewards: 344.83221360239855 
+
+INFO:root:Episode: 246
+INFO:root:Ending episode: done True, consecutive negative rewards 44
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 50954
+INFO:root:Total step count: 50954
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 367.36559139784373
+INFO:root:Running average rewards: 348.18543414222717 
+
+INFO:root:Episode: 247
+INFO:root:Ending episode: done True, consecutive negative rewards 19
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 51192
+INFO:root:Total step count: 51192
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 498.9597315436132
+INFO:root:Running average rewards: 346.3201534088831 
+
+INFO:root:Episode: 248
+INFO:root:Ending episode: done True, consecutive negative rewards 24
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 51430
+INFO:root:Total step count: 51430
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 327.14532871972034
+INFO:root:Running average rewards: 346.9429907791253 
+
+INFO:root:Episode: 249
+INFO:root:Ending episode: done True, consecutive negative rewards 21
+INFO:root:Total steps in episode: 39
+INFO:root:Replay buffer size: 51469
+INFO:root:Total step count: 51469
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: -28.821262458471196
+INFO:root:Running average rewards: 342.47490802467075 
+
+INFO:root:Episode: 250
+INFO:root:Ending episode: done True, consecutive negative rewards 3
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 51707
+INFO:root:Total step count: 51707
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 381.9736842105124
+INFO:root:Running average rewards: 341.99380874637455 
+
+INFO:root:Episode: 251
+INFO:root:Ending episode: done True, consecutive negative rewards 92
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 51945
+INFO:root:Total step count: 51945
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 186.13879003559256
+INFO:root:Running average rewards: 341.81484294898127 
+
+INFO:root:Episode: 252
+INFO:root:Ending episode: done True, consecutive negative rewards 11
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 52183
+INFO:root:Total step count: 52183
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 302.26027397258844
+INFO:root:Running average rewards: 344.44544568870714 
+
+INFO:root:Episode: 253
+INFO:root:Ending episode: done True, consecutive negative rewards 13
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 52421
+INFO:root:Total step count: 52421
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 586.647940074896
+INFO:root:Running average rewards: 341.98435854953226 
+
+INFO:root:Episode: 254
+INFO:root:Ending episode: done True, consecutive negative rewards 127
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 52659
+INFO:root:Total step count: 52659
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 297.7272727272558
+INFO:root:Running average rewards: 342.64921992928726 
+
+INFO:root:Episode: 255
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 169
+INFO:root:Replay buffer size: 52828
+INFO:root:Total step count: 52828
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 17.809252669041427
+INFO:root:Running average rewards: 340.67175690042217 
+
+INFO:root:Episode: 256
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 53066
+INFO:root:Total step count: 53066
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 639.6938775510016
+INFO:root:Running average rewards: 342.6419833471651 
+
+INFO:root:Episode: 257
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 169
+INFO:root:Replay buffer size: 53235
+INFO:root:Total step count: 53235
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 17.36732026143995
+INFO:root:Running average rewards: 339.8207024213392 
+
+INFO:root:Episode: 258
+INFO:root:Ending episode: done True, consecutive negative rewards 18
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 53473
+INFO:root:Total step count: 53473
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 585.7017543859471
+INFO:root:Running average rewards: 343.85945733893607 
+
+INFO:root:Episode: 259
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 53711
+INFO:root:Total step count: 53711
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 396.4089347079039
+INFO:root:Running average rewards: 345.74278332723657 
+
+INFO:root:Episode: 260
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 171
+INFO:root:Replay buffer size: 53882
+INFO:root:Total step count: 53882
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 18.872727272729733
+INFO:root:Running average rewards: 340.6973000736482 
+
+INFO:root:Episode: 261
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 54120
+INFO:root:Total step count: 54120
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 276.0247349823345
+INFO:root:Running average rewards: 338.712183185061 
+
+INFO:root:Episode: 262
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 54358
+INFO:root:Total step count: 54358
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 185.821917808224
+INFO:root:Running average rewards: 335.85775176073366 
+
+INFO:root:Episode: 263
+INFO:root:Ending episode: done True, consecutive negative rewards 25
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 54596
+INFO:root:Total step count: 54596
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 133.07017543860138
+INFO:root:Running average rewards: 332.4241678008342 
+
+INFO:root:Episode: 264
+INFO:root:Ending episode: done True, consecutive negative rewards 39
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 54834
+INFO:root:Total step count: 54834
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 536.3993174061247
+INFO:root:Running average rewards: 336.80397592151456 
+
+INFO:root:Episode: 265
+INFO:root:Ending episode: done True, consecutive negative rewards 144
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 55072
+INFO:root:Total step count: 55072
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 240.4231974921487
+INFO:root:Running average rewards: 332.1162498544782 
+
+INFO:root:Episode: 266
+INFO:root:Ending episode: done True, consecutive negative rewards 42
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 55310
+INFO:root:Total step count: 55310
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 212.93650793650954
+INFO:root:Running average rewards: 330.96881081013214 
+
+INFO:root:Episode: 267
+INFO:root:Ending episode: done True, consecutive negative rewards 39
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 55548
+INFO:root:Total step count: 55548
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 601.9696969696826
+INFO:root:Running average rewards: 336.4299398785943 
+
+INFO:root:Episode: 268
+INFO:root:Ending episode: done True, consecutive negative rewards 16
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 55786
+INFO:root:Total step count: 55786
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 231.86084142393346
+INFO:root:Running average rewards: 334.4659901532989 
+
+INFO:root:Episode: 269
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 56024
+INFO:root:Total step count: 56024
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 262.6388888888936
+INFO:root:Running average rewards: 330.6860572031075 
+
+INFO:root:Episode: 270
+INFO:root:Ending episode: done True, consecutive negative rewards 7
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 56262
+INFO:root:Total step count: 56262
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 274.3379790940679
+INFO:root:Running average rewards: 328.22792184253325 
+
+INFO:root:Episode: 271
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 56500
+INFO:root:Total step count: 56500
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 223.4713375796229
+INFO:root:Running average rewards: 326.1651104658543 
+
+INFO:root:Episode: 272
+INFO:root:Ending episode: done True, consecutive negative rewards 67
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 56738
+INFO:root:Total step count: 56738
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 329.65753424656083
+INFO:root:Running average rewards: 327.2090714292349 
+
+INFO:root:Episode: 273
+INFO:root:Ending episode: done True, consecutive negative rewards 133
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 56976
+INFO:root:Total step count: 56976
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 50.51083591331758
+INFO:root:Running average rewards: 325.8727604335294 
+
+INFO:root:Episode: 274
+INFO:root:Ending episode: done True, consecutive negative rewards 17
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 57214
+INFO:root:Total step count: 57214
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 341.7088607594801
+INFO:root:Running average rewards: 328.91023338276113 
+
+INFO:root:Episode: 275
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 179
+INFO:root:Replay buffer size: 57393
+INFO:root:Total step count: 57393
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 55.54776632302786
+INFO:root:Running average rewards: 327.4686911784418 
+
+INFO:root:Episode: 276
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 195
+INFO:root:Replay buffer size: 57588
+INFO:root:Total step count: 57588
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 117.90643274854202
+INFO:root:Running average rewards: 326.0104539186258 
+
+INFO:root:Episode: 277
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 171
+INFO:root:Replay buffer size: 57759
+INFO:root:Total step count: 57759
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 12.438323353294841
+INFO:root:Running average rewards: 319.15966708413157 
+
+INFO:root:Episode: 278
+INFO:root:Ending episode: done True, consecutive negative rewards 94
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 57997
+INFO:root:Total step count: 57997
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 369.7435897435805
+INFO:root:Running average rewards: 321.0939601244245 
+
+INFO:root:Episode: 279
+INFO:root:Ending episode: done True, consecutive negative rewards 77
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 58235
+INFO:root:Total step count: 58235
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 602.0954356846333
+INFO:root:Running average rewards: 325.36133141938154 
+
+INFO:root:Episode: 280
+INFO:root:Ending episode: done True, consecutive negative rewards 104
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 58473
+INFO:root:Total step count: 58473
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 537.3024054982654
+INFO:root:Running average rewards: 328.26330284278544 
+
+INFO:root:Episode: 281
+INFO:root:Ending episode: done True, consecutive negative rewards 20
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 58711
+INFO:root:Total step count: 58711
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 500.2380952380896
+INFO:root:Running average rewards: 332.26521939888147 
+
+INFO:root:Episode: 282
+INFO:root:Ending episode: done True, consecutive negative rewards 83
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 58949
+INFO:root:Total step count: 58949
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 394.67551622417943
+INFO:root:Running average rewards: 330.01368558773936 
+
+INFO:root:Episode: 283
+INFO:root:Ending episode: done True, consecutive negative rewards 3
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 59187
+INFO:root:Total step count: 59187
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 380.88424437298926
+INFO:root:Running average rewards: 331.285496331181 
+
+INFO:root:Episode: 284
+INFO:root:Ending episode: done True, consecutive negative rewards 14
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 59425
+INFO:root:Total step count: 59425
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 554.8316498316362
+INFO:root:Running average rewards: 332.35436497673675 
+
+INFO:root:Episode: 285
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 170
+INFO:root:Replay buffer size: 59595
+INFO:root:Total step count: 59595
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 19.662337662339738
+INFO:root:Running average rewards: 326.3296736123245 
+
+INFO:root:Episode: 286
+INFO:root:Ending episode: done True, consecutive negative rewards 45
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 59833
+INFO:root:Total step count: 59833
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 375.5882352941071
+INFO:root:Running average rewards: 325.17114918560463 
+
+INFO:root:Episode: 287
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 234
+INFO:root:Replay buffer size: 60067
+INFO:root:Total step count: 60067
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 184.92348993288553
+INFO:root:Running average rewards: 324.3217354362847 
+
+INFO:root:Episode: 288
+INFO:root:Ending episode: done True, consecutive negative rewards 54
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 60305
+INFO:root:Total step count: 60305
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 393.6363636363489
+INFO:root:Running average rewards: 326.51579138034054 
+
+INFO:root:Episode: 289
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 60543
+INFO:root:Total step count: 60543
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 643.0073800737903
+INFO:root:Running average rewards: 330.13895910373043 
+
+INFO:root:Episode: 290
+INFO:root:Ending episode: done True, consecutive negative rewards 75
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 60781
+INFO:root:Total step count: 60781
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 415.48951048950147
+INFO:root:Running average rewards: 331.6622939249376 
+
+INFO:root:Episode: 291
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 61019
+INFO:root:Total step count: 61019
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 809.2553191489237
+INFO:root:Running average rewards: 337.98640051448507 
+
+INFO:root:Episode: 292
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 226
+INFO:root:Replay buffer size: 61245
+INFO:root:Total step count: 61245
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 226.32597864767408
+INFO:root:Running average rewards: 336.6094963665357 
+
+INFO:root:Episode: 293
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 172
+INFO:root:Replay buffer size: 61417
+INFO:root:Total step count: 61417
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 16.385185185187574
+INFO:root:Running average rewards: 331.8217088741255 
+
+INFO:root:Episode: 294
+INFO:root:Ending episode: done True, consecutive negative rewards 4
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 61655
+INFO:root:Total step count: 61655
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 519.6179401993235
+INFO:root:Running average rewards: 333.4862829249482 
+
+INFO:root:Episode: 295
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 61893
+INFO:root:Total step count: 61893
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 455.3355704697876
+INFO:root:Running average rewards: 335.203924343932 
+
+INFO:root:Episode: 296
+INFO:root:Ending episode: done True, consecutive negative rewards 23
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 62131
+INFO:root:Total step count: 62131
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 167.99694189603008
+INFO:root:Running average rewards: 332.3489439301165 
+
+INFO:root:Episode: 297
+INFO:root:Ending episode: done True, consecutive negative rewards 21
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 62369
+INFO:root:Total step count: 62369
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 475.94594594594
+INFO:root:Running average rewards: 333.30592814205113 
+
+INFO:root:Episode: 298
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 171
+INFO:root:Replay buffer size: 62540
+INFO:root:Total step count: 62540
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 18.266666666668755
+INFO:root:Running average rewards: 333.19044096256397 
+
+INFO:root:Episode: 299
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 173
+INFO:root:Replay buffer size: 62713
+INFO:root:Total step count: 62713
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 36.410561056109124
+INFO:root:Running average rewards: 331.949014974612 
+
+INFO:root:Episode: 300
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 232
+INFO:root:Replay buffer size: 62945
+INFO:root:Total step count: 62945
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 231.70331125826283
+INFO:root:Running average rewards: 329.83970400117323 
+
+INFO:root:Episode: 301
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 186
+INFO:root:Replay buffer size: 63131
+INFO:root:Total step count: 63131
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 23.34436090225885
+INFO:root:Running average rewards: 323.4201513555143 
+
+INFO:root:Episode: 302
+INFO:root:Ending episode: done True, consecutive negative rewards 38
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 63369
+INFO:root:Total step count: 63369
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 282.70897832816104
+INFO:root:Running average rewards: 323.66588800348245 
+
+INFO:root:Episode: 303
+INFO:root:Ending episode: done True, consecutive negative rewards 14
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 63607
+INFO:root:Total step count: 63607
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 408.35570469797807
+INFO:root:Running average rewards: 324.9405798022353 
+
+INFO:root:Episode: 304
+INFO:root:Ending episode: done True, consecutive negative rewards 64
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 63845
+INFO:root:Total step count: 63845
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 64.57446808511176
+INFO:root:Running average rewards: 324.0058366782083 
+
+INFO:root:Episode: 305
+INFO:root:Ending episode: done True, consecutive negative rewards 118
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 64083
+INFO:root:Total step count: 64083
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 393.97058823527937
+INFO:root:Running average rewards: 324.8695685345872 
+
+INFO:root:Episode: 306
+INFO:root:Ending episode: done True, consecutive negative rewards 56
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 64321
+INFO:root:Total step count: 64321
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 240.71428571427612
+INFO:root:Running average rewards: 326.2399564248425 
+
+INFO:root:Episode: 307
+INFO:root:Ending episode: done True, consecutive negative rewards 21
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 64559
+INFO:root:Total step count: 64559
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 734.3650793650659
+INFO:root:Running average rewards: 327.40099073103806 
+
+INFO:root:Episode: 308
+INFO:root:Ending episode: done True, consecutive negative rewards 56
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 64797
+INFO:root:Total step count: 64797
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 492.4125874125747
+INFO:root:Running average rewards: 325.6736405904038 
+
+INFO:root:Episode: 309
+INFO:root:Ending episode: done True, consecutive negative rewards 109
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 65035
+INFO:root:Total step count: 65035
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 435.07518796990735
+INFO:root:Running average rewards: 322.803186244422 
+
+INFO:root:Episode: 310
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 65273
+INFO:root:Total step count: 65273
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 382.77777777776294
+INFO:root:Running average rewards: 324.7727448441174 
+
+INFO:root:Episode: 311
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 65511
+INFO:root:Total step count: 65511
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 322.9566563467504
+INFO:root:Running average rewards: 323.40084081934975 
+
+INFO:root:Episode: 312
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 65749
+INFO:root:Total step count: 65749
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 570.5172413792927
+INFO:root:Running average rewards: 321.5143465664762 
+
+INFO:root:Episode: 313
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 65987
+INFO:root:Total step count: 65987
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 532.9863481228525
+INFO:root:Running average rewards: 326.24684018469094 
+
+INFO:root:Episode: 314
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 177
+INFO:root:Replay buffer size: 66164
+INFO:root:Total step count: 66164
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 30.738461538464605
+INFO:root:Running average rewards: 326.0389470222978 
+
+INFO:root:Episode: 315
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 66402
+INFO:root:Total step count: 66402
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 513.6956521739003
+INFO:root:Running average rewards: 330.43341196154523 
+
+INFO:root:Episode: 316
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 66640
+INFO:root:Total step count: 66640
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 792.3720136518568
+INFO:root:Running average rewards: 335.5795335317556 
+
+INFO:root:Episode: 317
+INFO:root:Ending episode: done True, consecutive negative rewards 8
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 66878
+INFO:root:Total step count: 66878
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 731.2295081967055
+INFO:root:Running average rewards: 339.5063855757481 
+
+INFO:root:Episode: 318
+INFO:root:Ending episode: done True, consecutive negative rewards 4
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 67116
+INFO:root:Total step count: 67116
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 290.76779026216525
+INFO:root:Running average rewards: 338.4652780532687 
+
+INFO:root:Episode: 319
+INFO:root:Ending episode: done True, consecutive negative rewards 12
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 67354
+INFO:root:Total step count: 67354
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 754.3150684931319
+INFO:root:Running average rewards: 340.5598273395987 
+
+INFO:root:Episode: 320
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 67592
+INFO:root:Total step count: 67592
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 498.0599369084991
+INFO:root:Running average rewards: 341.47170011692344 
+
+INFO:root:Episode: 321
+INFO:root:Ending episode: done True, consecutive negative rewards 76
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 67830
+INFO:root:Total step count: 67830
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 580.5852842809197
+INFO:root:Running average rewards: 340.5264035344455 
+
+INFO:root:Episode: 322
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 68068
+INFO:root:Total step count: 68068
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 437.52032520324747
+INFO:root:Running average rewards: 338.1927439102238 
+
+INFO:root:Episode: 323
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 68306
+INFO:root:Total step count: 68306
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 338.69175627239946
+INFO:root:Running average rewards: 337.3781463214329 
+
+INFO:root:Episode: 324
+INFO:root:Ending episode: done True, consecutive negative rewards 25
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 68544
+INFO:root:Total step count: 68544
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 377.04968944097766
+INFO:root:Running average rewards: 338.12989321584274 
+
+INFO:root:Episode: 325
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 68782
+INFO:root:Total step count: 68782
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 625.2380952380852
+INFO:root:Running average rewards: 340.35019531517713 
+
+INFO:root:Episode: 326
+INFO:root:Ending episode: done True, consecutive negative rewards 12
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 69020
+INFO:root:Total step count: 69020
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 261.64335664335266
+INFO:root:Running average rewards: 342.033067237775 
+
+INFO:root:Episode: 327
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 69258
+INFO:root:Total step count: 69258
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 767.9032258064354
+INFO:root:Running average rewards: 349.1372768008038 
+
+INFO:root:Episode: 328
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 69496
+INFO:root:Total step count: 69496
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 722.2413793103327
+INFO:root:Running average rewards: 354.92332695754345 
+
+INFO:root:Episode: 329
+INFO:root:Ending episode: done True, consecutive negative rewards 3
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 69734
+INFO:root:Total step count: 69734
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 381.0273972602596
+INFO:root:Running average rewards: 357.1008194731923 
+
+INFO:root:Episode: 330
+INFO:root:Ending episode: done True, consecutive negative rewards 18
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 69972
+INFO:root:Total step count: 69972
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 610.2980132450223
+INFO:root:Running average rewards: 362.763969097168 
+
+INFO:root:Episode: 331
+INFO:root:Ending episode: done True, consecutive negative rewards 40
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 70210
+INFO:root:Total step count: 70210
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 312.14285714285097
+INFO:root:Running average rewards: 364.19275502595383 
+
+INFO:root:Episode: 332
+INFO:root:Ending episode: done True, consecutive negative rewards 121
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 70448
+INFO:root:Total step count: 70448
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 329.71042471040687
+INFO:root:Running average rewards: 358.8925341701773 
+
+INFO:root:Episode: 333
+INFO:root:Ending episode: done True, consecutive negative rewards 49
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 70686
+INFO:root:Total step count: 70686
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 101.07843137255429
+INFO:root:Running average rewards: 359.9739241177056 
+
+INFO:root:Episode: 334
+INFO:root:Ending episode: done True, consecutive negative rewards 18
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 70924
+INFO:root:Total step count: 70924
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 579.3295019156951
+INFO:root:Running average rewards: 357.7411099218457 
+
+INFO:root:Episode: 335
+INFO:root:Ending episode: done True, consecutive negative rewards 16
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 71162
+INFO:root:Total step count: 71162
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 855.8771929824367
+INFO:root:Running average rewards: 363.1732267994053 
+
+INFO:root:Episode: 336
+INFO:root:Ending episode: done True, consecutive negative rewards 8
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 71400
+INFO:root:Total step count: 71400
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 790.8131487889169
+INFO:root:Running average rewards: 367.92307803251737 
+
+INFO:root:Episode: 337
+INFO:root:Ending episode: done True, consecutive negative rewards 6
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 71638
+INFO:root:Total step count: 71638
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 70.41353383458929
+INFO:root:Running average rewards: 362.68618772983785 
+
+INFO:root:Episode: 338
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 71876
+INFO:root:Total step count: 71876
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 446.66666666666015
+INFO:root:Running average rewards: 366.60436659162633 
+
+INFO:root:Episode: 339
+INFO:root:Ending episode: done True, consecutive negative rewards 13
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 72114
+INFO:root:Total step count: 72114
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 475.97791798105567
+INFO:root:Running average rewards: 368.5257498670002 
+
+INFO:root:Episode: 340
+INFO:root:Ending episode: done True, consecutive negative rewards 60
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 72352
+INFO:root:Total step count: 72352
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 425.3761755485744
+INFO:root:Running average rewards: 372.3399737738803 
+
+INFO:root:Episode: 341
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 72590
+INFO:root:Total step count: 72590
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 484.4701986754832
+INFO:root:Running average rewards: 371.78016071046807 
+
+INFO:root:Episode: 342
+INFO:root:Ending episode: done True, consecutive negative rewards 3
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 72828
+INFO:root:Total step count: 72828
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 775.9677419354688
+INFO:root:Running average rewards: 371.90875704874185 
+
+INFO:root:Episode: 343
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 73066
+INFO:root:Total step count: 73066
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 399.3502824858682
+INFO:root:Running average rewards: 373.10655540624657 
+
+INFO:root:Episode: 344
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 200
+INFO:root:Replay buffer size: 73266
+INFO:root:Total step count: 73266
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 194.19354838709395
+INFO:root:Running average rewards: 372.20416464898284 
+
+INFO:root:Episode: 345
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 73504
+INFO:root:Total step count: 73504
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 637.6007326007185
+INFO:root:Running average rewards: 374.8840181288363 
+
+INFO:root:Episode: 346
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 228
+INFO:root:Replay buffer size: 73732
+INFO:root:Total step count: 73732
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 188.68338192419844
+INFO:root:Running average rewards: 373.0971960340999 
+
+INFO:root:Episode: 347
+INFO:root:Ending episode: done True, consecutive negative rewards 13
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 73970
+INFO:root:Total step count: 73970
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 200.97701149425836
+INFO:root:Running average rewards: 370.1173688336063 
+
+INFO:root:Episode: 348
+INFO:root:Ending episode: done True, consecutive negative rewards 69
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 74208
+INFO:root:Total step count: 74208
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 362.792207792197
+INFO:root:Running average rewards: 370.4738376243311 
+
+INFO:root:Episode: 349
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 74446
+INFO:root:Total step count: 74446
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 325.19543973941506
+INFO:root:Running average rewards: 374.01400464631 
+
+INFO:root:Episode: 350
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 74684
+INFO:root:Total step count: 74684
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 578.4006734006609
+INFO:root:Running average rewards: 375.9782745382115 
+
+INFO:root:Episode: 351
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 74922
+INFO:root:Total step count: 74922
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 482.1812080536838
+INFO:root:Running average rewards: 378.93869871839235 
+
+INFO:root:Episode: 352
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 75160
+INFO:root:Total step count: 75160
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 398.37748344369413
+INFO:root:Running average rewards: 379.8998708131034 
+
+INFO:root:Episode: 353
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 75398
+INFO:root:Total step count: 75398
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 594.5306859205639
+INFO:root:Running average rewards: 379.97869827156006 
+
+INFO:root:Episode: 354
+INFO:root:Ending episode: done True, consecutive negative rewards 27
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 75636
+INFO:root:Total step count: 75636
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 546.221374045789
+INFO:root:Running average rewards: 382.46363928474545 
+
+INFO:root:Episode: 355
+INFO:root:Ending episode: done True, consecutive negative rewards 99
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 75874
+INFO:root:Total step count: 75874
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 207.67062314539433
+INFO:root:Running average rewards: 384.36225298950893 
+
+INFO:root:Episode: 356
+INFO:root:Ending episode: done True, consecutive negative rewards 49
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 76112
+INFO:root:Total step count: 76112
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 46.30434782609194
+INFO:root:Running average rewards: 378.42835769225997 
+
+INFO:root:Episode: 357
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 76350
+INFO:root:Total step count: 76350
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 379.45255474451824
+INFO:root:Running average rewards: 382.0492100370906 
+
+INFO:root:Episode: 358
+INFO:root:Ending episode: done True, consecutive negative rewards 20
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 76588
+INFO:root:Total step count: 76588
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 665.9427609427423
+INFO:root:Running average rewards: 382.85162010265856 
+
+INFO:root:Episode: 359
+INFO:root:Ending episode: done True, consecutive negative rewards 64
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 76826
+INFO:root:Total step count: 76826
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 321.66666666665765
+INFO:root:Running average rewards: 382.10419742224616 
+
+INFO:root:Episode: 360
+INFO:root:Ending episode: done True, consecutive negative rewards 8
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 77064
+INFO:root:Total step count: 77064
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 715.1694915254096
+INFO:root:Running average rewards: 389.06716506477295 
+
+INFO:root:Episode: 361
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 192
+INFO:root:Replay buffer size: 77256
+INFO:root:Total step count: 77256
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 112.47444794953094
+INFO:root:Running average rewards: 387.4316621944449 
+
+INFO:root:Episode: 362
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 77494
+INFO:root:Total step count: 77494
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 203.85057471264545
+INFO:root:Running average rewards: 387.6119487634891 
+
+INFO:root:Episode: 363
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 77732
+INFO:root:Total step count: 77732
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 696.5194346289618
+INFO:root:Running average rewards: 393.24644135539273 
+
+INFO:root:Episode: 364
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 77970
+INFO:root:Total step count: 77970
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 450.13888888888044
+INFO:root:Running average rewards: 392.38383707022024 
+
+INFO:root:Episode: 365
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 185
+INFO:root:Replay buffer size: 78155
+INFO:root:Total step count: 78155
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 71.16129032258439
+INFO:root:Running average rewards: 390.6912179985247 
+
+INFO:root:Episode: 366
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 170
+INFO:root:Replay buffer size: 78325
+INFO:root:Total step count: 78325
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 2.234113712375624
+INFO:root:Running average rewards: 388.5841940562833 
+
+INFO:root:Episode: 367
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 170
+INFO:root:Replay buffer size: 78495
+INFO:root:Total step count: 78495
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 36.08921933085867
+INFO:root:Running average rewards: 382.9253892798951 
+
+INFO:root:Episode: 368
+INFO:root:Ending episode: done True, consecutive negative rewards 33
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 78733
+INFO:root:Total step count: 78733
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 754.0566037735717
+INFO:root:Running average rewards: 388.14734690339145 
+
+INFO:root:Episode: 369
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 78971
+INFO:root:Total step count: 78971
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 190.26645768025622
+INFO:root:Running average rewards: 387.42362259130505 
+
+INFO:root:Episode: 370
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 79209
+INFO:root:Total step count: 79209
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 496.69550173009065
+INFO:root:Running average rewards: 389.64719781766536 
+
+INFO:root:Episode: 371
+INFO:root:Ending episode: done True, consecutive negative rewards 5
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 79447
+INFO:root:Total step count: 79447
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 784.3103448275672
+INFO:root:Running average rewards: 395.25558789014474 
+
+INFO:root:Episode: 372
+INFO:root:Ending episode: done True, consecutive negative rewards 63
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 79685
+INFO:root:Total step count: 79685
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 527.3021582733647
+INFO:root:Running average rewards: 397.2320341304128 
+
+INFO:root:Episode: 373
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 220
+INFO:root:Replay buffer size: 79905
+INFO:root:Total step count: 79905
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 275.6363636363493
+INFO:root:Running average rewards: 399.4832894076431 
+
+INFO:root:Episode: 374
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 80143
+INFO:root:Total step count: 80143
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 722.3076923076768
+INFO:root:Running average rewards: 403.289277723125 
+
+INFO:root:Episode: 375
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 80381
+INFO:root:Total step count: 80381
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 752.7508650518913
+INFO:root:Running average rewards: 410.26130871041363 
+
+INFO:root:Episode: 376
+INFO:root:Ending episode: done True, consecutive negative rewards 66
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 80619
+INFO:root:Total step count: 80619
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 408.73134328356593
+INFO:root:Running average rewards: 413.1695578157638 
+
+INFO:root:Episode: 377
+INFO:root:Ending episode: done True, consecutive negative rewards 62
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 80857
+INFO:root:Total step count: 80857
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 222.725752508361
+INFO:root:Running average rewards: 415.2724321073146 
+
+INFO:root:Episode: 378
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 81095
+INFO:root:Total step count: 81095
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 681.5567765567648
+INFO:root:Running average rewards: 418.3905639754464 
+
+INFO:root:Episode: 379
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 81333
+INFO:root:Total step count: 81333
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 735.6709265175588
+INFO:root:Running average rewards: 419.72631888377566 
+
+INFO:root:Episode: 380
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 227
+INFO:root:Replay buffer size: 81560
+INFO:root:Total step count: 81560
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 274.791397849448
+INFO:root:Running average rewards: 417.1012088072875 
+
+INFO:root:Episode: 381
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 81798
+INFO:root:Total step count: 81798
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 178.0375426621214
+INFO:root:Running average rewards: 413.87920328152796 
+
+INFO:root:Episode: 382
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 200
+INFO:root:Replay buffer size: 81998
+INFO:root:Total step count: 81998
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 142.22222222222678
+INFO:root:Running average rewards: 411.3546703415083 
+
+INFO:root:Episode: 383
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 82236
+INFO:root:Total step count: 82236
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 584.577464788728
+INFO:root:Running average rewards: 413.3916025456658 
+
+INFO:root:Episode: 384
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 82474
+INFO:root:Total step count: 82474
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 529.1830065359387
+INFO:root:Running average rewards: 413.1351161127088 
+
+INFO:root:Episode: 385
+INFO:root:Ending episode: done True, consecutive negative rewards 8
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 82712
+INFO:root:Total step count: 82712
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 588.1683168316727
+INFO:root:Running average rewards: 418.8201759044021 
+
+INFO:root:Episode: 386
+INFO:root:Ending episode: done True, consecutive negative rewards 47
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 82950
+INFO:root:Total step count: 82950
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 52.88732394366707
+INFO:root:Running average rewards: 415.5931667908977 
+
+INFO:root:Episode: 387
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 173
+INFO:root:Replay buffer size: 83123
+INFO:root:Total step count: 83123
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 49.57394636015684
+INFO:root:Running average rewards: 414.23967135517046 
+
+INFO:root:Episode: 388
+INFO:root:Ending episode: done True, consecutive negative rewards 57
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 83361
+INFO:root:Total step count: 83361
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 566.7100371747102
+INFO:root:Running average rewards: 415.970408090554 
+
+INFO:root:Episode: 389
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 83599
+INFO:root:Total step count: 83599
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 414.99999999998215
+INFO:root:Running average rewards: 413.69033428981595 
+
+INFO:root:Episode: 390
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 175
+INFO:root:Replay buffer size: 83774
+INFO:root:Total step count: 83774
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 27.859327217128133
+INFO:root:Running average rewards: 409.8140324570922 
+
+INFO:root:Episode: 391
+INFO:root:Ending episode: done True, consecutive negative rewards 8
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 84012
+INFO:root:Total step count: 84012
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 226.56862745098377
+INFO:root:Running average rewards: 403.9871655401128 
+
+INFO:root:Episode: 392
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 84250
+INFO:root:Total step count: 84250
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 513.3916083915941
+INFO:root:Running average rewards: 406.85782183755214 
+
+INFO:root:Episode: 393
+INFO:root:Ending episode: done True, consecutive negative rewards 14
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 84488
+INFO:root:Total step count: 84488
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 847.5675675675485
+INFO:root:Running average rewards: 415.1696456613757 
+
+INFO:root:Episode: 394
+INFO:root:Ending episode: done True, consecutive negative rewards 44
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 84726
+INFO:root:Total step count: 84726
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 278.8019169328932
+INFO:root:Running average rewards: 412.7614854287114 
+
+INFO:root:Episode: 395
+INFO:root:Ending episode: done True, consecutive negative rewards 117
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 84964
+INFO:root:Total step count: 84964
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 292.30158730157433
+INFO:root:Running average rewards: 411.1311455970292 
+
+INFO:root:Episode: 396
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 85202
+INFO:root:Total step count: 85202
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 626.0884353741397
+INFO:root:Running average rewards: 415.71206053181027 
+
+INFO:root:Episode: 397
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 85440
+INFO:root:Total step count: 85440
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 659.8387096774098
+INFO:root:Running average rewards: 417.550988169125 
+
+INFO:root:Episode: 398
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 85678
+INFO:root:Total step count: 85678
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 572.910447761185
+INFO:root:Running average rewards: 423.09742598007017 
+
+INFO:root:Episode: 399
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 85916
+INFO:root:Total step count: 85916
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 438.53658536584135
+INFO:root:Running average rewards: 427.11868622316746 
+
+INFO:root:Episode: 400
+INFO:root:Ending episode: done True, consecutive negative rewards 38
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 86154
+INFO:root:Total step count: 86154
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 205.30030030030613
+INFO:root:Running average rewards: 426.85465611358785 
+
+INFO:root:Episode: 401
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 227
+INFO:root:Replay buffer size: 86381
+INFO:root:Total step count: 86381
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 293.2579710144777
+INFO:root:Running average rewards: 429.55379221471003 
+
+INFO:root:Episode: 402
+INFO:root:Ending episode: done True, consecutive negative rewards 86
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 86619
+INFO:root:Total step count: 86619
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 485.2047781569796
+INFO:root:Running average rewards: 431.5787502129983 
+
+INFO:root:Episode: 403
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 177
+INFO:root:Replay buffer size: 86796
+INFO:root:Total step count: 86796
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 68.82264150943772
+INFO:root:Running average rewards: 428.18341958111284 
+
+INFO:root:Episode: 404
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 168
+INFO:root:Replay buffer size: 86964
+INFO:root:Total step count: 86964
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 33.92359550562148
+INFO:root:Running average rewards: 427.87691085531793 
+
+INFO:root:Episode: 405
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 87202
+INFO:root:Total step count: 87202
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 632.272727272715
+INFO:root:Running average rewards: 430.25993224569226 
+
+INFO:root:Episode: 406
+INFO:root:Ending episode: done True, consecutive negative rewards 145
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 87440
+INFO:root:Total step count: 87440
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 366.0389610389465
+INFO:root:Running average rewards: 431.51317899893905 
+
+INFO:root:Episode: 407
+INFO:root:Ending episode: done True, consecutive negative rewards 62
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 87678
+INFO:root:Total step count: 87678
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 312.73809523808274
+INFO:root:Running average rewards: 427.2969091576691 
+
+INFO:root:Episode: 408
+INFO:root:Ending episode: done True, consecutive negative rewards 66
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 87916
+INFO:root:Total step count: 87916
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 310.69395017792056
+INFO:root:Running average rewards: 425.47972278532256 
+
+INFO:root:Episode: 409
+INFO:root:Ending episode: done True, consecutive negative rewards 135
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 88154
+INFO:root:Total step count: 88154
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 250.0704225352
+INFO:root:Running average rewards: 423.6296751309756 
+
+INFO:root:Episode: 410
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 88392
+INFO:root:Total step count: 88392
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 750.6375838925986
+INFO:root:Running average rewards: 427.30827319212386 
+
+INFO:root:Episode: 411
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 88630
+INFO:root:Total step count: 88630
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 454.4880546075017
+INFO:root:Running average rewards: 428.6235871747314 
+
+INFO:root:Episode: 412
+INFO:root:Ending episode: done True, consecutive negative rewards 52
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 88868
+INFO:root:Total step count: 88868
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 128.6842105263206
+INFO:root:Running average rewards: 424.2052568662017 
+
+INFO:root:Episode: 413
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 195
+INFO:root:Replay buffer size: 89063
+INFO:root:Total step count: 89063
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 147.5892255892301
+INFO:root:Running average rewards: 420.35128564086546 
+
+INFO:root:Episode: 414
+INFO:root:Ending episode: done True, consecutive negative rewards 44
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 89301
+INFO:root:Total step count: 89301
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 379.22680412370755
+INFO:root:Running average rewards: 423.83616906671784 
+
+INFO:root:Episode: 415
+INFO:root:Ending episode: done True, consecutive negative rewards 38
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 89539
+INFO:root:Total step count: 89539
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 690.9922178988194
+INFO:root:Running average rewards: 425.60913472396714 
+
+INFO:root:Episode: 416
+INFO:root:Ending episode: done True, consecutive negative rewards 78
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 89777
+INFO:root:Total step count: 89777
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 566.9217081850403
+INFO:root:Running average rewards: 423.35463166929907 
+
+INFO:root:Episode: 417
+INFO:root:Ending episode: done True, consecutive negative rewards 2
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 90015
+INFO:root:Total step count: 90015
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 294.61038961037605
+INFO:root:Running average rewards: 418.9884404834356 
+
+INFO:root:Episode: 418
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 209
+INFO:root:Replay buffer size: 90224
+INFO:root:Total step count: 90224
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 144.5879194630915
+INFO:root:Running average rewards: 417.52664177544494 
+
+INFO:root:Episode: 419
+INFO:root:Ending episode: done True, consecutive negative rewards 9
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 90462
+INFO:root:Total step count: 90462
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 774.4029850746093
+INFO:root:Running average rewards: 417.7275209412596 
+
+INFO:root:Episode: 420
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 90700
+INFO:root:Total step count: 90700
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 464.8705501618
+INFO:root:Running average rewards: 417.39562707379264 
+
+INFO:root:Episode: 421
+INFO:root:Ending episode: done True, consecutive negative rewards 47
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 90938
+INFO:root:Total step count: 90938
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 544.705882352926
+INFO:root:Running average rewards: 417.03683305451267 
+
+INFO:root:Episode: 422
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 91176
+INFO:root:Total step count: 91176
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 476.42857142856064
+INFO:root:Running average rewards: 417.4259155167659 
+
+INFO:root:Episode: 423
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 91414
+INFO:root:Total step count: 91414
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 439.5454545454419
+INFO:root:Running average rewards: 418.43445249949633 
+
+INFO:root:Episode: 424
+INFO:root:Ending episode: done True, consecutive negative rewards 13
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 91652
+INFO:root:Total step count: 91652
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 323.30065359476254
+INFO:root:Running average rewards: 417.89696214103407 
+
+INFO:root:Episode: 425
+INFO:root:Ending episode: done True, consecutive negative rewards 35
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 91890
+INFO:root:Total step count: 91890
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 569.1509433962132
+INFO:root:Running average rewards: 417.33609062261536 
+
+INFO:root:Episode: 426
+INFO:root:Ending episode: done True, consecutive negative rewards 57
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 92128
+INFO:root:Total step count: 92128
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 497.2330097087241
+INFO:root:Running average rewards: 419.69198715326917 
+
+INFO:root:Episode: 427
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 92366
+INFO:root:Total step count: 92366
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 422.85714285712584
+INFO:root:Running average rewards: 416.24152632377604 
+
+INFO:root:Episode: 428
+INFO:root:Ending episode: done True, consecutive negative rewards 63
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 92604
+INFO:root:Total step count: 92604
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 801.9465648854816
+INFO:root:Running average rewards: 417.0385781795275 
+
+INFO:root:Episode: 429
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 92842
+INFO:root:Total step count: 92842
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 609.1420118343057
+INFO:root:Running average rewards: 419.31972432526806 
+
+INFO:root:Episode: 430
+INFO:root:Ending episode: done True, consecutive negative rewards 94
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 93080
+INFO:root:Total step count: 93080
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 69.47368421053126
+INFO:root:Running average rewards: 413.9114810349231 
+
+INFO:root:Episode: 431
+INFO:root:Ending episode: done False, consecutive negative rewards 151
+INFO:root:Total steps in episode: 171
+INFO:root:Replay buffer size: 93251
+INFO:root:Total step count: 93251
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 15.45093167702042
+INFO:root:Running average rewards: 410.94456178026485 
+
+INFO:root:Episode: 432
+INFO:root:Ending episode: done True, consecutive negative rewards 11
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 93489
+INFO:root:Total step count: 93489
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 325.8633093525169
+INFO:root:Running average rewards: 410.90609062668597 
+
+INFO:root:Episode: 433
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 93727
+INFO:root:Total step count: 93727
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 685.8219178082018
+INFO:root:Running average rewards: 416.75352549104247 
+
+INFO:root:Episode: 434
+INFO:root:Ending episode: done True, consecutive negative rewards 23
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 93965
+INFO:root:Total step count: 93965
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 439.8101265822635
+INFO:root:Running average rewards: 415.35833173770806 
+
+INFO:root:Episode: 435
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 94203
+INFO:root:Total step count: 94203
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 582.8711484593746
+INFO:root:Running average rewards: 412.6282712924774 
+
+INFO:root:Episode: 436
+INFO:root:Ending episode: done True, consecutive negative rewards 5
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 94441
+INFO:root:Total step count: 94441
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 349.4444444444287
+INFO:root:Running average rewards: 408.21458424903255 
+
+INFO:root:Episode: 437
+INFO:root:Ending episode: done True, consecutive negative rewards 1
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 94679
+INFO:root:Total step count: 94679
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 591.792452830172
+INFO:root:Running average rewards: 413.42837343898844 
+
+INFO:root:Episode: 438
+INFO:root:Ending episode: done True, consecutive negative rewards 37
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 94917
+INFO:root:Total step count: 94917
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 404.9999999999849
+INFO:root:Running average rewards: 413.0117067723217 
+
+INFO:root:Episode: 439
+INFO:root:Ending episode: done True, consecutive negative rewards 11
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 95155
+INFO:root:Total step count: 95155
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 464.70149253730256
+INFO:root:Running average rewards: 412.89894251788405 
+
+INFO:root:Episode: 440
+INFO:root:Ending episode: done True, consecutive negative rewards 53
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 95393
+INFO:root:Total step count: 95393
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 140.66878980892233
+INFO:root:Running average rewards: 410.05186866048757 
+
+INFO:root:Episode: 441
+INFO:root:Ending episode: done True, consecutive negative rewards 0
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 95631
+INFO:root:Total step count: 95631
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 165.18808777430007
+INFO:root:Running average rewards: 406.8590475514757 
+
+INFO:root:Episode: 442
+INFO:root:Ending episode: done True, consecutive negative rewards 6
+INFO:root:Total steps in episode: 238
+INFO:root:Replay buffer size: 95869
+INFO:root:Total step count: 95869
+INFO:root:Epsilon: 0.05
+INFO:root:Total reward for episode: 712.6923076922923
+INFO:root:Running average rewards: 406.22629320904394 
+

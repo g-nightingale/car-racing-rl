@@ -269,6 +269,7 @@ class DQNAgentTrainer:
         config['random_action_steps'] = self.random_action_steps
         config['max_consecutive_negative_rewards'] = self.max_consecutive_negative_rewards
         config['update_target_model_steps'] = self.update_target_model_steps
+        config['target_model_hard_update'] = self.target_model_hard_update
         config['max_steps_per_episode'] = self.max_steps_per_episode
         config['skip_frames'] = self.skip_frames
         config['save_model_frequency'] = self.save_model_frequency
@@ -289,6 +290,7 @@ class DQNAgentTrainer:
         config['lr'] = agent.lr
         config['batch_size'] = agent.batch_size
         config['gamma'] = agent.gamma
+        config['tau'] = agent.tau
         config['model'] = agent.model
         config['target_model'] = agent.target_model
 
