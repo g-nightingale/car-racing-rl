@@ -48,7 +48,7 @@ As per the OpenAI gym documentation, the environment is solved when the agent ac
 
 As this is a continuous control task with an image based state representation we draw heavily from the pioneering work of Mnih et al. (2013) and subsequent research into reinforcement learning methods applied to Atari games.
 
-Specifically, we focus on methods used for tasks which use image based state representations.
+Specifically, we focus on methods used for tasks which utilise image based state representations.
 
 TODO
 
@@ -81,6 +81,8 @@ We reduce the continuous action space to the following five discrete actions:
 4. 80% brakes: [0.0, 0.0, 0.8]
 5. No action: [0.0, 0.0, 0.0]
 
+We hypothesize that a more complex action space is not required to perform well in this environment. Additionally, a smaller action space enables simpler architectures for the convolutional neural network. 
+
 #### 3.1.3 Initial frames of environment
 The first 50 frames of an environment depict the camera zooming into the track. During these frames, the car does not move, however throttle can be accumulated. We apply full throttle during these initial 50 frames, to propel the car forward once the game starts. 
 
@@ -92,35 +94,32 @@ These initial 50 frames are excluded from the replay buffer as they are not repr
 ### 3.1 DQN
 Deep Q-Networks were first introduced in the seminal paper by Mnih et al. (2013), where RL agents were successfully trained to play a range of Atari video games using only knowledge of the current screen state, available controller actions, and resulting rewards from taking actions.
 
-Earlier attempts at using neural networks had failed, however several key innovations introediced by Mnih et al. (2013) including experience replay, huber loss function and fixed target networks.
+Earlier attempts at using neural networks had failed, however several key innovations were introduced by Mnih et al. (2013) including experience replay, huber loss function and fixed target networks.
 
 DQNs leverage neural networks as a function approximator, where the input is a state representation and the output is an estimate action-values. 
 
-Action values are estimated as ... 
+As per Mnih et al (2013), a convolutional neural network is used to estimate action-values. 
 
-As per Mnih et al (2013), a convolutional neural network is used to estimate action-values. Mnih
-
-We trial two configurations of the DQN:
+We trial two configurations of the DQN (see appendix for details):
 1. DQN 1: A DQN closely resembling that of Mnih et al (2013) in terms of CNN structure and hyperparameters used.
-2. DQN 2: A modified DQN where we capture every fourth frame to form the state representation instead of consecutive frames. The rationale for this change is that using consecutive frames may not provide much variation in information to the agent as consecutive frames are extremely similar. Increasing the temporal differences between frames should provide more information of the recent trajectory of the agent, and therefore aid learning.
+2. DQN 2: A modified DQN where we capture every fourth frame to form the state representation instead of consecutive frames. The rationale for this change is that using consecutive frames may not provide much variation in information to the agent as consecutive frames are extremely similar. Increasing the temporal step between frames should provide more general information of the recent trajectory of the agent, and therefore aid learning.
 
 
 ### 3.2 Double-DQN
 Hasselt, Guez and Silver (2015) propose the use of a double-DQN network to overcome shortcomings of the original DQN algorithm. Specifically, by using the argmax function in selecting action-values, action value estimates are always biased to be larger than their true vales. This can cause issues because...
 
-As a remedy, Hasselt, Guez and Silver (2015) prescribe the use of two separate networks to ensure that q-value estimates are unbiased. The simplest approach being
+As a remedy, Hasselt, Guez and Silver (2015) prescribe the use of two separate networks to ensure that q-value estimates are unbiased. 
 
-We adopt the simplest implementation, where ...
-We also explore the use of 
+Our update rule changes to:
+$Q(s,a;\theta) \rightarrow R + \gamma max Q(s', argmaxQ(s', a';\theta);\theta')$
+
 
 We trial three configurations of DDQN:
 1. DDQN 1: with every fourth frame sampled, as per DQN 2.
 2. DDQN 2: with soft-parameter updates
-    - Drawing inspiration from Lillipcrap et al. (2019), we explore the use of soft-parameter updates. Instead of refreshing the weights of the target model every 5,000 steps, we copy a small portion of the main model weights at each step using the following update rule. 
-    
-We expect this change to increase the speed of learning and reduce any sharp deviations in rewards caused by instantaeous model weight changes.
+    - Drawing inspiration from Lillipcrap et al. (2019), we explore the use of soft-parameter updates. Instead of refreshing the weights of the target model every 5,000 steps, we copy a small portion of the main model weights at each step using the following update rule. We expect this change to increase the speed of learning and reduce any sharp deviations in rewards caused by instantaeous model weight changes.
 3. DDQN 3: with soft-parameter updates
-    - From the results of DDQN 2 we observe strange results of the agent. As our agent learns a 
+    - From the results of DDQN 2 we observe strange learning behaviour from the agent. As our agent learns a near optimal policy. Error analysis identifies that
 
 ### 3.3 Actor-critic 
 TODO
@@ -135,29 +134,53 @@ TODO
 *A presentation of your results, showing how quickly and how well your agent(s) learn (i.e., improve their policies). Include informative baselines for comparison (e.g. the best possible performance, the performance of an average human, or the performance of an agent that selects actions randomly).*
 
 ### 4.1 Benchmarks
-As a benchmarks, we use a human score captured over 30 trials.
+As an inference benchmark, we use a human score averaged over 30 trials. From manual play of the game, we achieve an average score of 700 points.
 
 ### 4.2 Training comparison
 Algorithm learning curves
 - Speed of convergence
-- Terminal rewards- any interesting/strange behaviour
+- Terminal rewards
+- Any interesting/strange behaviour
 
-**Figure 4: learning curves**
+
+**Figure 4: learning curves**   
+
 ![alt text](/images/training_results.png "Title")
+
+
+**Table 1: Training performance after 1,000 episodes**
+| algorithm | average reward |
+|-----------|----------------|
+| DQN 1     | 200            |
+| DQN 2     | 600            |
+| DDQN 1    | 800            |
+| DDQN 2    | 700            |
+| DDPG      |                |
+| Actor-critic |             |
+| PG         |               |
+
 
 ### 4.3 Inference comparison
 Performance of agents at inference time.
 
-**Figure 5: inference comparison**
+
+**Figure 5: inference comparison**  
+
 ![alt text](/images/inference_performance.png "Title")
 
+**Table 1: Inference performance over 100 episodes**
+| algorithm | average reward |
+|-----------|----------------|
+| DQN 1     | 200            |
+| DQN 2     | 600            |
+| DDQN 1    | 800            |
+| DDQN 2    | 700            |
+| DDPG      |                |
+| Actor-critic |             |
+| PG         |               |
 
 ## 5. Discussion
 *An evaluation of how well you solved your chosen problem.*
-
-
-
-
 
 ## 6. Future work
 *A discussion of potential future work you would complete if you had more time.*
