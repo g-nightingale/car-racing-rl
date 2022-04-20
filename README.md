@@ -17,6 +17,9 @@ The game runs at 50 frames per second, therefore each episode lasts 20 seconds, 
 ### 1.2 State representation
 Each state is represented as a 96x96 RGB image of the current gamescreen. The gamescreen displays the car and track, along with current score and telemetry readouts of true speed, ABS sensors, steering wheel position, and gyroscope.
 
+**Figure 1. State representation**
+![alt text](/images/state.png "Title")
+
 ### 1.3 Rewards
 The agent receives a reward of -0.1 for each frame elapsed and a reward of +1000/N for each new track tile visited, where N is the total number of tiles in the track. 
 
@@ -64,10 +67,10 @@ In a similar approach to Mnih et al. (2013) we make several modifications to the
 - Secondly, we censor the score meter in the bottom left of the screen by setting the pixels in this region to zero. The current score should not influence the actions taken by an agent and we observe strange behaviour in agents once they attain near maximal scores (discussed further in results).
 - Thirdly, we stack N grayscale game states to form a 96x96xN multidimensional vector, which is used as input in the CNN. We trial different intervals between consecutive game screens.
 
-**Figure 1: Image preprocessing**
+**Figure 2: Image preprocessing**
 ![alt text](/images/preprocessing1.png "Title")
 
-**Figure 2: Stacking of state frames**
+**Figure 3: Stacking of state frames**
 ![alt text](/images/preprocessing2.png "Title")
 
 #### 3.1.2 Action discretisation
@@ -83,7 +86,7 @@ The first 50 frames of an environment depict the camera zooming into the track. 
 
 These initial 50 frames are excluded from the replay buffer as they are not representative of states observed during "real" gameplay.
 
-**Figure 3: Initial frames**
+**Figure 4: Initial frames**
 ![alt text](/images/initial_frames.png "Title")  
 
 ### 3.1 DQN
@@ -111,9 +114,11 @@ We adopt the simplest implementation, where ...
 We also explore the use of 
 
 We trial three configurations of DDQN:
-1. DDQN 1: with every fourth frame sampled (as per our )
+1. DDQN 1: with every fourth frame sampled, as per DQN 2.
 2. DDQN 2: with soft-parameter updates
-    - Drawing inspiration from Lillipcrap et al. (2019), we leverage soft-parameter updates. Instead of refreshing the weights of the target model every 5,000 steps, we copy a small portion of the main model weights at each step using the following update rule. Ex expect this change to increase the speed of learning and reduce any sharp spkies dirven by instantaeous model weight changes.
+    - Drawing inspiration from Lillipcrap et al. (2019), we explore the use of soft-parameter updates. Instead of refreshing the weights of the target model every 5,000 steps, we copy a small portion of the main model weights at each step using the following update rule. 
+    
+We expect this change to increase the speed of learning and reduce any sharp deviations in rewards caused by instantaeous model weight changes.
 3. DDQN 3: with soft-parameter updates
     - From the results of DDQN 2 we observe strange results of the agent. As our agent learns a 
 
@@ -132,18 +137,20 @@ TODO
 ### 4.1 Benchmarks
 As a benchmarks, we use a human score captured over 30 trials.
 
-The enviornment
-
-
-
 ### 4.2 Training comparison
+Algorithm learning curves
+- Speed of convergence
+- Terminal rewards- any interesting/strange behaviour
 
 **Figure 4: learning curves**
-![alt text](/images/results.png "Title")
+![alt text](/images/training_results.png "Title")
 
 ### 4.3 Inference comparison
-TODO  
+Performance of agents at inference time.
+
 **Figure 5: inference comparison**
+![alt text](/images/inference_performance.png "Title")
+
 
 ## 5. Discussion
 *An evaluation of how well you solved your chosen problem.*
@@ -159,13 +166,13 @@ TODO
 *A discussion of your personal experience with the project, such as difficulties or pleasant surprises you encountered while completing it.*
 
 - Environment setup
-    - TODO
+    - TODO - the hassle of setting up the environment
 
 - Compute resources
     - The compute resources available to each team member were wide-ranging. Some team members had access to only basic compute on a local laptop, whilst other team members had access high peformance GPUs and scalable cloud compute. These differences had a direct and significant impact on the implementations and results achieved. For example, machines with more RAM were able to store a much larger replay buffer - a factor which we find to be highly correlated with agent performance. The disparate availability of compute resources creates a conflict between finding implementations that can solve the environment vs implementations which are directly comparable.
 
 - Training time
-    - The amount of training time required in this environment was significant, even on machines with substantial compute resource. Often it would be hours into training before an agent would start making progress in learning. This meant that 
+    - The amount of training time required in this environment was significant, even on machines with substantial compute resource. Often it would be hours into training before an agent would start making progress in learning. Receiving feedback to understand how models were performing relative to other configurations was time-consuming and hindered the speed of iteration.
 
 - Personal commitments
     - TODO
@@ -187,8 +194,10 @@ The Relu activation function has been used for each convolutional layer.
 Following on from the convolutional layers, outputs are flattened and passed to a 256 dimensional dense layer with a Relu activation function. Finally, these outputs are passed to a 5-dimensional dense layer with a linear activation function.
 
 ### 8.2 Trial configurations
+TODO
 
 ### 8.2 CNN analysis
+TODO
 
 
 
