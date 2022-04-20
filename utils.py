@@ -66,7 +66,7 @@ def plot_rewards(episode_rewards, y_lim=None):
     plt.show()
 
 
-def plot_reward_comparison(agent_episode_rewards, labels, ylim=(-50, 500)):
+def plot_reward_comparison(agent_episode_rewards, labels, ylim=(-50, 500), save_path=None):
     """Plot episode rewards."""
     plt.figure(figsize=(8, 6))
     plt.title('DQN Agent Comparison - Average reward (last 100 episodes)')
@@ -76,6 +76,8 @@ def plot_reward_comparison(agent_episode_rewards, labels, ylim=(-50, 500)):
     plt.xlabel('episode')
     plt.ylabel('average reward')
     plt.legend()
+    if save_path is not None:
+        plt.savefig(save_path)
     plt.show()
 
 
