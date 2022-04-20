@@ -108,11 +108,12 @@ We trial two configurations of the DQN (see appendix for details):
 ### 3.2 Double-DQN
 Hasselt, Guez and Silver (2015) propose the use of a double-DQN network to overcome shortcomings of the original DQN algorithm. Specifically, by using the argmax function in selecting action-values, action value estimates are always biased to be larger than their true vales. This can cause issues because...
 
-As a remedy, Hasselt, Guez and Silver (2015) prescribe the use of two separate networks to ensure that q-value estimates are unbiased. 
+As a remedy, Hasselt, Guez and Silver (2015) prescribe the use of two separate networks to ensure that q-value estimates are unbiased. We adopt the simplest implementation of double-DQN, where we use the existing main model and targets models from the DQN implementation. 
+
+In practice, we use the main model to select the action, and the target model to estimate the action-value.
 
 Our update rule changes to:
 $Q(s,a;\theta) \rightarrow R + \gamma max Q(s', argmaxQ(s', a';\theta);\theta')$
-
 
 We trial three configurations of DDQN:
 1. DDQN 1: with every fourth frame sampled, as per DQN 2.
@@ -168,7 +169,7 @@ Performance of agents at inference time.
 
 ![alt text](/images/inference_performance.png "Title")
 
-**Table 1: Inference performance over 100 episodes**
+**Table 2: Inference performance over 100 episodes**
 | algorithm | average reward |
 |-----------|----------------|
 | DQN 1     | 200            |
@@ -198,10 +199,13 @@ Performance of agents at inference time.
     - The amount of training time required in this environment was significant, even on machines with substantial compute resource. Often it would be hours into training before an agent would start making progress in learning. Receiving feedback to understand how models were performing relative to other configurations was time-consuming and hindered the speed of iteration.
 
 - Personal commitments
-    - TODO
+    - TODO -jobs, family, hard to find common time to meet.
 
 ## 7. References
-
+TODO 
+https://arxiv.org/pdf/1312.5602.pdf 
+https://arxiv.org/pdf/1509.06461v3.pdf
+https://arxiv.org/pdf/1509.02971.pdf
 
 
 ## 8. Appendices
