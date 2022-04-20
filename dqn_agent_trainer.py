@@ -26,6 +26,9 @@ class DQNAgentTrainer:
         min_replay_memory_size (int): Minimum number of observations in the replay memory before model training starts.
         random_action_steps (int): Number of steps to take random action instead of using model.
         max_consecutive_negative_rewards (int): Maximum number of consecutive negative rewards before ending episode.
+        min_percent_tiles_found (float): Minimum percent of track tiles found after min_percent_tiles_found_frame_start frames.
+        min_percent_tiles_found_episode_start (int): Episode count to start using min_percent_tiles_found logic.
+        min_percent_tiles_found_frame_start (int): Frame count to start using min_percent_tiles_found logic.
         update_target_model_steps (int): Frequency at which to update the target model weights.
         target_model_hard_update (bool): Make hard update or soft update to target model weights. 
         max_steps_per_episode (int): Maximum number of steps before ending an episode.
@@ -43,9 +46,10 @@ class DQNAgentTrainer:
     """
     def __init__(self, img_len=56, frame_stack_num=4, number_of_episodes=1000, epsilon=1.0, epsilon_min=0.05, epsilon_step_episodes=100.0,
                  final_epsilon_episode=500, max_replay_memory_size=100000, min_replay_memory_size=10000, random_action_steps=2000,
-                 max_consecutive_negative_rewards=50, update_target_model_steps=5000, target_model_hard_update=True, max_steps_per_episode=10000,
-                 skip_frames=4, save_model_frequency=10000, save_models=False, save_run_results=True, verbose_cnn=50, verbose=True,
-                 plot_progress=False, benchmark_rewards=None):
+                 max_consecutive_negative_rewards=50, min_percent_tiles_found=0.85, min_percent_tiles_found_episode_start=300, 
+                 min_percent_tiles_found_frame_start=10000, update_target_model_steps=5000, 
+                 target_model_hard_update=True, max_steps_per_episode=10000, skip_frames=4, save_model_frequency=10000, save_models=False, 
+                 save_run_results=True, verbose_cnn=50, verbose=True, plot_progress=False, benchmark_rewards=None):
 
         self.img_len = img_len
         self.frame_stack_num = frame_stack_num
@@ -60,6 +64,9 @@ class DQNAgentTrainer:
         self.min_replay_memory_size = min_replay_memory_size
         self.random_action_steps = random_action_steps
         self.max_consecutive_negative_rewards = max_consecutive_negative_rewards
+        self.min_percent_tiles_found = min_percent_tiles_found
+        self.min_percent_tiles_found_episode_start = min_percent_tiles_found_episode_start
+        self.min_percent_tiles_found_frame_start = min_percent_tiles_found_frame_start
         self.update_target_model_steps = update_target_model_steps
         self.target_model_hard_update = target_model_hard_update
         self.max_steps_per_episode = max_steps_per_episode
@@ -90,6 +97,10 @@ class DQNAgentTrainer:
         log_filename = (f'{self.path}/log.log')
         logging.basicConfig(filename=log_filename, level=logging.INFO, force=True)
 
+        # Output results
+        if self.save_run_results:
+            self.output_config_and_results(agent)
+            
         # Create agent models
         agent.create_models(self.img_dim)
 
@@ -152,6 +163,9 @@ class DQNAgentTrainer:
         episode_reward = 0
         episode_step_count = 0
         consecutive_negative_rewards = 0
+        frame_count = 50
+        track_tiles = len(env.track)
+        track_tiles_found = 0
 
         # Get stacked state representation
         s_0 = image_processing(s_0, self.img_len)
@@ -179,6 +193,8 @@ class DQNAgentTrainer:
                 
                 action_reward += reward
                 episode_reward += reward
+                frame_count += 1
+                track_tiles_found += 1 if reward > 0 else 0
                 if done:
                     break
 
@@ -187,7 +203,7 @@ class DQNAgentTrainer:
                 consecutive_negative_rewards += 1 
             else: 
                 consecutive_negative_rewards = 0
-
+                
             # Append latest state and get new stacked representation
             s_1 = image_processing(s_1, self.img_len)
             grayscale_state_buffer.append(s_1)
@@ -210,7 +226,9 @@ class DQNAgentTrainer:
                 agent.update_model_weights(self.target_model_hard_update)
 
             # End the episode if following conditions are met
-            if done or (episode_step_count > self.max_steps_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards):
+            if done or (episode_step_count > self.max_steps_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards) \
+            or (episode_number > self.min_percent_tiles_found_episode_start and frame_count > self.min_percent_tiles_found_frame_start \
+            and track_tiles_found/track_tiles < self.min_percent_tiles_found):
                 clear_output(wait=True)
                 if self.verbose:
                     print(f'Episode: {episode_number}')
@@ -247,8 +265,9 @@ class DQNAgentTrainer:
         plt.xlabel('episode')
         plt.ylabel('average reward')
         plt.legend()
+        plt.savefig(f'{self.path}/training_rewards.png')
         plt.show()
-
+        
 
     def output_config_and_results(self, agent):
         """Outputs config and results to a pickle file."""
@@ -268,6 +287,9 @@ class DQNAgentTrainer:
         config['min_replay_memory_size'] = self.min_replay_memory_size 
         config['random_action_steps'] = self.random_action_steps
         config['max_consecutive_negative_rewards'] = self.max_consecutive_negative_rewards
+        config['min_percent_tiles_found'] = self.min_percent_tiles_found
+        config['min_percent_tiles_found_episode_start'] = self.min_percent_tiles_found_episode_start
+        config['min_percent_tiles_found_frame_start'] = self.min_percent_tiles_found_frame_start
         config['update_target_model_steps'] = self.update_target_model_steps
         config['target_model_hard_update'] = self.target_model_hard_update
         config['max_steps_per_episode'] = self.max_steps_per_episode
@@ -280,10 +302,6 @@ class DQNAgentTrainer:
         config['final_step_count'] = self.step_count
 
         # Agent config
-        #config['d'] = agent.d
-        # agent_copy = copy.deepcopy(agent)
-        # agent_copy.d = deque()
-        # config['agent'] = agent_copy
         config['actions'] = agent.actions
         config['num_actions'] = agent.num_actions
         config['action_probs'] = agent.action_probs   
@@ -291,8 +309,7 @@ class DQNAgentTrainer:
         config['batch_size'] = agent.batch_size
         config['gamma'] = agent.gamma
         config['tau'] = agent.tau
-        config['model'] = agent.model
-        config['target_model'] = agent.target_model
+        config['ddqn'] = agent.ddqn
 
         # Rewards
         config['episode_rewards'] = self.episode_rewards
