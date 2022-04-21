@@ -22,13 +22,12 @@ class DQNAgentTrainer:
         epsilon (float): Starting epsilon value → probability of selecting a an action at random.
         epsilon_min (float): Mimum epsilon value.
         epsilon_step_episodes (float): Number of episodes to step from starting epsilon to epsilon_min.
+        first_epsilon_decay_episode (int): First episode to start decayig epsilon.
+        final_epsilon_episode (int): Final episode to use epsilon, after which no random actions are chosen.
         max_replay_memory_size (int): Maximum number of observations in the replay memory.
         min_replay_memory_size (int): Minimum number of observations in the replay memory before model training starts.
         random_action_steps (int): Number of steps to take random action instead of using model.
         max_consecutive_negative_rewards (int): Maximum number of consecutive negative rewards before ending episode.
-        min_percent_tiles_found (float): Minimum percent of track tiles found after min_percent_tiles_found_frame_start frames.
-        min_percent_tiles_found_episode_start (int): Episode count to start using min_percent_tiles_found logic.
-        min_percent_tiles_found_frame_start (int): Frame count to start using min_percent_tiles_found logic.
         update_target_model_steps (int): Frequency at which to update the target model weights.
         target_model_hard_update (bool): Make hard update or soft update to target model weights. 
         max_steps_per_episode (int): Maximum number of steps before ending an episode.
@@ -45,9 +44,8 @@ class DQNAgentTrainer:
         
     """
     def __init__(self, img_len=56, frame_stack_num=4, number_of_episodes=1000, epsilon=1.0, epsilon_min=0.05, epsilon_step_episodes=100.0,
-                 final_epsilon_episode=500, max_replay_memory_size=100000, min_replay_memory_size=10000, random_action_steps=2000,
-                 max_consecutive_negative_rewards=50, min_percent_tiles_found=0.85, min_percent_tiles_found_episode_start=300, 
-                 min_percent_tiles_found_frame_start=10000, update_target_model_steps=5000, 
+                 first_epsilon_decay_episode=10000, final_epsilon_episode=500, max_replay_memory_size=100000, min_replay_memory_size=10000,                   
+                 random_action_steps=2000, max_consecutive_negative_rewards=50, update_target_model_steps=5000, 
                  target_model_hard_update=True, max_steps_per_episode=10000, skip_frames=4, save_model_frequency=10000, save_models=False, 
                  save_run_results=True, verbose_cnn=50, verbose=True, plot_progress=False, benchmark_rewards=None):
 
@@ -59,14 +57,12 @@ class DQNAgentTrainer:
         self.epsilon_min = epsilon_min
         self.epsilon_step_episodes = epsilon_step_episodes
         self.epsilon_step = (self.epsilon - self.epsilon_min)/self.epsilon_step_episodes
+        self.first_epsilon_decay_episode = first_epsilon_decay_episode
         self.final_epsilon_episode = final_epsilon_episode
         self.max_replay_memory_size = max_replay_memory_size
         self.min_replay_memory_size = min_replay_memory_size
         self.random_action_steps = random_action_steps
         self.max_consecutive_negative_rewards = max_consecutive_negative_rewards
-        self.min_percent_tiles_found = min_percent_tiles_found
-        self.min_percent_tiles_found_episode_start = min_percent_tiles_found_episode_start
-        self.min_percent_tiles_found_frame_start = min_percent_tiles_found_frame_start
         self.update_target_model_steps = update_target_model_steps
         self.target_model_hard_update = target_model_hard_update
         self.max_steps_per_episode = max_steps_per_episode
@@ -136,7 +132,8 @@ class DQNAgentTrainer:
             # Start decaying epsilon when policy is used to select actions
             if episode_number > self.final_epsilon_episode:
                 self.epsilon = 0.0
-            elif self.step_count > self.random_action_steps and self.step_count > self.min_replay_memory_size:
+            elif episode_number > self.first_epsilon_decay_episode and self.step_count > self.random_action_steps \
+            and self.step_count > self.min_replay_memory_size:
                 self.epsilon = max(self.epsilon_min, self.epsilon - self.epsilon_step)
 
             # Save model
@@ -163,9 +160,6 @@ class DQNAgentTrainer:
         episode_reward = 0
         episode_step_count = 0
         consecutive_negative_rewards = 0
-        frame_count = 50
-        track_tiles = len(env.track)
-        track_tiles_found = 0
 
         # Get stacked state representation
         s_0 = image_processing(s_0, self.img_len)
@@ -193,8 +187,6 @@ class DQNAgentTrainer:
                 
                 action_reward += reward
                 episode_reward += reward
-                frame_count += 1
-                track_tiles_found += 1 if reward > 0 else 0
                 if done:
                     break
 
@@ -226,9 +218,7 @@ class DQNAgentTrainer:
                 agent.update_model_weights(self.target_model_hard_update)
 
             # End the episode if following conditions are met
-            if done or (episode_step_count > self.max_steps_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards) \
-            or (episode_number > self.min_percent_tiles_found_episode_start and frame_count > self.min_percent_tiles_found_frame_start \
-            and track_tiles_found/track_tiles < self.min_percent_tiles_found):
+            if done or (episode_step_count > self.max_steps_per_episode) or (consecutive_negative_rewards > self.max_consecutive_negative_rewards):
                 clear_output(wait=True)
                 if self.verbose:
                     print(f'Episode: {episode_number}')
@@ -282,14 +272,12 @@ class DQNAgentTrainer:
         config['epsilon_min'] = self.epsilon_min
         config['epsilon_step_episodes'] = self.epsilon_step_episodes 
         config['epsilon_step'] = self.epsilon_step 
+        config['first_epsilon_decay_episode'] = self.first_epsilon_decay_episode
         config['final_epsilon_episode'] = self.final_epsilon_episode
         config['max_replay_memory_size'] = self.max_replay_memory_size
         config['min_replay_memory_size'] = self.min_replay_memory_size 
         config['random_action_steps'] = self.random_action_steps
         config['max_consecutive_negative_rewards'] = self.max_consecutive_negative_rewards
-        config['min_percent_tiles_found'] = self.min_percent_tiles_found
-        config['min_percent_tiles_found_episode_start'] = self.min_percent_tiles_found_episode_start
-        config['min_percent_tiles_found_frame_start'] = self.min_percent_tiles_found_frame_start
         config['update_target_model_steps'] = self.update_target_model_steps
         config['target_model_hard_update'] = self.target_model_hard_update
         config['max_steps_per_episode'] = self.max_steps_per_episode
