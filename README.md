@@ -102,7 +102,7 @@ As per Mnih et al (2013), a convolutional neural network is used to estimate act
 
 We trial two configurations of the DQN (see appendix for details):
 1. DQN 1: A DQN closely resembling that of Mnih et al (2013) in terms of CNN structure and hyperparameters used.
-2. DQN 2: A modified DQN where we capture every fourth frame to form the state representation instead of consecutive frames. The rationale for this change is that using consecutive frames may not provide much variation in information to the agent as consecutive frames are extremely similar. Increasing the temporal step between frames should provide more general information of the recent trajectory of the agent, and therefore aid learning.
+2. DQN 2: A modified DQN where we capture every fourth frame to form the state representation instead of consecutive frames. The rationale for this change is that using consecutive frames may not provide sufficient variation in information to the agent as consecutive frames are extremely similar. Increasing the temporal step between frames should provide more general information of the recent trajectory of the agent, and therefore aid learning. Rewards are accumulated over every four frames.
 
 
 ### 3.2 Double-DQN
@@ -119,9 +119,9 @@ We trial three configurations of DDQN:
 1. DDQN 1: with every fourth frame sampled, as per DQN 2.
 2. DDQN 2: with soft-parameter updates
     - Drawing inspiration from Lillipcrap et al. (2019), we explore the use of soft-parameter updates. Instead of refreshing the weights of the target model every 5,000 steps, we copy a small portion of the main model weights at each step using the following update rule. We expect this change to increase the speed of learning and reduce any sharp deviations in rewards caused by instantaeous model weight changes.
-3. DDQN 3: with soft-parameter updates
-    - From the results of DDQN 2 we observe strange learning behaviour from the agent. As our agent learns a near optimal policy. Error analysis identifies that
-
+3. DDQN 3: with soft-parameter updates and decaying epsilon
+    - From results of DDQN we observe that agent performance tends to plataue and drop after about 400 episdoes of training. To mitigate this, we trial reducing epsilon from 0.05 to 0.0025 linearly over 50 episodes starting from episode 300. The rationale is that the agent should focus more on refining its policy and less on exploration, performance is alrady very good and we are close to meeting the solving condtions.
+    
 ### 3.3 Actor-critic 
 TODO
 
@@ -138,6 +138,11 @@ TODO
 As an inference benchmark, we use a human score averaged over 30 trials. From manual play of the game, we achieve an average score of 700 points.
 
 ### 4.2 Training comparison
+Our DQN 1 agent performs...
+
+THe DQN 2 agent peforms very well, achieving terminal rewards of 800 points during training. The addition of soft-updating to the target model weights increases the rate of learning significantly. We notice a peculiar phenomena where agent performance begins to deteriorate significantly after around episode 500. After reviewing randomly selected episodes of play, we observe that our agent has developed some bad habits and learnt how to cut corners on the track. This is problematic, as positive rewards are only earned through visiting previously unvisited track tiles. Once our agent has proficiency to complete a full lap of the track, it no longer receives rewards - despite staying on the track. States which were previously associated with positive rewards are now given negative rewards in the replay buffer.
+
+
 Algorithm learning curves
 - Speed of convergence
 - Terminal rewards
