@@ -9,29 +9,43 @@ from IPython import display as ipythondisplay
 from gym.wrappers import Monitor
 
 
-def image_processing(s, img_len, crop_dims=None):
+def image_processing(s, img_len):
     """Crop image, convert to grayscale and reshape."""
     
-    if crop_dims is not None:
-        s = s[crop_dims[0], crop_dims[1], :]
+    # Convert to grayscale
     s = np.dot(s[...,:3], [0.2989, 0.5870, 0.1140]).astype(np.uint8)
+
+    # Simplify track part of image
+    s[:85, :][s[:85, :]==106.0]=101.0
+    s[:85, :][s[:85, :]==104.0]=101.0
+    s[:85, :][s[:85, :]==161.0]=255.0
+    s[:85, :][s[:85, :]==177.0]=255.0
+    s[:85, :][s[:85, :]==254.0]=255.0
+    s[:85, :][s[:85, :]==76.0]=255.0
+
+    # Simplify bottom bar of image
+    s[86:, :12] = 0.0
+    s[86:, :][s[86:, :]==254.0]=255.0
+    s[86:, :][s[86:, :]==29.0]=255.0
+    s[86:, :][s[86:, :]==44.0]=255.0
+    s[86:, :][s[86:, :]==149.0]=255.0
+    s[86:, :][s[86:, :]==76.0]=255.0
+
+    # Reshape
     s = np.reshape(s, (1, img_len, img_len))  
-    s[0, 86:, :16] = 0.0
 
     return s
 
 
-def get_stacked_state(grayscale_state_buffer, img_dim):
+def get_stacked_state(grayscale_state_buffer, frame_interval, img_dim):
     """Returns a stacked image from the grayscale buffer."""
 
     # Create image from grayscale buffer
     img = np.zeros(img_dim)
     for i in range(img_dim[2]):
-        img[:, :, i] = grayscale_state_buffer[i]
+        img[:, :, i] = grayscale_state_buffer[::-1][i * frame_interval]
     img = np.reshape(img, (1,) + img_dim)
 
-    # Remove first image from buffer
-    grayscale_state_buffer.popleft()
     return img
 
 
