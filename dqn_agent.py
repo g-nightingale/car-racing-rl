@@ -28,6 +28,10 @@ class DQNAgent:
         batch_size (int): Batch size for experience replay sampling.
         gamma (float): Discount rate applied in q-value calculation.
         tau (float): Tau value used for soft model updates.
+        decay_lr (bool): Use learning rate decay or not.
+        decay_rate (float): Rate to decay learning rate.
+        decay_steps (int): Number of steps to decay learning rate.
+        decay_step_start (int): Starting step to decay learning rate.
         model (keras model): Model for predicting action values.
         target model (keras model): Model for updating action values.
         user_defined_model_function (function): User defined function to create a CNN model.
@@ -35,6 +39,7 @@ class DQNAgent:
     """
 
     def __init__(self, actions, action_probs=None, lr=0.00025, batch_size=32, gamma=0.95, tau=0.001,
+                 decay_lr=False, decay_rate=0.95, decay_steps=100000, decay_step_start=0,
                  user_defined_model_function=None, ddqn=False):
         """Initialise the agent."""
 
@@ -51,6 +56,10 @@ class DQNAgent:
         self.tau = tau
         self.model = None
         self.target_model = None
+        self.decay_lr = decay_lr
+        self.decay_rate = decay_rate
+        self.decay_steps = decay_steps
+        self.decay_step_start = decay_step_start
         if user_defined_model_function is not None:
             self.user_defined_model_function = user_defined_model_function
         else:
@@ -87,7 +96,7 @@ class DQNAgent:
             self.target_model = self.user_defined_model_function(img_dim, self.lr, self.num_actions)
 
 
-    def experience_replay(self, img_dim, verbose=False):
+    def experience_replay(self, img_dim, steps, verbose=False):
         """Experience replay step."""
 
         # Create random batch from replay buffer
@@ -119,6 +128,10 @@ class DQNAgent:
         # Fit model
         self.model.fit(s_0, q_0, epochs=1, batch_size=self.batch_size, verbose=verbose)
 
+        # Decay the learning rate
+        if self.decay_lr and steps > self.decay_step_start:
+            self.decay_learning_rate(steps)
+
 
     def update_model_weights(self, hard_update=True):
         """Update target model weights to match model weights."""
@@ -132,6 +145,11 @@ class DQNAgent:
     def save_model(self, path='./saved_models/dqn_final.h5'):
         """Save the model."""
         self.model.save(path)
+
+
+    def decay_learning_rate(self, steps):
+        """Decay the learning rate."""
+        self.model.optimizer.lr = self.lr * np.power((1 - self.decay_rate), (min(steps, self.decay_steps)/self.decay_steps))
 
 
     def act(self, env, render=False):
