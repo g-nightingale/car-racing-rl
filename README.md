@@ -1,8 +1,8 @@
 # Reinforcement Learning: Second Assignment
 
+## 0. setup
+The code 
 ## 1. Problem definition
-*A clear, precise and concise description of your chosen problem, including the states, actions, transition dynamics, and the reward function. You will lose marks for an unclear, incorrect, or incomplete problem definition.*
-
 We have chosen the CarRacing-v0 enviroment from the OpenAI gym suite of reinforcement learning environments.
 
 This is a top down car racing environment, where the goal of the agent is to maximize points earned by sucessfully navigating around a randomly generated racetrack.
@@ -56,8 +56,6 @@ From our research, this specific environment has not been extensively studied in
 
 
 ## 3. Method
-*A description of the method(s) used to solve your chosen problem, an explanation of how these methods work (in your own words), and an explanation of why you chose these specific methods.*
-
 ### 3.1 Pre-processing
 The following pre-processing steps have been applied to all of the algorithms trialled.
 
@@ -121,15 +119,7 @@ We trial three configurations of DDQN:
     - Drawing inspiration from Lillipcrap et al. (2019), we explore the use of soft-parameter updates. Instead of refreshing the weights of the target model every 5,000 steps, we copy a small portion of the main model weights at each step using the following update rule. We expect this change to increase the speed of learning and reduce any sharp deviations in rewards caused by instantaeous model weight changes.
 3. DDQN 3: with soft-parameter updates and decaying epsilon
     - From results of DDQN we observe that agent performance tends to plataue and drop after about 400 episdoes of training. To mitigate this, we trial reducing epsilon from 0.05 to 0.0025 linearly over 50 episodes starting from episode 300. The rationale is that the agent should focus more on refining its policy and less on exploration, performance is alrady very good and we are close to meeting the solving condtions.
-    
-### 3.3 Actor-critic 
-TODO
 
-### 3.4 DDPG 
-TODO
-
-### 3.5 Policy gradients
-TODO
 
 ## 4. Results
 *A presentation of your results, showing how quickly and how well your agent(s) learn (i.e., improve their policies). Include informative baselines for comparison (e.g. the best possible performance, the performance of an average human, or the performance of an agent that selects actions randomly).*

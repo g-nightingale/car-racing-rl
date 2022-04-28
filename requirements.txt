@@ -17,9 +17,9 @@ decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
 entrypoints==0.3
 executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
 flatbuffers==2.0
-fonttools==4.31.2
+fonttools==4.32.0
 gast==0.5.3
-glfw==2.5.2
+glfw==2.5.3
 google-auth==2.6.3
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
@@ -27,7 +27,7 @@ grpcio==1.44.0
 gym==0.19.0
 h5py==3.6.0
 idna==3.3
-imageio==2.16.1
+imageio==2.16.2
 ipykernel @ file:///tmp/build/80754af9/ipykernel_1647000775989/work/dist/ipykernel-6.9.1-py3-none-any.whl
 ipython @ file:///tmp/build/80754af9/ipython_1648798933365/work
 jedi @ file:///tmp/build/80754af9/jedi_1644315229345/work
@@ -47,6 +47,7 @@ oauthlib==3.2.0
 opencv-python==4.5.5.64
 opt-einsum==3.3.0
 packaging==21.3
+pandas==1.4.2
 parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
 pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
@@ -60,8 +61,9 @@ pyasn1-modules==0.2.8
 pycparser==2.21
 pyglet==1.5.23
 Pygments @ file:///opt/conda/conda-bld/pygments_1644249106324/work
-pyparsing==3.0.7
+pyparsing==3.0.8
 python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz==2022.1
 PyVirtualDisplay==3.0
 pyzmq @ file:///home/builder/ci_310/pyzmq_1640794096902/work
 requests==2.27.1
