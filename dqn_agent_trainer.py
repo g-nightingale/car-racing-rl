@@ -261,7 +261,8 @@ class DQNAgentTrainer:
     def plot_rewards(self, episode_rewards):
         """Plot episode rewards."""
         # Create new benchmark rewards list that is thesame length as episode rewards
-        benchmark_rewards = self.benchmark_rewards[:len(episode_rewards)]
+        if self.benchmark_rewards is not None:
+            benchmark_rewards = self.benchmark_rewards[:len(episode_rewards)]
 
         # Plot
         plt.figure(figsize=(8, 6))
