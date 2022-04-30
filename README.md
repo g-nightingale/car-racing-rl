@@ -128,3 +128,8 @@ Double DQN 1 scores 782 points, surpassing our human level benchmark. Double DQN
 van Hasselt, H., Guez, A. and Silver, D., 2015. Deep Reinforcement Learning with Double Q-learning (v.3). arXiv:1509.06461 [cs] [Online]. Available from: http://arxiv.org/abs/1509.06461 [Accessed 23 April 2022].
 
 Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D. and Riedmiller, M., 2013. Playing Atari with Deep Reinforcement Learning. arXiv:1312.5602 [cs] [Online]. Available from: http://arxiv.org/abs/1312.5602 [Accessed 23 April 2022].
+
+Rodrigues, P. and Vieira, S., 2020. Optimizing Agent Training with Deep Q-Learning on a Self-Driving
+Reinforcement Learning Environment. 2020 IEEE Symposium Series on Computational Intelligence (SSCI),
+[Online], 2020 IEEE Symposium Series on Computational Intelligence (SSCI). pp.745–752. Available from:
+https://doi.org/10.1109/SSCI47803.2020.9308525.
