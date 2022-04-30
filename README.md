@@ -1,77 +1,64 @@
-# Reinforcement Learning: Second Assignment
+# CarRacing-v0
 
-## 0. setup
-The code 
+In this environment, the goal of the agent is to maximize points by successfully navigating around a randomly generated racetrack. The agent loses points for each frame of game-play elapsed, and earns points for visiting previously unvisited track tiles.
+
+## 0. Environment Setup
+        conda create -c conda-forge -n gymenv swig pip  
+        conda activate gymenv  
+        pip install gym==0.19   # Use 0.17.3 to render in the notebook, however this has memory leak issues because of xvfb
+        pip install Box2D gym
+        pip install gym[all]
+
+        pip install tensorflow
+        pip install matplotlib
+
+        pip install gym pyvirtualdisplay   
+        sudo apt-get install -y xvfb python-opengl ffmpeg  
+
+        # The following steps are so that I can access the new env in Azure ML notebooks
+        conda install ipykernel
+        python -m ipykernel install --user --name gymenv --display-name "Python (gymenv)"
+
+
 ## 1. Problem definition
-We have chosen the CarRacing-v0 enviroment from the OpenAI gym suite of reinforcement learning environments.
+### 1.1 Environment details
+At the beginning of each episode, a race track is randomly generated consisting of between 200 and 300 track tiles. An episode finishes when either all of the track tiles have been visited, the car leaves the environment perimeter or 1,000 frames have elapsed. The game runs at 50 frames per second, therefore each episode lasts up to 20 seconds.
 
-This is a top down car racing environment, where the goal of the agent is to maximize points earned by sucessfully navigating around a randomly generated racetrack.
-
-We have chosen this problem as it provides unique challenges given the image state representation and continuous action space, and also enables the application of a wide range of reinforcement learning methods.
-
-### 1.1 Track generation and episode details 
-A track is randomly generated each time the environment is reset. Each track consists of between 200 and 300 tiles and each episode consists of 1,000 frames. 
-
-The game runs at 50 frames per second, therefore each episode lasts 20 seconds, unless terminated early.
-
-### 1.2 State representation
-Each state is represented as a 96x96 RGB image of the current gamescreen. The gamescreen displays the car and track, along with current score and telemetry readouts of true speed, ABS sensors, steering wheel position, and gyroscope.
+The environment state is represented as a 96x96x3 RGB image of the current game screen, displaying an overheard view of the car and track, along with current score and telemetry readouts of speed, ABS sensors, steering position, and gyroscope. As the game progresses, the car remains in a fixed position whilst the game screen is re-orientated based on the movements of the car. 
 
 **Figure 1. State representation**
 ![alt text](/images/state.png "Title")
 
-### 1.3 Rewards
-The agent receives a reward of -0.1 for each frame elapsed and a reward of +1000/N for each new track tile visited, where N is the total number of tiles in the track. 
+### 1.2 Rewards and solving condition
+The agent receives a reward of -0.1 for each frame elapsed and a reward of +1000/N for each new track tile visited, where N is the total number of tiles in the track. The agent receives a score of -100 if it ventures far beyond the racetrack and leaves the wider environment perimeter. To achieve maximum rewards, the agent must navigate quickly around the track without missing any track tiles.
 
-According to the OpenAI Gym documentation, the agent receives a score of -100 for leaving the wider track boundary.
+The environment is solved when the agent achieves an average score of at least 900 points over 100 episodes. 
 
-### 1.4 Episode termination
-The official OpenAI gym documentation states that an episode finishes when either all of the tiles are visited or the car leaves the playfield - which is the wider boundary beyond the race track and grass areas.
+### 1.3 Action space and transition dynamics
+The agent interacts with the environment through throttle, steering and braking inputs. These actions are continuous and have the following ranges:
+- Throttle (t) in the range $[0.0, 1.0]$, where 0.0 is no throttle, and 1.0 is full throttle.
+- Steering (s) in the range $[-1.0, 1.0]$, where -1.0 is full left turn and 1.0 is full right turn.
+- Braking (b) in the range $[0.0, 1.0]$, where 0.0 is no braking and 1.0 is full braking.
 
-We also note that an episode finishes after 1,000 frames have elapsed.
-
-Additionally, for some algorithm implementations we add additional termination criteria.
-
-### 1.5 Action space
-The action space in the CarRacing-v0 environment is continuous and consists of 
-- Acceleration (a) in the range [0.0, 1.0], where 0.0 is no throttle, and 1.0 is full throttle.
-- Steering (s) in the range [-1.0, 1.0], where -1.0 is full left turn and 1.0 is full right turn.
-- Braking (b) [0.0, 1.0], where 0.0 is no braking and 1.0 is full braking.
-
-Actions are supplied to the environment in the vector form [a, s, b].
-
-### 1.6 Solved conditions
-As per the OpenAI gym documentation, the environment is solved when the agent achieves an average score of at least 900 points over 100 episodes.
+Actions are supplied to the environment in the vector form $[t, s, b]$. After taking an action, the game state is updated according to an unobserved, internal physics model within the environment. The next state is computed based on the agents current speed and trajectory in combination with the new action inputs, and is returned in the form of an updated game screen along with rewards earned.
 
 ## 2. Background
-*A discussion of reinforcement learning methods that may be effective at solving your chosen problem, their strengths and weaknesses for your chosen problem, and any existing results in the scientific literature (or publicly available online) on your chosen problem or similar problems.*
+There are up to $256^{3\times96^2}$ possible states for the CarRacing-v0 environment, as each 96x96 game screen consists of three RGB layers that can each have 256 unique values. In reality, the actual state space is much smaller (the game uses only a handful of colours for example), however it is prohibitively large to consider tabular based reinforcement learning approaches.
 
-As this is a continuous control task with an image based state representation we draw heavily from the pioneering work of Mnih et al. (2013) and subsequent research into reinforcement learning methods applied to Atari games.
-
-Specifically, we focus on methods used for tasks which utilise image based state representations.
-
-TODO
-
-From our research, this specific environment has not been extensively studied in the scientific literature.
+We therefore look towards methods which use function-approximation to estimate q-values such as Deep Q-Networks.
 
 
 ## 3. Method
-### 3.1 Pre-processing
-The following pre-processing steps have been applied to all of the algorithms trialled.
-
-#### 3.1.1 State representation
+### 3.1 State representation
 In a similar approach to Mnih et al. (2013) we make several modifications to the state representation:
-- Firstly, we convert the RGB image to grayscale as colour is not important for learning in this environment.
-- Secondly, we censor the score meter in the bottom left of the screen by setting the pixels in this region to zero. The current score should not influence the actions taken by an agent and we observe strange behaviour in agents once they attain near maximal scores (discussed further in results).
-- Thirdly, we stack N grayscale game states to form a 96x96xN multidimensional vector, which is used as input in the CNN. We trial different intervals between consecutive game screens.
+- Firstly, we convert the RGB image to grayscale to reduce dimensionality.
+- Secondly, we censor the score meter in the bottom left of the screen by setting the pixels in this region to zero. For some approaches we also trial removing further track details such as grass and track tile shading.
+- Thirdly, we stack N grayscale game states to form a 96x96xN multidimensional vector, which is used as input in the CNN. We trial different intervals between consecutive game screens.Thirdly, we stack N grayscale game states to form a 96x96xN multidimensional vector, which is used as input in the CNN. We trial different intervals between consecutive game screens.
 
-**Figure 2: Image preprocessing**
+**Figure 2: Image preprocessing**  
 ![alt text](/images/preprocessing1.png "Title")
 
-**Figure 3: Stacking of state frames**
-![alt text](/images/preprocessing2.png "Title")
-
-#### 3.1.2 Action discretisation
+### 3.2 Action discretisation
 We reduce the continuous action space to the following five discrete actions:
 1. Full throttle: [0.0, 1.0, 0.0]
 2. Full left turn: [-1.0, 0.0, 0.0]
@@ -79,150 +66,65 @@ We reduce the continuous action space to the following five discrete actions:
 4. 80% brakes: [0.0, 0.0, 0.8]
 5. No action: [0.0, 0.0, 0.0]
 
-We hypothesize that a more complex action space is not required to perform well in this environment. Additionally, a smaller action space enables simpler architectures for the convolutional neural network. 
+### 3.3 Initial frames of environment
+The first 50 frames of an environment depict the camera zooming into the track. During these frames, the car does not move, however throttle can be accumulated. We apply full throttle during these initial 50 frames, to propel the car forward once the game starts. We exclude these initial 50 frames from the replay buffer as they are not representative of states observed during normal game play.
 
-#### 3.1.3 Initial frames of environment
-The first 50 frames of an environment depict the camera zooming into the track. During these frames, the car does not move, however throttle can be accumulated. We apply full throttle during these initial 50 frames, to propel the car forward once the game starts. 
+### 3.4 Deep Q-Network
+Deep Q-Networks (DQNs) were first introduced by Mnih et al. (2013), where the authors trained RL agents to play a range of Atari video games using only knowledge of the current game screen, available controller actions, and resulting rewards and next states from taking said actions.
 
-These initial 50 frames are excluded from the replay buffer as they are not representative of states observed during "real" gameplay.
+DQNs use a neural network as a non-linear function approximator, where the network takes the representation of a state $s$ as input (in our case, the pre-processed game screen) and outputs an estimate of the action-value $q$ for each available action. Previous attempts to use neural networks for reinforcement learning had largely failed due to stability issues during training. Mnih et al. (2013) address these issues through the use of separate target networks and experience replay.
 
-**Figure 4: Initial frames**
-![alt text](/images/initial_frames.png "Title")  
+Using this approach, q-value updates are given as: \\
+$Q(s,a;\theta) \rightarrow r + max_{a}Q(s', a;\theta))$
 
-### 3.1 DQN
-Deep Q-Networks were first introduced in the seminal paper by Mnih et al. (2013), where RL agents were successfully trained to play a range of Atari video games using only knowledge of the current screen state, available controller actions, and resulting rewards from taking actions.
+We trial two configurations of the DQN:
+- DQN 1: A DQN closely resembling that of Mnih et al (2013) in terms of CNN architecture and hyper-parameters used.  
+- DQN 2: A modified DQN with two key changes. Firstly, instead of applying an action to a single frame, we apply the action to four consecutive frames, and accumulate the rewards over these four frames. Secondly, instead of stacking consecutive frames to form the state-representation, we use every fourth frame. The hypothesis is that consecutive frames are very similar and may not provide sufficient variation in information to facilitate effective learning.
 
-Earlier attempts at using neural networks had failed, however several key innovations were introduced by Mnih et al. (2013) including experience replay, huber loss function and fixed target networks.
+### 3.5 Double Deep Q-Network
+Hasselt, Guez and Silver (2015) demonstrate that the DQN algorithm produces overoptimistic estimates of action-values, causing instability during learning and producing sub-optimal policies. 
 
-DQNs leverage neural networks as a function approximator, where the input is a state representation and the output is an estimate action-values. 
+As a solution, they propose the use of a double DQN network that leverages the existing architecture of the DQN without requiring additional networks or parameters. Specifically, the action-value model is used to select the optimal action, whilst the target model is used to estimate the action-value, effectively removing the upward bias in action-value estimates. Hasselt, Guez and Silver (2015) find that double DQN produces better policies and obtains state of the art results on Atari 2600 games.
 
-As per Mnih et al (2013), a convolutional neural network is used to estimate action-values. 
+Following this logic, our update rule changes to: \\
+$Q(s,a;\theta) \rightarrow r + \gamma max Q(s', argmaxQ(s', a';\theta);\theta')$
 
-We trial two configurations of the DQN (see appendix for details):
-1. DQN 1: A DQN closely resembling that of Mnih et al (2013) in terms of CNN structure and hyperparameters used.
-2. DQN 2: A modified DQN where we capture every fourth frame to form the state representation instead of consecutive frames. The rationale for this change is that using consecutive frames may not provide sufficient variation in information to the agent as consecutive frames are extremely similar. Increasing the temporal step between frames should provide more general information of the recent trajectory of the agent, and therefore aid learning. Rewards are accumulated over every four frames.
-
-
-### 3.2 Double-DQN
-Hasselt, Guez and Silver (2015) propose the use of a double-DQN network to overcome shortcomings of the original DQN algorithm. Specifically, by using the argmax function in selecting action-values, action value estimates are always biased to be larger than their true vales. This can cause issues because...
-
-As a remedy, Hasselt, Guez and Silver (2015) prescribe the use of two separate networks to ensure that q-value estimates are unbiased. We adopt the simplest implementation of double-DQN, where we use the existing main model and targets models from the DQN implementation. 
-
-In practice, we use the main model to select the action, and the target model to estimate the action-value.
-
-Our update rule changes to:
-$Q(s,a;\theta) \rightarrow R + \gamma max Q(s', argmaxQ(s', a';\theta);\theta')$
-
-We trial three configurations of DDQN:
-1. DDQN 1: with every fourth frame sampled, as per DQN 2.
-2. DDQN 2: with soft-parameter updates
-    - Drawing inspiration from Lillipcrap et al. (2019), we explore the use of soft-parameter updates. Instead of refreshing the weights of the target model every 5,000 steps, we copy a small portion of the main model weights at each step using the following update rule. We expect this change to increase the speed of learning and reduce any sharp deviations in rewards caused by instantaeous model weight changes.
-3. DDQN 3: with soft-parameter updates and decaying epsilon
-    - From results of DDQN we observe that agent performance tends to plataue and drop after about 400 episdoes of training. To mitigate this, we trial reducing epsilon from 0.05 to 0.0025 linearly over 50 episodes starting from episode 300. The rationale is that the agent should focus more on refining its policy and less on exploration, performance is alrady very good and we are close to meeting the solving condtions.
-
+We trial two configurations of double DQN:
+- Double DQN 1: We trial a double DQN with the same modifications as DQN 2, to understand the impact of bias reduction in this environment.
+- Double DQN 2: We add learning rate decay and $L2$ regularisation to the CNN as per Rodrigues and Vieira (2020) in order to further improve learning stability and convergence. We also increase the capacity of the CNN from 256 to 512 neurons in the final dense layer and add additional image pre-processing steps, removing track details and reducing the number of shades used.
 
 ## 4. Results
-*A presentation of your results, showing how quickly and how well your agent(s) learn (i.e., improve their policies). Include informative baselines for comparison (e.g. the best possible performance, the performance of an average human, or the performance of an agent that selects actions randomly).*
+We consider two sets of results. Firstly, we examine agent performance during training to understand terminal scores and convergence properties. Secondly, we examine the performance of trained agents in an inference environment over 100 episodes, where agents execute their learned policies without any randomly chosen actions.
 
-### 4.1 Benchmarks
-As an inference benchmark, we use a human score averaged over 30 trials. From manual play of the game, we achieve an average score of 700 points.
+### 4.1 Training results
+Results from training are presented in Table 1. Our DQN 1 agent achieves an average score of 213 points over 100 episodes. DQN 2 achieves an average score of 724. This result is consistent with our hypothesis that repeating actions over multiple frames and increasing the inter-temporal gap in state representation improves agent learning.
 
-### 4.2 Training comparison
-Our DQN 1 agent performs...
+The double DQN 1 agent achieves an average training score of 807 points - demonstrating the benefits bias reduction in the action-value estimates. Double DQN 2 improves these results, achieving an average training score of 875. Using learning rate decay and regularisation, the volatility of scores reduces as training matures and our agent converges towards a good policy.
 
-THe DQN 2 agent peforms very well, achieving terminal rewards of 800 points during training. The addition of soft-updating to the target model weights increases the rate of learning significantly. We notice a peculiar phenomena where agent performance begins to deteriorate significantly after around episode 500. After reviewing randomly selected episodes of play, we observe that our agent has developed some bad habits and learnt how to cut corners on the track. This is problematic, as positive rewards are only earned through visiting previously unvisited track tiles. Once our agent has proficiency to complete a full lap of the track, it no longer receives rewards - despite staying on the track. States which were previously associated with positive rewards are now given negative rewards in the replay buffer.
+**Table 1: Training results**
+| Algorithm | Average score (100) |
+|-----------|---------------------|
+| DQN 1     | 213                 |
+| DQN 2     | 724                 |
+| Double DQN 1 | 807              |
+| Double DQN 2 | 867              |
 
+### 4.2 Inference results
+Inference results are presented in Table 2.
 
-Algorithm learning curves
-- Speed of convergence
-- Terminal rewards
-- Any interesting/strange behaviour
+DQN 1 also performs poorly, achieving an average score of only 122 points - significantly under-performing training results. This is potentially due to the higher weighting assigned to moving forward when taking a random action, thus causing the training score to be inflated. DQN 2 improves performance significantly - scoring 690 points on average and achieving near human levels of performance.
 
+Double DQN 1 scores 782 points, surpassing our human level benchmark. Double DQN 2 is our best performing agent, reaching an average score of 903 $\pm$ 26, which successfully solves this environment. We note the success of this agent appears to be correlated with track configuration, as this agent tends to perform better on tracks with fewer sharp corners
 
-**Figure 4: learning curves**   
+**Table 2: Inference results**
+| Algorithm | Average score (100) |
+|-----------|---------------------|
+| DQN 1     | 122 $\pm$ 113       |
+| DQN 2     | 690 $\pm$ 250       |
+| Double DQN 1 | 782 $\pm$ 223    |
+| Double DQN 2 | 903 $\pm$ 26     |
 
-![alt text](/images/training_results.png "Title")
+### References
+van Hasselt, H., Guez, A. and Silver, D., 2015. Deep Reinforcement Learning with Double Q-learning (v.3). arXiv:1509.06461 [cs] [Online]. Available from: http://arxiv.org/abs/1509.06461 [Accessed 23 April 2022].
 
-
-**Table 1: Training performance after 1,000 episodes**
-| algorithm | average reward |
-|-----------|----------------|
-| DQN 1     | 200            |
-| DQN 2     | 600            |
-| DDQN 1    | 800            |
-| DDQN 2    | 700            |
-| DDPG      |                |
-| Actor-critic |             |
-| PG         |               |
-
-
-### 4.3 Inference comparison
-Performance of agents at inference time.
-
-
-**Figure 5: inference comparison**  
-
-![alt text](/images/inference_performance.png "Title")
-
-**Table 2: Inference performance over 100 episodes**
-| algorithm | average reward |
-|-----------|----------------|
-| DQN 1     | 200            |
-| DQN 2     | 600            |
-| DDQN 1    | 800            |
-| DDQN 2    | 700            |
-| DDPG      |                |
-| Actor-critic |             |
-| PG         |               |
-
-## 5. Discussion
-*An evaluation of how well you solved your chosen problem.*
-
-## 6. Future work
-*A discussion of potential future work you would complete if you had more time.*
-
-## 7. Personal experience
-*A discussion of your personal experience with the project, such as difficulties or pleasant surprises you encountered while completing it.*
-
-- Environment setup
-    - TODO - the hassle of setting up the environment
-
-- Compute resources
-    - The compute resources available to each team member were wide-ranging. Some team members had access to only basic compute on a local laptop, whilst other team members had access high peformance GPUs and scalable cloud compute. These differences had a direct and significant impact on the implementations and results achieved. For example, machines with more RAM were able to store a much larger replay buffer - a factor which we find to be highly correlated with agent performance. The disparate availability of compute resources creates a conflict between finding implementations that can solve the environment vs implementations which are directly comparable.
-
-- Training time
-    - The amount of training time required in this environment was significant, even on machines with substantial compute resource. Often it would be hours into training before an agent would start making progress in learning. Receiving feedback to understand how models were performing relative to other configurations was time-consuming and hindered the speed of iteration.
-
-- Personal commitments
-    - TODO -jobs, family, hard to find common time to meet.
-
-## 7. References
-TODO 
-https://arxiv.org/pdf/1312.5602.pdf 
-https://arxiv.org/pdf/1509.06461v3.pdf
-https://arxiv.org/pdf/1509.02971.pdf
-
-
-## 8. Appendices
-### 8.1 DQN structure
-For DQN and Double DQN algoritrhms, we use a Convolutional Neural Network with an architecture similar to that of Mnih et al. (2013) with the addition of an extra convolutional layer in order to reduce the number of model parameters.
-
-The model consists of three convolutional layers with the following attributes:
-- Number of filters: 32, 64, 64
-- Filter sizes: 8, 4, 3 
-- Stride length: 4, 2, 1
-
-The Relu activation function has been used for each convolutional layer. 
-Following on from the convolutional layers, outputs are flattened and passed to a 256 dimensional dense layer with a Relu activation function. Finally, these outputs are passed to a 5-dimensional dense layer with a linear activation function.
-
-### 8.2 Trial configurations
-TODO
-
-### 8.2 CNN analysis
-TODO
-
-
-
-
-
-
+Mnih, V., Kavukcuoglu, K., Silver, D., Graves, A., Antonoglou, I., Wierstra, D. and Riedmiller, M., 2013. Playing Atari with Deep Reinforcement Learning. arXiv:1312.5602 [cs] [Online]. Available from: http://arxiv.org/abs/1312.5602 [Accessed 23 April 2022].
